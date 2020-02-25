@@ -5,6 +5,9 @@ Welcome to GS CurveTools's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+	first-page
+	second-page
+
 Indices and tables
 ==================
 
