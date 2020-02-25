@@ -2,11 +2,11 @@ Welcome to GS CurveTools's documentation!
 =========================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+    :maxdepth: 2
+    :caption: Contents:
 
-	first-page
-	second-page
+    first-page.rst
+    second-page.rst
 
 Indices and tables
 ==================
