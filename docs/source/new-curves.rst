@@ -1,8 +1,8 @@
 .. currentmodule:: index
 
-=============
+#############
 Main Concepts
-=============
+#############
 
 Intro
 -----

@@ -1,10 +1,8 @@
 .. currentmodule:: index
-.. role:: strike
-    :class: strike
 
-============
+############
 Installation
-============
+############
 
 Initialization
 --------------
@@ -29,7 +27,7 @@ Initialization
 
         import gs_curvetools.init as ct_init;reload(ct_init);ct_init.Init();
 
-#. Click **Enter**. Installation is complete.
+#. Press **Enter**. Installation is complete.
 
 Main Menu, Resetting and Stopping
 ---------------------------------
@@ -39,14 +37,14 @@ Main Menu, Resetting and Stopping
     :class: with-shadow float-right
     :width: 200px
 
-After **Initialization** step **GS** tab will appear on **Maya Shelf**.
+After Initialization_ step **GS** tab will appear on **Maya Shelf**.
 
 .. figure:: https://i.imgur.com/mefmQ38.png
     :alt: Main Menu
     :class: with-shadow float-left
     :width: 50px
 
-CT UI button will open/close GS CurveTools UI.
+CT UI button will open/close GS CurveTools User Interface.
 
 .. figure:: https://i.imgur.com/a9MMBFc.png
     :alt: Main Menu
@@ -67,14 +65,17 @@ CT Del will close GS CurveTools UI and stop any background scripts.
 Hotkeys
 -------
 
-After you Initialize the plug-in all the hotkeys will be available in::
+After you Initialize_ the plug-in all the hotkeys will be available in::
+
 
     Hotkey Editor -> Custom Scripts -> GS -> GS_CurveTools
+
+.. _Initialize: Initialization__
 
 Updating the Plug-in
 --------------------
 
-To update the plug-in to a new version just **delete** the old **gs_curvetools** folder and repeat the `Initialization`_ steps.
+To update the plug-in to a new version just **delete** the old **gs_curvetools** folder and repeat the Initialization_ steps.
 
 
 
