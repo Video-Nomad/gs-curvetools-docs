@@ -24,7 +24,6 @@ author = 'George Sladkovsky'
 # The full version, including alpha/beta/rc tags
 release = 'v1.1'
 
-
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be
@@ -41,6 +40,9 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
+# -- Options for LaTeX output
+
+latex_toplevel_sectioning = 'part'
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -61,8 +63,6 @@ html_theme_options = {
     'logo_only': False,
     'display_version': False,
     'prev_next_buttons_location': 'bottom',
-    #'style_external_links': False,
-    'vcs_pageview_mode': '',
     'style_nav_header_background': '#5285A6',
     # Toc options
     'collapse_navigation': True,
