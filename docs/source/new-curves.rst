@@ -5,7 +5,7 @@ Main Concepts
 #############
 
 Intro
------
+^^^^^
 
 GS CurveTools main function is to create and manipulate geometry that is bound to a curve.
 
@@ -17,7 +17,7 @@ In this chapter we will go through main concepts of the plug-in and after that w
 
 
 Main Menu
----------
+^^^^^^^^^
 
 .. figure:: https://i.imgur.com/Srb9UYX.png
     :alt: Right floating image

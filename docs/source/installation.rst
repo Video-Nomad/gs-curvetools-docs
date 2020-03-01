@@ -5,7 +5,7 @@ Installation
 ############
 
 Initialization
---------------
+^^^^^^^^^^^^^^
 
 .. warning:: Only **Windows** platform is fully supported. **OSX** platform is not tested and not supported. It might work just fine, or it might not.
 
@@ -30,7 +30,7 @@ Initialization
 #. Press **Enter**. Installation is complete.
 
 Main Menu, Resetting and Stopping
----------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: https://i.imgur.com/ewMSuiz.png
     :alt: Maya Shelf
@@ -63,7 +63,7 @@ CT Del will close GS CurveTools UI and stop any background scripts.
 .. note:: You can use middle mouse drag to drag these buttons to any tab on the shelf.
 
 Hotkeys
--------
+^^^^^^^
 
 After you Initialize_ the plug-in all the hotkeys will be available in::
 
@@ -73,7 +73,7 @@ After you Initialize_ the plug-in all the hotkeys will be available in::
 .. _Initialize: Initialization__
 
 Updating the Plug-in
---------------------
+^^^^^^^^^^^^^^^^^^^^
 
 To update the plug-in to a new version just **delete** the old **gs_curvetools** folder and repeat the Initialization_ steps.
 
