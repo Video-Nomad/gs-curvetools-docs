@@ -64,7 +64,7 @@ html_theme_options = {
     'prev_next_buttons_location': 'bottom',
     'style_external_links': False,
     'vcs_pageview_mode': '',
-    'style_nav_header_background': 'light-blue',
+    'style_nav_header_background': '#5285A6',
     # Toc options
     'collapse_navigation': True,
     'sticky_navigation': True,
@@ -76,3 +76,7 @@ html_theme_options = {
 html_logo = 'images/logo.png'
 
 html_favicon = 'images/favicon.png'
+
+html_css_files = [
+    'css/custom.css',
+]
