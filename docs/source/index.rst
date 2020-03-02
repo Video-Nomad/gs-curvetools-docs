@@ -4,9 +4,8 @@ GS CurveTools for Autodesk Maya Documentation
 
 **Tested on Maya 2017-2020**
 
-#####
 Links
-#####
+^^^^^
 
 - `Online Store <https://sladkovsky3d.artstation.com/store>`_
 - `Discord Support Server <https://discord.gg/f4DH6HQ>`_
@@ -15,9 +14,8 @@ Links
 - `ArtStation <https://www.artstation.com/sladkovsky3d>`_
 
 
-############
 Introduction
-############
+^^^^^^^^^^^^
 
 .. figure:: https://i.imgur.com/Srb9UYX.png
     :alt: Right floating image
@@ -33,7 +31,7 @@ One of the main focuses of GS CurveTools is Hair Cards workflow. Almost every ga
 .. rst-class::  clear-both
 
 Main Features of GS CurveTools
-------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Fast creation of procedural geometry cards and tubes
 - Conversion of already existing curves to curve cards/tubes
@@ -52,7 +50,10 @@ Main Features of GS CurveTools
 
 .. toctree::
     :maxdepth: 2
-    :caption: Chapters:
+    :caption: Table of Contents:
 
-    installation.rst
-    new-curves.rst
+	Changelog <changelog>
+    Installation <installation>
+    First Steps <main-concepts>
+	Attributes <attributes>
+	UVs <uvs>

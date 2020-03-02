@@ -1,13 +1,18 @@
-.. currentmodule:: index
+.. currentmodule:: <index>
 
-############
-Installation
-############
+.. role:: strike
+    :class: strike
 
-Initialization
-^^^^^^^^^^^^^^
+########################################
+Installation, Shelf, Hotkeys and Updates
+########################################
+
+Installation Steps
+^^^^^^^^^^^^^^^^^^
 
 .. warning:: Only **Windows** platform is fully supported. **OSX** platform is not tested and not supported. It might work just fine, or it might not.
+
+0. :strike:`Pay for WinRAR`
 
 #. Unpack and copy **gs_curvetools** folder to **Documents/Maya/{Maya_Version}/scripts/**
 
@@ -37,7 +42,7 @@ Main Menu, Resetting and Stopping
     :class: with-shadow float-right
     :width: 200px
 
-After Initialization_ step **GS** tab will appear on **Maya Shelf**.
+After `Installation Steps`_ **GS** tab will appear on **Maya Shelf**.
 
 .. figure:: https://i.imgur.com/mefmQ38.png
     :alt: Main Menu
@@ -65,17 +70,16 @@ CT Del will close GS CurveTools UI and stop any background scripts.
 Hotkeys
 ^^^^^^^
 
-After you Initialize_ the plug-in all the hotkeys will be available in::
-
+After you Initialize_ the plug-in, all the hotkeys will be available in::
 
     Hotkey Editor -> Custom Scripts -> GS -> GS_CurveTools
 
-.. _Initialize: Initialization__
+.. _Initialize: `Installation Steps`_
 
 Updating the Plug-in
 ^^^^^^^^^^^^^^^^^^^^
 
-To update the plug-in to a new version just **delete** the old **gs_curvetools** folder and repeat the Initialization_ steps.
+To update the plug-in to a new version just **delete** the old **gs_curvetools** folder and repeat the `Installation Steps`_.
 
 
 

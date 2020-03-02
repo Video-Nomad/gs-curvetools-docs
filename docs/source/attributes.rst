@@ -1,0 +1,7 @@
+.. currentmodule:: <index>
+
+##########
+Attributes
+##########
+
+Placeholder

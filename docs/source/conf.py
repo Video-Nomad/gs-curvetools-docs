@@ -42,7 +42,7 @@ exclude_patterns = []
 
 # -- Options for LaTeX output
 
-latex_toplevel_sectioning = 'section'
+latex_toplevel_sectioning = 'chapter'
 
 # -- Options for HTML output -------------------------------------------------
 
