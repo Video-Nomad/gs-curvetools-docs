@@ -25,8 +25,6 @@ Basic Workflow Example
 	:class: with-shadow float-right
 	:width: 200px
 
-
-
 Start by creating a simple curve card with Add Card button. Now try modifying the curve that was created. 
 
 .. figure:: https://i.imgur.com/RpXP1lK.png
@@ -140,7 +138,6 @@ Main Menu is split into 5 logical sections:
 	#. **Curve Control** and **Apply** buttons create a deformer curve that can deform selected curves. So apply the deformer, simply select it and click Apply.
 
 	#. **Curve Control Window** Will open a separate menu that holds sliders and graphs that control curve attributes and UVs.
-	
 
 Curve Control Window
 ^^^^^^^^^^^^^^^^^^^^

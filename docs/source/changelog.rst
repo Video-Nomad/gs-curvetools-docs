@@ -26,6 +26,8 @@ Version 1.1
 
 - New **Layer Filters**. Quickly show/hide all the layers. Show only geometry or only curves on all layers.
 
+	- Last layer (**J**) is skipped by default. You can store your template curves there and the filters will not affect it. This functionality can be changed in the options.
+
 - New **Color Mode**. Quickly colorize your layers in viewport and in layer window. Switch between two modes: only color or UV checker pattern + color. Click again to return back to normal textures.
 
 - New **Extract Selected** and **Extract All**:
@@ -39,6 +41,8 @@ Version 1.1
 - **Transfer Attr.** and **Transfer UVs** buttons can now work in reverse mode (Shift + Click). Default -> Transfer From **First** selected to all other curves, Shift -> Transfer from **Last** selected to all other curves.
 
 - **Transfer Attr.** and **Transfer UVs** will now show [Source] curve when transferring the attributes.
+ 
+- **Smooth** function can now not only smooth the entire curve but also smooth only selected CVs. 
 
 - **Rebuild Curve** will now show number of CVs in the viewport.
 
@@ -60,7 +64,7 @@ Version 1.1
 
 - Switching workspaces and closing Maya will not cause blank window to appear when Maya is launched next time.
 
-- Changing scenes will not affect functionality of the plug-in anymore.
+- Changing scenes will not affect functionality of the plug-in.
 
 - Add Cards command will no longer randomly add additional curves at the location of existing curves.
 
@@ -72,7 +76,7 @@ Version 1.1
 
 **Known Issues:**
 
-- Rebuild Curve slider is not working if there is Maya Deformer currently present on the curve. Applying the deformer (deleing history) fixes it.
+- Rebuild Curve slider is not working if there is Maya Deformer currently present on the curve. Applying the deformer (deleting history) fixes it.
 
 - Smooth function can't handle more than 255 CVs on one curve
 

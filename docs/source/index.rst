@@ -49,11 +49,11 @@ Main Features of GS CurveTools
 
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 3
     :caption: Table of Contents:
 
 	Changelog <changelog>
     Installation <installation>
-    First Steps <main-concepts>
+    First Steps <first-steps>
 	Attributes <attributes>
 	UVs <uvs>
