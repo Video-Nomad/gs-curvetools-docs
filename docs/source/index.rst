@@ -2,7 +2,7 @@
 GS CurveTools for Autodesk Maya Documentation
 #############################################
 
-**Tested on Maya 2017-2020**
+**For Maya 2017-2020**
 
 Links
 ^^^^^
@@ -47,6 +47,14 @@ Main Features of GS CurveTools
 - Control multiple curves with Control Curve deformer
 - Custom window for all curve controls
 
+Supported Platforms
+^^^^^^^^^^^^^^^^^^^
+
+Maya 2017-2020 for Windows -> Fully Tested and Supported.
+
+Maya 2017-2020 for Mac -> In Beta.
+
+Linux Not Tested.
 
 .. toctree::
     :maxdepth: 3

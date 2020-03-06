@@ -10,7 +10,7 @@ Installation, Shelf, Hotkeys and Updates
 Installation Steps
 ^^^^^^^^^^^^^^^^^^
 
-.. warning:: Only **Windows** platform is fully supported. **OSX** platform is not tested and not supported. It might work just fine, or it might not.
+.. warning:: Only **Windows** version is **fully supported**. **Mac** version is currently in **beta test** and may have some bugs. **Linux** version was not tested and currently **not supported**.
 
 0. :strike:`Pay for WinRAR`
 
@@ -70,7 +70,7 @@ CT Del will close GS CurveTools UI and stop any background scripts.
 Hotkeys
 ^^^^^^^
 
-After you Initialize_ the plug-in, all the hotkeys will be available in::
+After you Initialize_ the plug-in you can find all the hotkeys in::
 
     Hotkey Editor -> Custom Scripts -> GS -> GS_CurveTools
 

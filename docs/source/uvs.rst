@@ -4,5 +4,283 @@
 UV Unwrapping and Editing
 #########################
 
-Placeholder
+Intro
+^^^^^
+
+**UV Attributes** were created to procedurally change the UVs of the geometry in a way that supports further modification using, for example, width and hight divisions attributes.
+
+If you try to set the UVs using Maya UV Editor, it will work but only until you try to change the width and height divisions of the geometry.
+
+.. figure:: https://i.imgur.com/YOPhCEd.png
+	:class: with-shadow float-right
+	:width: 250px
+
+Here is an example of broken UVs, when using regular Maya UV workflow and trying to change length division attribute ->
+
+|
+|
+|
+
+.. figure:: https://i.imgur.com/xTNi8vn.png
+	:class: with-shadow float-right
+	:width: 250px
+
+To avoid this issue, it is best to use provided UV attributes to Move, Scale and Rotate the UV
+
+|
+|
+|
+|
+
+.. figure:: https://i.imgur.com/7F5NEZM.png
+	:class: with-shadow float-right
+	:width: 250px
+
+The default UVs of the cards and tubes are just uniform UV map that fills the 0,1 space.
+
+By changing the UV attributes you will change the shape of this default UV map.
+
+|
+|
+|
+|
+
+UV Attributes
+^^^^^^^^^^^^^
+
+**Select for UV edit** will highlight the UV map of the selected curve so it is visible in Maya UV editor. This button is optional, you can always set your UVs directly from Viewport, skipping the UV Editor completely.
+
+.. figure:: https://i.imgur.com/WSR8Dw4.gif
+	:class: with-shadow float-right
+	:width: 200px
+
+- **MoveU** and **MoveV** attributes will move the UV map left, right, up and down in the UV space
+
+|
+|
+|
+|
+|
+
+.. figure:: https://i.imgur.com/xEShPv3.gif
+	:class: with-shadow float-right
+	:width: 200px
+
+- **ScaleU** and **ScaleV** will scale the UV map. ScaleU will scale the map from sides to center, and ScaleV will scale from top to bottom. This unusual behavior of ScaleV is because it is much easier to control the map this way. You don't need to scale and then move each time if you are aiming for a specific hair texture in your map.
+
+|
+|
+
+.. figure:: https://i.imgur.com/PFWIahQ.gif
+	:class: with-shadow float-right
+	:width: 200px
+
+- **Rotate UV** (RotUV) will rotate the map around its center point.
+
+|
+|
+|
+|
+|
+|
+|
+
+.. figure:: https://i.imgur.com/3Au3IVr.gif
+	:class: with-shadow float-right
+	:width: 200px
+
+- **Rotate Root UV** (RotRtUV) will rotate around the "root" part of the UV map.
+
+|
+|
+|
+|
+|
+|
+
+.. figure:: https://i.imgur.com/GMWGh6s.gif
+	:class: with-shadow float-right
+	:width: 200px
+
+- **Rotate Tip UV** (RotTipUV) will rotate the "tip" part of the UV map.
+
+|
+|
+|
+|
+|
+
+Workflow examples
+^^^^^^^^^^^^^^^^^
+
+.. figure:: https://i.imgur.com/OUaCurd.png
+	:class: with-shadow float-right
+	:width: 400px
+
+Let's imagine we have a texture map (we are using alpha map for better visibility) with hair strands rendered in a vertical orientation. Some of them are long and go from top to bottom of the map. Some of them are short and even stacked on top of each other. So how do we approach this? There are two main ways:
+
+|
+|
+|
+|
+|
+|
+|
+
+**Workflow 1 (recommended)** - You can easily set up your UVs right in the viewport. Just remember how the map changes when you change the attributes and you are set.
+
+.. note:: Hair Card is scaled to almost square shape in this example to provide better visibility.
+
+.. figure:: https://i.imgur.com/lGj7ZDE.gif
+	:class: with-shadow float-right
+	:width: 400px
+
+- First, let's move the UV map using our curve as "aim". "Select" the appropriate hair strand using MoveU like this:
+	
+|
+|
+|
+|
+|
+|
+|
+
+
+.. figure:: https://i.imgur.com/ZodRDJ9.gif
+	:class: with-shadow float-right
+	:width: 400px
+
+- After that let's scale our map using ScaleU until the strand fills the entire card:
+
+|
+|
+|
+|
+|
+|
+|
+
+.. figure:: https://i.imgur.com/6Yeie82.gif
+	:class: with-shadow float-right
+	:width: 400px
+
+- In this example, map is upside down. Let's rotate the UVs 180 deg, to flip it back to normal:
+
+|
+|
+|
+|
+|
+|
+|
+
+.. figure:: https://i.imgur.com/MJTqMNI.gif
+	:class: with-shadow float-right
+	:width: 400px
+
+- As you can see, map does not fill the entirety of the hair card. This is wasted texture space. Let's fix this by combining MoveU and ScaleV attributes:
+
+|
+|
+|
+|
+|
+|
+
+.. note:: To use better precision than sliders can provide we can either stretch the Curve Control Window or use combination of Ctrl + Left Mouse Button Drag on the Value Fields.
+
+.. figure:: https://i.imgur.com/TxC95Fq.gif
+	:class: with-shadow float-right
+	:width: 200px
+
+And here we go. Now we just need to add alpha back to the texture and scale the curve back to its original size.
+
+As you can see, Viewport method is extremely simple and intuitive. You only need to do this once per each hair strand in the texture map, and then you can just use "TransferUVs" button to copy UV attributes to other curves.
+
+
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+
+**Workflow 2 (UV Editor)** - You can use normal Maya UV editor as a reference. This method allows for better visibility of the actual changes of the UV map when you change the UV attributes. It is slower thou, and I recommend you to get used to the first workflow.
+
+- Let's select our curve and open Maya UV Editor.
+
+.. figure:: https://i.imgur.com/BFAgEhM.gif
+	:class: with-shadow float-right
+	:width: 400px
+
+- Now you will notice that UV editor is empty. That's because we only selected our curve, not the actual geometry. To fix this, in the UV section of Curve Control Window click on the "Select for UV edit" button.
+
+|
+|
+|
+|
+|
+
+.. figure:: https://i.imgur.com/rLIkPv8.gif
+	:class: with-shadow float-right
+	:width: 400px
+
+- Now it is only a matter of changing the attributes to the desired values:
+
+|
+|
+|
+|
+|
+|
+|
+
+As you can see, although this method is fast and easy, it lacks the precision you get when viewing your texture in the viewport
+
+
+Transferring UVs
+^^^^^^^^^^^^^^^^
+
+.. figure:: https://i.imgur.com/DLijcFH.png
+	:class: with-shadow float-right
+	:width: 100px
+
+You can easily **copy** (or **transfer**) UVs from one curve to any number of other curves. For that, just use the provided **"Transfer UVs."** button. It will show you the **[Source]** curve when you click on it. UVs are transferred from the **[Source]** curve to all other curves.
+
+Transfer UVs work in two directions:
+
+.. figure:: https://i.imgur.com/85MzXYz.gif
+	:class: with-shadow float-right
+	:width: 400px
+
+- By default, it will transfer **From First Selected Curve** -> **To All Other Curves**.
+
+|
+|
+|
+|
+|
+|
+|
+|
+
+.. figure:: https://i.imgur.com/rjXWaGz.gif
+	:class: with-shadow float-right
+	:width: 400px
+
+- Using **Shift** modifier, you can reverse the direction of the transfer. It will now transfer **From Last Selected Curve** -> **To All Other Curves**.
+
+|
+|
+|
+|
+
+.. note:: Transfer UVs command is **multi selection compatible**, so you can transfer UVs from one curve to any number of other curves in one click.
 

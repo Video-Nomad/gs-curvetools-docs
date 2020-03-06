@@ -186,9 +186,7 @@ The main object that you will interact with is **pathCurve** object. It is the o
 
 **geoCard** is the actual geometry that is controlled by the **pathCurve**. The only way to interact with it is to enable "Geometry Edit" in the layer.
 
-.. warning:: You should not move or rename any objects inside the main group. If you want to organize your scene - use layers, rename and group the main group itself but not its contents.
+.. warning:: You should not remove or rename any objects inside the main group. If you want to organize your scene - use layers or/and rename and group the main group itself but not its contents.
 
 .. note:: **Warp** function will sometimes create additional sub-group called **origCurves** that should not be moved or renamed by the user.
-
-
 

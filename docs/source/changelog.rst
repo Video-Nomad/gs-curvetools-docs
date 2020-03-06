@@ -60,6 +60,10 @@ Version 1.1
 
 	- Online Documentation: https://gs-curvetools.readthedocs.io/
 
+- **Merged Versions** - we are back to one folder for every version of Maya.
+
+- **Mac OS** support is now in Beta. If you have any bugs, please report them.
+
 **Fixed Bugs:**
 
 - Switching workspaces and closing Maya will not cause blank window to appear when Maya is launched next time.

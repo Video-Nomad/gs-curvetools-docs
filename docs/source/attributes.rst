@@ -19,9 +19,9 @@ There are 3 main types of attributes:
 
 - **Graphs** - graphs provide with advanced control over some attributes of the curve.
 
-Some attributes are common for all types of curves. Other can only be found on, for example, Tubes, Warp Cards, etc.
+Some attributes are common for all types of curves. Others can only be found on, for example, Tubes or Warp Cards, etc.
 
-Warp function has its own set of attributes because of the unique way it binds geometry.
+**Warp** function has its own set of attributes because of the unique way it binds geometry.
 
 Main Attributes
 ^^^^^^^^^^^^^^^
@@ -97,7 +97,7 @@ Main Attributes
 	:class: with-shadow float-right
 	:width: 250px
 
-- **WidthX and WidthZ** - Only for Tubes. Individually changes with along X and Z axis of the tube. You can also lock these two sliders together to change the width uniformly.
+- **WidthX and WidthZ** - Only for Tubes. Individually changes width along X and Z axis of the tube. You can also lock these two sliders together to change the width uniformly.
 
 |
 |
@@ -114,7 +114,7 @@ Main Attributes
 		:class: with-shadow float-right
 		:width: 250px
 
-	- In case of with, Magnitude can be controlled by normal Width Slider
+	- In case of width, Magnitude can be controlled by normal Width Slider
 	- **Reset Curve** will reset the graph to its default state.
 	- **^** button will open a pop-out Twist Curve Graph that can be resized by user.
 
@@ -217,3 +217,44 @@ Solidify Attributes
 - **Scale X, Scale Y and Offset** will change the profile of the solidified geometry. The main difference between them is that offset works more uniformly.
 
 - **Solidify Normals** (SNormals) will change the hardness of normals along the solidified edges.
+
+.. note:: To use better precision than sliders can provide we can either stretch the Curve Control Window or use combination of Ctrl + Left Mouse Button Drag on the Value Fields.
+
+Transferring Attributes
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. figure:: https://i.imgur.com/DLijcFH.png
+	:class: with-shadow float-right
+	:width: 100px
+
+You can easily **copy** (or **transfer**) attributes from one curve to any number of other curves. For that, just use the provided **"Transfer Attr."** button. It will show you the **[Source]** curve when you click on it. Attributes are transferred from the **[Source]** curve to all other curves.
+
+Transfer attributes works in two directions:
+
+.. figure:: https://i.imgur.com/Yv6vnLV.gif
+	:class: with-shadow float-right
+	:width: 400px
+
+- By default, it will transfer **From First Selected Curve** -> **To All Other Curves**.
+
+|
+|
+|
+|
+|
+|
+|
+|
+
+.. figure:: https://i.imgur.com/JmsEkOI.gif
+	:class: with-shadow float-right
+	:width: 400px
+
+- Using **Shift** modifier, you can reverse the direction of the transfer. It will now transfer **From Last Selected Curve** -> **To All Other Curves**.
+
+|
+|
+|
+|
+
+.. note:: Transfer Attr. command is **multi selection compatible**, so you can transfer Attributes from one curve to any number of other curves in one click.
