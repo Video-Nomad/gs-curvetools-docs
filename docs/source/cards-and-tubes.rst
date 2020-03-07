@@ -96,14 +96,14 @@ Here is an example of two different selection orders:
 .. figure:: https://i.imgur.com/Em7Zt1n.gif
 	:alt: Creation Section
 	:class: with-shadow float-right
-	:width: 350px
-	:height: 350px
+	:width: 300px
+	:height: 300px
 
 .. figure:: https://i.imgur.com/xG3xaCO.gif
 	:alt: Creation Section
 	:class: with-shadow
-	:width: 350px
-	:height: 350px
+	:width: 300px
+	:height: 300px
 
 Warp Mode
 ^^^^^^^^^
@@ -137,7 +137,7 @@ The graph can be reset to default using **Reset Curve** button.
 |
 |
 
-**Scale Curve Graph:**
+**Width Curve Graph:**
 
 .. figure:: https://i.imgur.com/lfOQU7Z.gif
 	:alt: Creation Section
