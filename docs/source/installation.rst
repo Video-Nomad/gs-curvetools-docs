@@ -10,7 +10,7 @@ Installation, Shelf, Hotkeys and Updates
 Installation Steps
 ^^^^^^^^^^^^^^^^^^
 
-.. warning:: Only **Windows** version is **fully supported**. **Mac** version is currently in **beta test** and may have some bugs. **Linux** version was not tested and currently **not supported**.
+.. warning:: Only **Windows** version is **fully supported**. **Mac** version is currently in **beta test** and may have some bugs. **Linux** was not tested and currently **not supported**. **Maya LT** was not tested and currently **not supported**.
 
 0. :strike:`Pay for WinRAR`
 

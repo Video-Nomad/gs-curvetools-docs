@@ -116,7 +116,7 @@ Main Menu is split into 5 logical sections:
 
 	#. **Select CVs Slider** will quickly select CVs based on the slider position. Select curves and drag the slider.
 	
-	#. **Transfer Attr** and **Transfer UVs** button will transfer appropriate attributes (settings) from one curve selected curve to all other in selection list.
+	#. **Transfer Attr** and **Transfer UVs** button will transfer appropriate attributes (settings) from one selected curve to all other curves in selection list.
 	
 	#. **Reset Pivot** will reset the manipulator pivot to the first CV of the curve.
 	
@@ -138,6 +138,8 @@ Main Menu is split into 5 logical sections:
 	#. **Curve Control** and **Apply** buttons create a deformer curve that can deform selected curves. So apply the deformer, simply select it and click Apply.
 
 	#. **Curve Control Window** Will open a separate menu that holds sliders and graphs that control curve attributes and UVs.
+
+.. note:: You might notice a **small triangle** on the bottom left of some icons. This triangle indicates that there is an alternative algorithm available for this function. To activate it, just **Hold Shift** before clicking the button.
 
 Curve Control Window
 ^^^^^^^^^^^^^^^^^^^^

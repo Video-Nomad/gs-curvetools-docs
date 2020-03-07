@@ -1,8 +1,8 @@
 .. currentmodule:: <index>
 
-##########
-Attributes
-##########
+################
+Curve Attributes
+################
 
 Intro
 ^^^^^

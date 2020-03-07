@@ -50,18 +50,23 @@ Main Features of GS CurveTools
 Supported Platforms
 ^^^^^^^^^^^^^^^^^^^
 
-Maya 2017-2020 for Windows -> Fully Tested and Supported.
+**Maya 2017-2020 for Windows** -> Fully Tested and Supported.
 
-Maya 2017-2020 for Mac -> In Beta.
+**Maya 2017-2020 for Mac** -> In Beta.
 
-Linux Not Tested.
+**Linux** -> Not Tested and Not Supported.
+
+**Maya LT** -> Not Tested and Not Supported.
 
 .. toctree::
     :maxdepth: 3
     :caption: Table of Contents:
 
 	Changelog <changelog>
+	Video Tutorials <video-tutorials>
     Installation <installation>
     First Steps <first-steps>
-	Attributes <attributes>
-	UVs <uvs>
+	Curve Attributes <attributes>
+	Textures and UVs <uvs>
+	Cards and Tubes <cards-and-tubes>
+	Warp <warp>
