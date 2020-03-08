@@ -16,6 +16,10 @@ In this chapter we will discuss all the types of cards and tubes, difference bet
 
 GS CurveTools has 4 main types of curves split into two categories: **Extrude** and **Warp**. You can easily switch between categories using Extrude and Warp radio button (switch) on the top of the menu.
 
+**Extrude** will create groups in the outliner called **curveCard** or **curveTube** and Warp mode will create **warpCard** or **warpTube** groups. 
+
+You can rename this group or even group it with other groups, but do not rename or move anything inside those groups.
+
 **Extrude** and **Warp** use completely different algorithms, and in general, **Warp** is more advanced version of **Extrude**.
 
 The main reason why **Extrude** was left as an option is because it has slightly better performance than **Warp** mode. **Warp** mode, on the other hand, has the ability to precisely control the twist and scale along the length of the curve, as well as detaching the length of the geometry from the length of the curve etc.

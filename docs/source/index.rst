@@ -24,9 +24,11 @@ Introduction
 
 **GS CurveTools** is a powerful tool used create and manipulate geometry cards and tubes (Curve Cards and Curve Tubes). GS CurveTools can be used in numerous workflows, from hair card creation, to creation of complex procedural braided cables and much more.
 
-The main power of GS CurveTools is its ability to quickly create complex network of nodes, tailored for fast manipulation of geometry in a smooth and natural way. 
+The main power of GS CurveTools is its ability to quickly create complex network of nodes, tailored for fast manipulation of geometry in a smooth and natural way.
 
 One of the main focuses of GS CurveTools is Hair Cards workflow. Almost every game out there uses some form of hair cards to create complex and beautiful hair styles for its main characters. To be able to quickly create new hair cards, convert curves to hair cards and quickly change its parameters is very important part of GS CurveTools workflow.
+
+With Version 1.1 user can now bind custom geometry to any curve and even bind already created Curve Cards and Curve Tubes to any curve  using Warp function.
 
 .. rst-class::  clear-both
 
@@ -37,7 +39,11 @@ Main Features of GS CurveTools
 - Conversion of already existing curves to curve cards/tubes
 - Ability to quickly populate empty spaces between curves with new curve cards/tubes
 - Intuitive and fast controls for created curves
-- Powerful layer system for created curves/tubes
+- Ability to bind (attach) any geometry or already existing Curve Cards/Tubes to any Curve.
+- Powerful Layer System for created curves/tubes.
+- Easy to use filters to quickly show/hide all curves or geometry.
+- New Colorize mode to quickly check UVs, see the layers in the Viewport and more.
+- Quickly Extract All geometry for Export, or Extract Selected only. Original Curves stay functional.
 - Fast selection and grouping of curves
 - Transfer of attributes and UVs between curve cards
 - Interactive rebuild of existing curves for additional complexity or vice versa, to simplify control.
@@ -59,14 +65,18 @@ Supported Platforms
 **Maya LT** -> Not Tested and Not Supported.
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
     :caption: Table of Contents:
 
 	Changelog <changelog>
 	Video Tutorials <video-tutorials>
-    Installation <installation>
-    First Steps <first-steps>
+	Installation <installation>
+	First Steps <first-steps>
 	Curve Attributes <attributes>
 	Textures and UVs <uvs>
-	Cards and Tubes <cards-and-tubes>
-	Warp <warp>
+	Card and Tube Types <cards-and-tubes>
+	Warp Button <warp>
+	Layers <layers>
+	Quick Selection and Grouping <selection>
+	Utility Functions <utility>
+	Options Menu <options>

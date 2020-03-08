@@ -10,7 +10,9 @@ Intro
 	:class: with-shadow float-right
 	:width: 150px
 
-Warp button allows for an entire new level of customization of your curves as it allows to bind any selected geometry to a curve AND it also supports binding Curve Cards and Curve Tubes to a single curve, keeping the original geometry shape intact. Let's explore.
+Warp button allows for an entire new level of customization of your curves as it allows to bind any selected geometry to a curve AND it also supports binding Curve Cards and Curve Tubes to a single curve, keeping the original geometry shape intact.
+
+Warp button will create a group in the outliner, called **warpGroup** or **warpGeo**. Just like with any other group in GS CurveTools, you can rename it to anything you like or group it with other groups, but do not rename or move anything inside this group.
 
 
 Binding Geometry to a Curve
@@ -66,8 +68,8 @@ You can **switch back to the original curves and modify** them at any moment usi
 |
 |
 
-Using Maya Deformers on Warp
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Using Maya Deformers on Warp Group
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: https://i.imgur.com/aifSVpA.gif
 	:class: with-shadow float-right

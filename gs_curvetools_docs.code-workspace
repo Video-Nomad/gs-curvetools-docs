@@ -4,5 +4,18 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.exclude": {
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.hg": true,
+			"**/CVS": true,
+			"**/.DS_Store": true,
+			"**/.history": true,
+			"**/.mypy_cache": true,
+			"**/*.code-workspace": true,
+			"**/*.pyc": true
+		},
+		"explorerExclude.backup": null
+	}
 }
