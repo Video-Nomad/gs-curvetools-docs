@@ -59,6 +59,7 @@ You can also use **Modifier** buttons to change the behavior of the slider:
 	:width: 300px
 
 - Holding **Shift + Control** button will Deselect any selected CVs based on the slider position.
+
 |
 |
 |

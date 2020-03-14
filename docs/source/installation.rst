@@ -14,7 +14,10 @@ Installation Steps
 
 0. :strike:`Pay for WinRAR`
 
-#. Unpack and copy **gs_curvetools** folder to **Documents/Maya/{Maya_Version}/scripts/**
+#. Unpack and copy **gs_curvetools** folder to:
+
+	- **Windows:** Documents/Maya/{Maya_Version}/scripts/
+	- **Mac:** {Your_Mac_Name}/⁨Users⁩/{User_Name}/⁨Library/⁨Preferences⁩/⁨Autodesk⁩/⁨maya/{Maya_Version}/scripts/⁩
 
     .. figure:: https://i.imgur.com/aLTGOqy.png
         :alt: Folder Structure Example
@@ -22,7 +25,15 @@ Installation Steps
         :width: 600px
         :align: center
 
-        Folder structure example
+        Windows Folder Structure Example
+
+    .. figure:: https://i.imgur.com/AxYywaa.png
+        :alt: Folder Structure Example
+        :class: with-shadow
+        :width: 600px
+        :align: center
+
+        Mac Folder Structure Example
 
 #. Run **Maya**
 
@@ -80,10 +91,3 @@ Updating the Plug-in
 ^^^^^^^^^^^^^^^^^^^^
 
 To update the plug-in to a new version just **delete** the old **gs_curvetools** folder and repeat the `Installation Steps`_.
-
-
-
-
-
-
-
