@@ -25,4 +25,3 @@ Version 1.0 Full Tutorial
     </div>
 
 |
-|
