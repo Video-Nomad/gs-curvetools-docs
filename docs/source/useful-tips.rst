@@ -44,7 +44,7 @@ First you can enable Screen-space Ambient Occlusion but without any actual occlu
             else:
                 mc.setAttr('hardwareRenderingGlobals.ssaoEnable', 1)
 
-        .. note:: It might look something like this when you paste it, don't worry it's a visual bug in Maya. Just leave it a is:
+        .. note:: It might look something like this when you paste it, don't worry it's a visual bug in Maya. Just leave it as is:
 
             .. figure:: https://i.imgur.com/d75eZzW.png
                 :alt: Maya Shelf
@@ -65,12 +65,12 @@ First you can enable Screen-space Ambient Occlusion but without any actual occlu
                     :width: 400px
                     :align: center
 
-    - Now by clicking on your custom hotkey, you will toggle between two visibility modes.
+- Now by clicking on your custom hotkey, you will toggle between two visibility modes.
 
 Curve thickness
 ###############
 
-Next trick is to increase the thickness of the curve. To do that, simply select all the curves you want to change and using Curve Control Window and increase the thickness of the curves:
+Next trick is to increase the thickness of the curve. To do that, simply select all the curves you want to change and using Curve Control Window and increase the thickness of the curves (default value is -1):
 
 .. figure:: https://i.imgur.com/34Foacd.gif
                 :alt: Maya Shelf
