@@ -80,3 +80,4 @@ Supported Platforms
 	Quick Selection and Grouping <selection>
 	Utility Functions <utility>
 	Options Menu <options>
+	Useful Tips <useful-tips>
