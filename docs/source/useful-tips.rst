@@ -30,7 +30,10 @@ First you can enable Screen-space Ambient Occlusion but without any actual occlu
     :width: 300px
     :align: center
 
+
 - Now you only need to add a hotkey to quickly switch between two modes:
+
+	.. note:: In **Version 1.1.1** you don't need to add this hotkey. It is already there in **"GS -> GS_CurveTools -> Misc -> GSCT_ToggleAO"**
 
     - Go to Windows -> Settings/Preferences -> Hotkey Editor -> Runtime Command Editor -> New
     - Copy and Paste this code to the Python command field:

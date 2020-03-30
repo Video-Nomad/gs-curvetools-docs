@@ -4,8 +4,28 @@
 Changelog
 #########
 
-Version 1.1
-^^^^^^^^^^^
+Version 1.1.1
+^^^^^^^^^^^^^
+
+**New Features:**
+
+- Added special Hotkey **"GS -> GS_CurveTools -> Misc -> GSCT_ToggleAO"** to toggle **AO** (refer to Online Documentation -> Useful Tips)
+- Added Hotkey to switch geometry editing for all layers **"GS -> GS_CurveTools -> Misc -> GSCT Toggle Geo Edit"**
+
+**Improvements:**
+
+- **Rebuild Curve Slider** will no longer throw warning messages when used with no curves selected
+- **Twist Magnitude** field upper limit increased to 99
+
+**Fixed Bugs:**
+
+- **Fixed Hotkeys**. They will now save properly between Maya sessions
+- **Open Online Documentation** will now properly work on Mac
+- Fixed some icons on Mac
+- Minor code cleanup
+
+Version 1.1.0
+^^^^^^^^^^^^^
 
 **New Features:**
 
@@ -84,7 +104,7 @@ Version 1.1
 
 - Smooth function can't handle more than 255 CVs on one curve
 
-Version 1.015
+Version 1.0.15
 ^^^^^^^^^^^^^
 **Improvements:**
 
@@ -95,7 +115,7 @@ Version 1.015
 - Fixed some minor bugs for all Maya versions
 - Fixed Curve Control Window error for Maya 2017 and 2018
 
-Version 1.01
+Version 1.0.1
 ^^^^^^^^^^^^
 
 **Fixed Bugs:**
@@ -103,7 +123,7 @@ Version 1.01
 - Fixed a bug where accidental duplication (Ctrl+D) of path curve led to unexpected behavior of layers
 - Other minor improvements
 
-Version 1.005
+Version 1.0.05
 ^^^^^^^^^^^^^
 
 **Improvements:**
