@@ -16,6 +16,8 @@ Screen-space AO Trick:
 
 First you can enable Screen-space Ambient Occlusion but without any actual occlusion happening. Maya 2017-2020 viewport will increase the visibility of the curves if you have Ambient Occlusion enabled.
 
+.. important:: This trick only works on materials with transparency. If you don't use alpha on your material, just add a little bit of overall transparency. Even smallest amount will enable this AO trick.
+
 .. figure:: https://i.imgur.com/yLFF7GW.gif
     :alt: Maya Shelf
     :class: with-shadow 

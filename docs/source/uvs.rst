@@ -255,7 +255,7 @@ As you can see, Viewport method is extremely simple and intuitive. You only need
 |
 |
 
-**Workflow 2 (UV Editor)** - You can use normal Maya UV editor as a reference. This method allows for better visibility of the actual changes of the UV map when you change the UV attributes. It is slower thou, and I recommend you to get used to the first workflow.
+**Workflow 2 (UV Editor)** - You can use normal Maya UV editor as a reference. This method allows for better visibility of the actual changes of the UV map when you change the UV attributes. It is slower though, and I recommend you to get used to the first workflow.
 
 - Let's select our curve and open Maya UV Editor.
 
