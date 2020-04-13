@@ -4,6 +4,25 @@
 Changelog
 #########
 
+Version 1.1.2
+^^^^^^^^^^^^^
+
+**New Features:**
+
+- Added "Edit Orig. Geo" button. You can now edit custom geometry attached to a curve (Enable "geometry edit" in the layer to be able to select geometry)
+- "Reverse Normals" attribute is now available for every type of curve created in CurveTools plug-in (affects only curves created in v1.1.2 and higher)
+
+**Improvements:**
+
+- More predictable behavior of "Flip Axis" button. It will now automatically reverse normals (affects only curves created in v1.1.2 and higher)
+
+**Fixed Bugs:**
+
+- Attaching custom geometry to a curve will no longer cause "offset" if target curve has transforms or offset pivot.
+- Fixed an error and "stuck" progress bar when pressing Duplicate button with no curves selected.
+- Reduce curve will no longer cause an error when pressed with no curves selected.
+- Minor code cleanup.
+
 Version 1.1.1
 ^^^^^^^^^^^^^
 
