@@ -4,7 +4,7 @@
 Options Menu
 ############
 
-.. figure:: https://i.imgur.com/UB2S6lg.png
+.. figure:: https://i.imgur.com/7DY8DqC.png
 	:class: with-shadow float-right
 	:width: 250px
 
@@ -28,6 +28,34 @@ Scale Factor is a simple multiplier and has range from 0.001 to basically infini
 	:width: 400px
 
 .. note:: Scale Factor will only affect new curves. Old curves will not change.
+
+Global Curve Thickness
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. figure:: https://i.imgur.com/bNvU4Kb.png
+	:class: with-shadow
+	:width: 200px
+
+This menu allows user to change global default thickness of the curves. It only affects curves that were created using the plug-in.
+
+**Input field and slider** goes from -1 (default thickness) to 20.
+
+**Save** button will save current thickness value and it will be consistent between Maya sessions.
+
+**Update Curves** button will change the thickness of already existing curves in the scene.
+
+You can setill edit individual curve thickness in the **Curve Control Window**
+
+Set AO Settings
+^^^^^^^^^^^^^^^
+
+This button will change the settings of AO in the current scene to match those described in the Useful Tips section
+
+Set Transparency Settings
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This button will change the settings of transparency in the the current scene for better rendering of hair cards in the current scene.
+
 
 Update Layers
 ^^^^^^^^^^^^^
