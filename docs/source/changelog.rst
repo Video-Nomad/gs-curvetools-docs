@@ -15,7 +15,7 @@ Version 1.1.3
 
 **Improvements:**
 
-- Improved "Duplicate" command. Curve thickness will now be constistent in duplicated curves.
+- Improved "Duplicate" command. Curve thickness will now be consistent in duplicated curves.
 
 - Group Curves command will no longer append a number to the end of the name of the group. Maya should handle this automatically.
 
@@ -145,7 +145,8 @@ Version 1.1.0
 - Smooth function can't handle more than 255 CVs on one curve
 
 Version 1.0.15
-^^^^^^^^^^^^^
+^^^^^^^^^^^^^^
+
 **Improvements:**
 
 - Added full Maya 2020 Support
@@ -156,7 +157,7 @@ Version 1.0.15
 - Fixed Curve Control Window error for Maya 2017 and 2018
 
 Version 1.0.1
-^^^^^^^^^^^^
+^^^^^^^^^^^^^
 
 **Fixed Bugs:**
 
@@ -164,7 +165,7 @@ Version 1.0.1
 - Other minor improvements
 
 Version 1.0.05
-^^^^^^^^^^^^^
+^^^^^^^^^^^^^^
 
 **Improvements:**
 
