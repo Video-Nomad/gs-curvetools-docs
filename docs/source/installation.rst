@@ -37,14 +37,20 @@ Installation Steps
 
 #. Run **Maya**
 
-#. Copy and Paste this code to **Python Command Field**:
+#. Copy and Paste this code to **Python Command Field** at the bottom (switch from MEL by clicking on it) or to the script editor:
 
     .. code-block:: python
 
         import gs_curvetools.init as ct_init;reload(ct_init);ct_init.Init();
 
-#. Press **Enter**. Installation is complete.
 
+#. **Run the code** (Press Enter for the Command Field or press on triangle for script editor). Installation is complete.
+
+.. figure:: https://i.imgur.com/fUdzdWO.png
+	:alt: Folder Structure Example
+	:class: with-shadow
+	:width: 300px
+	:align: center
 Main Menu, Resetting and Stopping
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

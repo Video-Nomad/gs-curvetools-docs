@@ -4,6 +4,27 @@
 Changelog
 #########
 
+Version 1.1.3
+^^^^^^^^^^^^^
+
+**New Features:**
+
+- Global curve thickness can now be changed and saved in the "Options -> Global Curve Thickness" menu. Update already existing curves using "Update Curves" button and save selected thickness using "Save" button. Line thickness for the new curves is now set automatically. You can still edit individual curve thickness in Curve Control Window.
+
+- Two new options in the Options menu: "Set AO Settings" and "Set Transparency settings". They will change the viewport settings for the current scene for better curve visibility and transparency. You can then toggle AO by setting a hotkey in the hotkey editor “GS -> GS_CurveTools -> Misc -> GSCT_ToggleAO”.
+
+**Improvements:**
+
+- Improved "Duplicate" command. Curve thickness will now be constistent in duplicated curves.
+
+- Group Curves command will no longer append a number to the end of the name of the group. Maya should handle this automatically.
+
+**Fixed Bugs:**
+
+- Fixed an error that appeared on commands Reset Pivot, Rebuild Curve and Select Curve when there were matching names in the scene.
+
+- Minor code cleanup and optimization.
+
 Version 1.1.2
 ^^^^^^^^^^^^^
 
