@@ -4,25 +4,53 @@
 Useful Tips
 ###########
 
-Better Curve Visibility In The Viewport
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Better Transparency Settings Viewport
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Maya Viewport default settings are not very well suited for the needs of hair creation and preview. In order to have the best possible preview you can change a few options.
+
+.. note:: Since **GS CurveTools v1.1.3** you have an option to Set Transparency Settings automatically in the Options menu. It will do exactly what is described below.
+
+.. figure:: https://i.imgur.com/oDTDuxD.png
+    :alt: Maya Shelf
+    :class: with-shadow float-right
+    :width: 300px
+    :align: center
+
+1. Open Viewport Settings in the Renderer -> Viewport 2.0 Option box.
+
+2. Set the Transparency Algorithm to Depth Peeling, Transparency Quality to 1 and enable Transparent Shadows.
+
+3. You can also add some lights you your scene to have better representation of your hair.
+
+4. Although these options will give you a nice approximation, you should always check your project in a game engine or marmoset toolbag.
+
+|
+|
+
+Better Curve Visibility in Viewport
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. figure:: https://i.imgur.com/yLFF7GW.gif
+    :alt: Maya Shelf
+    :class: with-shadow float-right
+    :width: 300px
+    :align: center
 
 It can be tricky sometimes to see curves using default Maya settings, especially when you have a lot of them with applied textures.
 
 There are a few simple steps you can take to fix this problem:
 
-Screen-space AO Trick:
-######################
+You can enable Screen-space Ambient Occlusion but without any actual occlusion happening. Maya 2017-2020 viewport will increase the visibility of the curves if you have Ambient Occlusion enabled.
 
-First you can enable Screen-space Ambient Occlusion but without any actual occlusion happening. Maya 2017-2020 viewport will increase the visibility of the curves if you have Ambient Occlusion enabled.
+|
+|
 
 .. important:: This trick only works on materials with transparency. If you don't use alpha on your material, just add a little bit of overall transparency. Even smallest amount will enable this AO trick.
 
-.. figure:: https://i.imgur.com/yLFF7GW.gif
-    :alt: Maya Shelf
-    :class: with-shadow 
-    :width: 300px
-    :align: center
+.. note:: Since **GS CurveTools v1.1.3** you can simply go to the plug-in "Options -> Set AO Settings" to set AO settings automatically. You still need to set your custom hotkey in the "GS -> GS_CurveTools -> Misc -> GSCT_ToggleAO"
+
+**Set AO settings manually (legacy):**
 
 - To avoid any unwanted visual effects from AO, go to Renderer -> Viewport 2.0 (options box) -> Screen-space Ambient Occlusion and change the settings as showed on the screenshot:
 
@@ -72,13 +100,21 @@ First you can enable Screen-space Ambient Occlusion but without any actual occlu
 
 - Now by clicking on your custom hotkey, you will toggle between two visibility modes.
 
-Curve thickness
-###############
+Curve Thickness
+^^^^^^^^^^^^^^^
 
-Next trick is to increase the thickness of the curve. To do that, simply select all the curves you want to change and using Curve Control Window and increase the thickness of the curves (default value is -1):
+You can change the thickness of the curves globally or for each curve individually.
+
+.. figure:: https://i.imgur.com/bNvU4Kb.png
+	:class: with-shadow float-right
+	:width: 200px
+
+To change curve thickness globally go to GS CurveTools Options -> Global Curve Thickness.
+
+You can also change curve thickness manually in Curve Control Window using number field on the top right. This will not change global curve thickness. Only selected curves will be affected.
 
 .. figure:: https://i.imgur.com/34Foacd.gif
-                :alt: Maya Shelf
-                :class: with-shadow
-                :width: 400px
-                :align: center
+	:alt: Maya Shelf
+	:class: with-shadow
+	:width: 400px
+	:align: center
