@@ -23,7 +23,7 @@ Only for Maya 2020. UVs are not working after save and reload of the scene. UV p
 
 First of all, this issue is not related to GS CurveTools in any way.
 
-This issue is related to Maya 2020/2020.1 and the new bug it has with saving/loading Maya Binary scene files (.mb). During the reload of the scene the inputComponents list used in polyMoveUV nodes is getting corrupted and shows as nmm[*] instead of map[*]. This bug was reported for Maya 2020 and 2020.1 and was not fixed as of right now.
+This issue is related to Maya 2020, 2020.1 and 2020.2 and the new bug it has with saving/loading Maya Binary scene files (.mb). During the reload of the scene the inputComponents list used in polyMoveUV nodes is getting corrupted and shows as nmm[*] instead of map[*]. This bug was reported for Maya 2020, 2020.1, 2020.2 and was not fixed as of right now.
 
 **Solution/Workaround:**
 
