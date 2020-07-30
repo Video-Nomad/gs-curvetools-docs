@@ -4,6 +4,22 @@
 Changelog
 #########
 
+Version 1.1.4
+^^^^^^^^^^^^^
+
+**Improvements:**
+
+- Scale Factor Slider now properly stretches with the window.
+- Removed minimize and maximize buttons from Scale Factor, Global Curve Thickness and Randomize windows.
+- Changed the name of the Randomize window from "Randomize" to "Randomize Curves".
+
+**Fixed Bugs:**
+
+- Fixed a Randomize window bug where it failed to properly construct the window if the main plug-in window was docked. It should now properly create a floating window regardless of the main window position or docking.
+- Fixed a bug with Control Curve Apply button where it deleted wrong curves after applying the deformer. This only happened with the Curve Cards/Tubes that were created using Curve Card/Tube or Warp buttons out of duplicated Control Curve curves.
+- Extend Curve button will no longer create multiple CVs on the section of the curve that was extended. Curve will be automatically rebuilt every time based on the original number of CVs.
+- Minor code cleanup and maintenance.
+
 Version 1.1.3
 ^^^^^^^^^^^^^
 

@@ -69,6 +69,44 @@ Duplicated curves are fully functional, have the same material etc.
 
 **Duplicate** will respect Outliner grouping and hierarchy and put new duplicated curves next to the original ones.
 
+Randomize
+^^^^^^^^^
+
+.. figure:: https://i.imgur.com/reo8tKF.png
+	:class: with-shadow float-right
+	:height: 400px
+
+Randomize button opens the randomization parameters window. This window holds parameters that can be used to randomize selected curves.
+
+**Workflow:**
+
+- Select the curves to randomize.
+- Enable/disable the randomization modules by clicking on the "Enable" checkbox (Curve Points, Rotation, etc).
+- Change parameters (X,Y,Z, etc).
+- Drag the slider and hold the mouse button to look at the preview of the amount of randomization.
+- Release the slider and click "Randomize" button to apply the randomization. Releasing the slider will disable the preview.
+- If magnitude of randomization is not enough, use "mult" slider to multiply the sliders, increasing the final randomization.
+
+**Randomization modules:**
+
+	**Control Points:** This module will randomize all the control points (CVs) on the selected curves. At least one axis should be enabled for the randomization to occur. Additionally, user can Lock First and/or Last CV on the curves to avoid moving the root or tip CV.
+
+	**Rotation:** Randomize the overall rotation on the curves based on the pivot point on those curves. At least one axis should be enabled for the randomization to occur.
+
+	**Orientation:** Randomize the orientation of the geometry on the curve. Rotates the geometry around the curve.
+
+	**Twist:** Randomize the twist parameter on the selected curves.
+
+	**Width:** Randomize width parameter of the curves. Uniform checkbox is used to sync WidthX and WidthZ parameter on Curve Tubes. Disabling Uniform will result in separate randomization values for WidthX and WidthZ parameter on Curve Tubes.
+
+	**Taper:** Randomize taper parameter of the curves.
+
+	**Profile:** Randomize profile parameter of the curve. Allow negative values will allow randomization to go negative, flipping the profile.
+
+	**Randomize:** button will apply any randomization that was enabled.
+
+	**Close:** Closes the window.
+
 Extend, Reduce and Smooth
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
