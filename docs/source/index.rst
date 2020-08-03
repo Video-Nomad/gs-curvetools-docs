@@ -8,7 +8,7 @@ Links
 ^^^^^
 
 - `Online Store <https://sladkovsky3d.artstation.com/store>`_
-- `Discord Support Server <https://discord.gg/f4DH6HQ>`_
+- `Discord Support Server <https://discord.gg/KyPCW6F>`_
 - `Twitch Channel <https://www.twitch.tv/videonomad>`_
 - `YouTube Channel <https://www.youtube.com/channel/UCmIFpG98OqbUecaf5H-ixKQ>`_
 - `ArtStation <https://www.artstation.com/sladkovsky3d>`_
