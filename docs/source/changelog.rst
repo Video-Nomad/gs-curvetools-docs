@@ -4,6 +4,21 @@
 Changelog
 #########
 
+Version 1.1.5
+^^^^^^^^^^^^^
+
+Small transition update before v1.2
+
+**Improvements:**
+
+- High-DPI interface improvements.
+- Fixed text alignment in some menus.
+- General code optimization and maintenance.
+
+**Fixed Bugs:**
+
+- Extracting geometry from selected curves will no longer throw an error and stop if one or more curves are broken. Now it will just skip those curves and print their names in the console.
+
 Version 1.1.4
 ^^^^^^^^^^^^^
 
