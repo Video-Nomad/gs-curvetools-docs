@@ -77,3 +77,22 @@ Using Maya Deformers on Warp Group
 
 You can also use **Maya Non-Linear Deformers** and **Lattice** on the original curves. You can then either keep them or simply select original curves and Delete by Type -> History (Alt + Shift + D)
 
+|
+|
+|
+|
+|
+|
+|
+|
+
+Warp and UV Attributes Transfer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. figure:: https://i.imgur.com/7sH5MYI.gif
+	:class: with-shadow float-right
+	:width: 350px
+
+You can transfer UV attributes to the Warp bound cards just like with normal cards, however you need to select the entire Warp group for this to work.
+
+This will only work with UV attributes. Normal attributes will be applied to both the warp group and each individual card.
