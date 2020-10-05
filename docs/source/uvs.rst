@@ -327,3 +327,13 @@ Transfer UVs work in two directions:
 
 .. note:: Transfer UVs command is **multi selection compatible**, so you can transfer UVs from one curve to any number of other curves in one click.
 
+Transferring UVs for Warp Groups
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. figure:: https://i.imgur.com/7sH5MYI.gif
+	:class: with-shadow float-right
+	:width: 400px
+
+Transferring attributes for Warp Groups is a bit different. You want to select the original curve first and then the entire Warp Group (or multiple groups). After that just click on Transfer UVs and you are done.
+
+This will only work on UV attributes, but not on normal attributes. Normal attributes will be transferred to the warp group and each individual card and it will create a mess.
