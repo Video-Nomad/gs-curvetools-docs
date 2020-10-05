@@ -91,8 +91,8 @@ Warp and UV Attributes Transfer
 
 .. figure:: https://i.imgur.com/7sH5MYI.gif
 	:class: with-shadow float-right
-	:width: 350px
+	:width: 300px
 
-You can transfer UV attributes to the Warp bound cards just like with normal cards, however you need to select the entire Warp group for this to work.
+Transferring attributes for Warp Groups is a bit different. You want to select the source curve first and then the entire Warp Group (or multiple groups). After that just click on Transfer UVs and you are done. You can reverse this by holding Shift (UVs will be transferred from the last selection to all other).
 
-This will only work with UV attributes. Normal attributes will be applied to both the warp group and each individual card.
+This will only work on UV attributes, but not on normal attributes. Normal attributes will be transferred to the warp group and each individual card and it will create a mess.

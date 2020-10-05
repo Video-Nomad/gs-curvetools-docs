@@ -334,6 +334,6 @@ Transferring UVs for Warp Groups
 	:class: with-shadow float-right
 	:width: 400px
 
-Transferring attributes for Warp Groups is a bit different. You want to select the original curve first and then the entire Warp Group (or multiple groups). After that just click on Transfer UVs and you are done.
+Transferring attributes for Warp Groups is a bit different. You want to select the source curve first and then the entire Warp Group (or multiple groups). After that just click on Transfer UVs and you are done. You can reverse this by holding Shift (UVs will be transferred from the last selection to all other).
 
 This will only work on UV attributes, but not on normal attributes. Normal attributes will be transferred to the warp group and each individual card and it will create a mess.
