@@ -291,7 +291,7 @@ As you can see, although this method is fast and easy, it lacks the precision yo
 Transferring UVs
 ^^^^^^^^^^^^^^^^
 
-.. figure:: https://i.imgur.com/DLijcFH.png
+.. figure:: https://i.imgur.com/DUClUeE.png
 	:class: with-shadow float-right
 	:width: 100px
 
