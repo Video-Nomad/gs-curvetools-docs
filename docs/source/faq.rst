@@ -68,6 +68,21 @@ Since this issues is fundamental to Maya and can't be fixed without rewriting th
 
 .. note:: In general using curve parameters such as **Width** and **Orientation** is recommended over Mayas Rotation and Scale parameters.
 
+Geometry was Left Behind When Deleting Curves
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. figure:: https://i.imgur.com/ZsRo4v2.png
+	:alt: Utility Section
+	:class: with-shadow float-right
+	:width: 200px
+
+**Explanation:**
+
+If the user deletes only the curve component (**pathCurve#**), but no the entire card group, in some cases (**warp cards, tubes**) there might be a leftover geometry in the scene.
+
+**Solution/Workaround:**
+
+The **correct** way to delete cards/tubes is to **delete the entire group** that holds all of the components of that card/tube. **Do not** delete only the curve (**pathCurve#**), delete the entire group (**curveCard, curveTube etc.**). Select the **Curve** -> **press UP** on the keyboard (this will select the entire card) -> **Delete**.
 
 Can I use Z-up World Coordinates?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
