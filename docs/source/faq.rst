@@ -17,7 +17,7 @@ Maya 2020 and Broken UVs
 	:class: with-shadow float-right
 	:width: 250px
 
-Only for Maya 2020. UVs are not working after save and reload of the scene. UV paramters are correct but UVs on the existing cards seem to be wrong. Changing UV parameters on cards created before the save has no effect. New cards are working correctly.
+Only for Maya 2020. UVs are not working after save and reload of the scene. UV parameters are correct but UVs on the existing cards seem to be wrong. Changing UV parameters on cards created before the save has no effect. New cards are working correctly.
 
 **Explanation:**
 
