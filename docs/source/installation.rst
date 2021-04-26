@@ -19,7 +19,7 @@ Installation Steps
 	- **Windows:** Documents/Maya/{Maya_Version}/scripts/
 	- **Mac:** {Your_Mac_Name}/⁨Users⁩/{User_Name}/⁨Library/⁨Preferences⁩/⁨Autodesk⁩/⁨maya/{Maya_Version}/scripts/⁩
 
-    .. figure:: https://i.imgur.com/aLTGOqy.png
+    .. figure:: images/installation/folder_structure.png
         :alt: Folder Structure Example
         :class: with-shadow
         :width: 600px
@@ -27,7 +27,7 @@ Installation Steps
 
         Windows Folder Structure Example
 
-    .. figure:: https://i.imgur.com/AxYywaa.png
+    .. figure:: images/installation/folder_structure_mac.png
         :alt: Folder Structure Example
         :class: with-shadow
         :width: 600px
@@ -41,12 +41,12 @@ Installation Steps
 
     .. code-block:: python
 
-        import gs_curvetools.init as ct_init;reload(ct_init);ct_init.Init();
+        import gs_curvetools.init as ct_init;from imp import reload;reload(ct_init);ct_init.Init();
 
 
 #. **Run the code** (Press Enter for the Command Field or press on triangle for script editor). Installation is complete.
 
-.. figure:: https://i.imgur.com/fUdzdWO.png
+.. figure:: images/installation/script_editor_paste.png
 	:alt: Folder Structure Example
 	:class: with-shadow
 	:width: 300px
@@ -54,28 +54,28 @@ Installation Steps
 Main Menu, Resetting and Stopping
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: https://i.imgur.com/ewMSuiz.png
+.. figure:: images/installation/menu_buttons.png
     :alt: Maya Shelf
     :class: with-shadow float-right
     :width: 200px
 
 After `Installation Steps`_ **GS** tab will appear on **Maya Shelf**.
 
-.. figure:: https://i.imgur.com/mefmQ38.png
+.. figure:: images/buttons/gs_ui.png
     :alt: Main Menu
     :class: with-shadow float-left
     :width: 50px
 
 CT UI button will open/close GS CurveTools User Interface.
 
-.. figure:: https://i.imgur.com/a9MMBFc.png
+.. figure:: images/buttons/gs_reset.png
     :alt: Main Menu
     :class: with-shadow float-left
     :width: 50px
 
 CT Reset will reset GS CurveTools to its default state.
 
-.. figure:: https://i.imgur.com/QIoIcVU.png
+.. figure:: images/buttons/gs_del.png
     :alt: Main Menu
     :class: with-shadow float-left
     :width: 50px

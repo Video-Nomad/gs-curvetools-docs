@@ -9,7 +9,7 @@ Intro
 
 In this chapter we will discuss all the types of cards and tubes, difference between them and additional commands available for each type.
 
-.. figure:: https://i.imgur.com/Bi42bdg.png
+.. figure:: images/creation_section.png
 	:alt: Creation Section
 	:class: with-shadow float-right
 	:width: 150px
@@ -30,12 +30,12 @@ The main reason why **Extrude** was left as an option is because it has slightly
 Extrude Mode
 ^^^^^^^^^^^^
 
-.. figure:: https://i.imgur.com/4Bjr88w.png
+.. figure:: images/buttons/new_card.png
 	:alt: Creation Section
 	:class: with-shadow
 	:width: 150px
 
-.. figure:: https://i.imgur.com/tJEzI3d.gif
+.. figure:: images/new_card_function.gif
 	:alt: Creation Section
 	:class: with-shadow float-right
 	:width: 250px
@@ -50,12 +50,12 @@ Extrude Mode
 |
 |
 
-.. figure:: https://i.imgur.com/yrAqmEb.png
+.. figure:: images/buttons/curve_card.png
 	:alt: Creation Section
 	:class: with-shadow
 	:width: 150px
 
-.. figure:: https://i.imgur.com/iTejLQ8.gif
+.. figure:: images/curve_card_function.gif
 	:alt: Creation Section
 	:class: with-shadow float-right
 	:width: 250px
@@ -70,12 +70,12 @@ Extrude Mode
 
 
 
-.. figure:: https://i.imgur.com/DxyABsE.png
+.. figure:: images/buttons/add_cards.png
 	:alt: Creation Section
 	:class: with-shadow
 	:width: 150px
 
-.. figure:: https://i.imgur.com/ZXRyyiY.gif
+.. figure:: images/add_cards_function.gif
 	:alt: Creation Section
 	:class: with-shadow float-right
 	:width: 250px
@@ -86,7 +86,7 @@ The attributes of those selected curves will be smoothly blended between new add
 
 Holding **Shift** button while clicking **Add Cards**/**Tubes** buttons will disable blending of attributes between curve pairs. Instead, attributes will be copied from the first selected curve in the curve pair.
 
-.. figure:: https://i.imgur.com/fBKmzZG.png
+.. figure:: images/add_slider.png
 	:alt: Creation Section
 	:class: with-shadow float-right
 	:width: 150px
@@ -97,13 +97,13 @@ The number of crated curves is defined by the **Add** slider. The number of the 
 
 Here is an example of two different selection orders:
 
-.. figure:: https://i.imgur.com/Em7Zt1n.gif
+.. figure:: images/add_cards_selection_01.gif
 	:alt: Creation Section
 	:class: with-shadow float-right
 	:width: 300px
 	:height: 300px
 
-.. figure:: https://i.imgur.com/xG3xaCO.gif
+.. figure:: images/add_cards_selection_02.gif
 	:alt: Creation Section
 	:class: with-shadow
 	:width: 300px
@@ -114,7 +114,7 @@ Warp Mode
 
 **Warp Mode** mirrors the **Extrude** functionality but creates Warp Cards and Tubes instead. These advanced curves have additional options:
 
-.. figure:: https://i.imgur.com/ydfyDZ4.gif
+.. figure:: images/twist_graph.gif
 	:alt: Creation Section
 	:class: with-shadow float-right
 	:width: 350px
@@ -128,7 +128,7 @@ The graph can be reset to default using **Reset Curve** button.
 |
 |
 
-.. figure:: https://i.imgur.com/ACnhTnz.gif
+.. figure:: images/magnitude_field.gif
 	:alt: Creation Section
 	:class: with-shadow float-right
 	:width: 350px
@@ -143,7 +143,7 @@ The graph can be reset to default using **Reset Curve** button.
 
 **Width Curve Graph:**
 
-.. figure:: https://i.imgur.com/lfOQU7Z.gif
+.. figure:: images/width_graph.gif
 	:alt: Creation Section
 	:class: with-shadow float-right
 	:width: 350px
@@ -157,7 +157,7 @@ The graph can be reset to default using **Reset Curve** button.
 |
 |
 
-.. figure:: https://i.imgur.com/fgb31UL.gif
+.. figure:: images/width_graph_popout.gif
 	:alt: Creation Section
 	:class: with-shadow float-right
 	:width: 350px
@@ -171,7 +171,7 @@ Both graphs can be detached from the Curve Control Window into their own windows
 |
 |
 
-.. figure:: https://i.imgur.com/9wqQluY.gif
+.. figure:: images/width_new_cvs.gif
 	:alt: Creation Section
 	:class: with-shadow float-right
 	:width: 350px
@@ -185,7 +185,7 @@ Both graphs support **adding and removing additional points** to further enhance
 |
 |
 
-.. figure:: https://i.imgur.com/mnnxQS8.gif
+.. figure:: images/warp_length_unlock.gif
 	:alt: Creation Section
 	:class: with-shadow float-right
 	:width: 350px
@@ -203,7 +203,7 @@ Both graphs support **adding and removing additional points** to further enhance
 Using Maya Deformers
 ^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: https://i.imgur.com/XruKiIT.gif
+.. figure:: images/maya_deformers.gif
 	:alt: Creation Section
 	:class: with-shadow float-right
 	:width: 350px
@@ -224,6 +224,9 @@ Supported and tested deformers are:
 - Wave
 
 Other deformers might work just fine as well
+
+|
+|
 
 .. warning:: When deleting history it is **very important** to only use **Delete By Type** and **NOT Delete All**. **Delete All** will break all curves in the scene.
 

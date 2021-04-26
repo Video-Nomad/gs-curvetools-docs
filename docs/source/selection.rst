@@ -7,7 +7,7 @@ Quick Selection and Grouping
 Select Components
 ^^^^^^^^^^^^^^^^^
 
-.. figure:: https://i.imgur.com/pZ5X8IH.png
+.. figure:: images/grouping_section.png
 	:class: with-shadow float-right
 	:width: 150px
 
@@ -28,10 +28,26 @@ It is recommended to use **Layers** to organize your curves. However, you can al
 
 **Group Curves** will group all the selected curves (and their components) in the Outliner and name the Group based on the Group Name input field. If Input Filed is empty, group will have the default name (**crvGrp**).
 
+Regroup by Layer
+^^^^^^^^^^^^^^^^
+
+.. figure:: images/colorized_regrouped_layers.png
+    :class: with-shadow float-right
+    :width: 150px
+
+**Regroup by Layer** function will take all the curves and group them in the outliner based on their Layer number and the name in the Group Name Field.
+
+Optionally, it will apply layer color to the created groups, if the option **Colorize Regrouped Layers** was enabled in the option menu.
+
+|
+|
+|
+|
+
 Select CVs Slider
 ^^^^^^^^^^^^^^^^^
 
-.. figure:: https://i.imgur.com/95MCP5z.gif
+.. figure:: images/select_cv_slider.gif
 	:class: with-shadow float-right
 	:width: 300px
 
@@ -43,7 +59,7 @@ Select any number of curves in the Viewport and then drag the slider. Depending 
 
 You can also use **Modifier** buttons to change the behavior of the slider:
 
-.. figure:: https://i.imgur.com/3dJS4DZ.gif
+.. figure:: images/shift_select_cv_slider.gif
 	:class: with-shadow float-right
 	:width: 300px
 
@@ -54,7 +70,7 @@ You can also use **Modifier** buttons to change the behavior of the slider:
 |
 |
 
-.. figure:: https://i.imgur.com/kq05alu.gif
+.. figure:: images/shift_ctrl_select_cv_slider.gif
 	:class: with-shadow float-right
 	:width: 300px
 
@@ -71,7 +87,7 @@ You can also use **Modifier** buttons to change the behavior of the slider:
 Reset Pivot
 ^^^^^^^^^^^
 
-.. figure:: https://i.imgur.com/WTrjAOc.gif
+.. figure:: images/reset_pivot.gif
 	:class: with-shadow float-right
 	:width: 300px
 

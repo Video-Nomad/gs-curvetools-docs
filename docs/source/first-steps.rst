@@ -20,21 +20,21 @@ In this chapter we will go through the main concepts of the plug-in.
 Basic Workflow Example
 ^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: https://i.imgur.com/I3HO5NH.png
+.. figure:: images/new_card.png
 	:alt: Utility Section
 	:class: with-shadow float-right
 	:width: 200px
 
 Start by creating a simple curve card with Add Card button. Now try modifying the curve that was created. 
 
-.. figure:: https://i.imgur.com/RpXP1lK.png
+.. figure:: images/component_selection_mode.png
 	:alt: Utility Section
 	:class: with-shadow float-right
 	:width: 100px
 
 You can switch to "Control Vertex" editing mode by selecting "Select by Component Type" in the Maya Menu or by pressing F8. 
 
-.. figure:: https://i.imgur.com/kdpgInp.png
+.. figure:: images/control_vertex_object_mode.png
 	:alt: Utility Section
 	:class: with-shadow float-right
 	:width: 200px
@@ -47,7 +47,7 @@ Here you will find all the main controls for the curve.
 
 Now select your curve and click Duplicate button. You now have two curves with the same attributes, UVs and material.
 
-.. note:: To read about UVs setup, please read the appropriate section in the Table of Contents.
+.. note:: To read about UVs setup, please read the appropriate section in the Table of Contents (Textures and UVs, UV Editor)
 
 By default, Layer 0 is selected and all new curves will go there. You can switch between layers by simply clicking on them. All the new curves (except for duplicated ones) will go into selected layers. Duplicated curves will inherit the layer of the original selected curve.
 
@@ -58,7 +58,7 @@ Main Menu is a simple window that can be docked to any place within Maya main wi
 
 Main Menu is split into 5 logical sections:
 
-	.. figure:: https://i.imgur.com/eYsUOBZ.png
+	.. figure:: images/options_help_about.png
 		:alt: Options Section
 		:class: with-shadow float-right
 		:width: 150px
@@ -71,39 +71,41 @@ Main Menu is split into 5 logical sections:
 
 	#. **About** menu holds information about the version of the plug-in and licensing details
 
-	.. figure:: https://i.imgur.com/Bi42bdg.png
+	.. figure:: images/creation_section.png
 		:alt: Creation Section
 		:class: with-shadow float-right
 		:width: 150px
 
 #. In the **Creation Section** you will find all the commands that create new cards or tubes, modify existing curves, add cards between other cards, convert edges of poly objects to curves and advanced geometry and curves binding function - Warp.
 	
-	a. Switch buttons **"Extrude and Warp"** will switch between two curve modes. Extrude is the basic geometry creation that existed before v1.1 and Warp is the new, advanced, algorithm that adds a lot of new controls to created curves.
+	a. Switch buttons **"Warp and Extrude"** will switch between two curve creation modes. Extrude is the basic geometry creation that existed before v1.1 and Warp is the new, advanced, algorithm that adds a lot of new controls to created curves.
 
 	#. **New Card** or **New Tube** will create a default card or tube in the center of the world.
 
-	#. **Curve Card** or **Curve Tube** will convert any Maya CV or Bezier curve to fully functional Curve Card or Tube
+	#. **Curve Card** or **Curve Tube** will convert any Maya curve to fully functional Curve Card or Tube
+
+	#. **Bind** and **Unbind** buttons allow for advanced binding of geometry and curves to other curves. More details in the **Bind** section.
 
 	#. **Add Cards** and **Add Tubes** will create new Cards or Tubes between selected Curve Cards or Curve Tubes. The number of created curves is controlled by **Add** slider
 
 	#. Edge to Curve will convert any selected edge groups to CV curves.
 
-	#. Warp button allows for advanced binding of geometry and curves to other curves. More details in the Warp section.
+	#. **Subdivide** will replace any selected card with multiple duplicates based on the Add slider.
 
-	.. figure:: https://i.imgur.com/IA6fg8L.png
+	.. figure:: images/layer_section.png
 		:alt: Layer Section
 		:class: with-shadow float-right
 		:width: 150px
 
-#. **Layer Section** consists of four filters, 20 curve layers and geometry extraction buttons:
+#. **Layer Section** consists of four filters, 20, 30 or 40 curve layers and geometry extraction buttons:
 
 	a. **Filters** allow you to quickly show/hide all curve cards, show only curves, show only geometry and enable geometry colorization mode.
 
 	#. **20 layers** switch buttons allow for advanced and intuitive organization of curve cards. New curves are placed in the selected layer. Using Marking Menu (Hold RMB) you can transfer curves between layers, hide individual layers, change selectability of geometry and more.
 
-	#. **Extract Selected** will extract geometry from selected curves. **Extract All** will extract geometry from all layers.
+	#. **Extract Selected** will extract geometry from selected curves. **Extract All** will extract geometry from all layers. Holding Shift during extraction will result in separated cards, instead of one combined mesh.
 
-	.. figure:: https://i.imgur.com/pZ5X8IH.png
+	.. figure:: images/selection_transfer_section.png
 		:alt: Selection and Transfer Section
 		:class: with-shadow float-right
 		:width: 150px
@@ -120,7 +122,7 @@ Main Menu is split into 5 logical sections:
 	
 	#. **Reset Pivot** will reset the manipulator pivot to the first CV of the curve.
 	
-	.. figure:: https://i.imgur.com/gG0L4Co.png
+	.. figure:: images/utility_section.png
 		:alt: Utility Section
 		:class: with-shadow float-right
 		:width: 150px
@@ -139,12 +141,14 @@ Main Menu is split into 5 logical sections:
 
 	#. **Curve Control Window** Will open a separate menu that holds sliders and graphs that control curve attributes and UVs.
 
+	#. **UV Editor** Window will open the UV Editor 
+
 .. note:: You might notice a **small triangle** on the bottom left of some icons. This triangle indicates that there is an alternative algorithm available for this function. To activate it, just **Hold Shift** before clicking the button.
 
 Curve Control Window
 ^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: https://i.imgur.com/o39URwW.png
+.. figure:: images/curve_control_window.png
 	:alt: Utility Section
 	:class: with-shadow float-right
 	:width: 250px
@@ -164,16 +168,11 @@ Curve Control Window holds all the sliders and checkboxes that control the attri
 .. note:: You can always extend the range of the sliders by manually typing values into a value field.
 
 |
-|
-|
-|
-|
-|
 
 Structure of the Curve Card/Tube Object
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: https://i.imgur.com/ZsRo4v2.png
+.. figure:: images/structure_of_card_object.png
 	:alt: Utility Section
 	:class: with-shadow float-right
 	:width: 200px

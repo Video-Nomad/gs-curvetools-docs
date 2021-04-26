@@ -26,7 +26,7 @@ Some attributes are common for all types of curves. Others can only be found on,
 Main Attributes
 ^^^^^^^^^^^^^^^
 
-.. figure:: https://i.imgur.com/tjoOSpR.png
+.. figure:: images/attributes/axis_control.png
 	:class: with-shadow float-right
 	:width: 250px
 
@@ -38,7 +38,7 @@ Main Attributes
 
 |
 
-.. figure:: https://i.imgur.com/LDMpwPP.png
+.. figure:: images/attributes/length_division.png
 	:class: with-shadow float-right
 	:width: 250px
 
@@ -46,7 +46,7 @@ Main Attributes
 
 |
 
-.. figure:: https://i.imgur.com/chMirsJ.png
+.. figure:: images/attributes/width_division.png
 	:class: with-shadow float-right
 	:width: 250px
 
@@ -54,7 +54,7 @@ Main Attributes
 
 |
 
-.. figure:: https://i.imgur.com/scB7Mhl.png
+.. figure:: images/attributes/orientation.png
 	:class: with-shadow float-right
 	:width: 250px
 
@@ -62,7 +62,7 @@ Main Attributes
 
 |
 
-.. figure:: https://i.imgur.com/SDd7nw3.gif
+.. figure:: images/attributes/twist.gif
 	:class: with-shadow float-right
 	:width: 250px
 
@@ -71,7 +71,7 @@ Main Attributes
 |
 |
 
-.. figure:: https://i.imgur.com/uO0J6rz.png
+.. figure:: images/attributes/twist_graph.png
 	:class: with-shadow float-right
 	:width: 250px
 
@@ -83,7 +83,7 @@ Main Attributes
 
 |
 
-.. figure:: https://i.imgur.com/Bv2I38U.png
+.. figure:: images/attributes/width.png
 	:class: with-shadow float-right
 	:width: 250px
 
@@ -93,7 +93,7 @@ Main Attributes
 |
 |
 
-.. figure:: https://i.imgur.com/Ey2E2eN.gif
+.. figure:: images/attributes/width_x_z.gif
 	:class: with-shadow float-right
 	:width: 250px
 
@@ -104,13 +104,13 @@ Main Attributes
 |
 |
 
-.. figure:: https://i.imgur.com/wWROJSO.png
+.. figure:: images/attributes/curve_width_demo.png
 	:class: with-shadow float-right
 	:width: 250px
 
 - **Width Curve Graph** - Only for Warp geometry. Allows for precise control over the width of the geometry along the curve.
 
-	.. figure:: https://i.imgur.com/OQ6zOkn.png
+	.. figure:: images/attributes/width_curve_graph.png
 		:class: with-shadow float-right
 		:width: 250px
 
@@ -123,7 +123,7 @@ Main Attributes
 |
 |
 
-.. figure:: https://i.imgur.com/rvOHrZ0.png
+.. figure:: images/attributes/taper.png
 	:class: with-shadow float-right
 	:width: 250px
 
@@ -137,7 +137,7 @@ Main Attributes
 |
 |
 
-.. figure:: https://i.imgur.com/oNojAth.png
+.. figure:: images/attributes/profile.png
 	:class: with-shadow float-right
 	:width: 250px
 
@@ -146,7 +146,20 @@ Main Attributes
 |
 |
 
-.. figure:: https://i.imgur.com/0F4rfYw.png
+.. figure:: images/attributes/profile_curve_graph.png
+	:class: with-shadow float-right
+	:width: 250px
+
+**Profile Graph** - Controls the profile strength along the length of the curve. 
+
+	- **Number input field** (1.00) controls the magnitude of the Profile Curve Graph effect
+	- **Smoothing** will control the smoothness of the profile curve graph effect
+	- **Auto and Manual** will enable/disable automatic equalization of the curve.
+	- **^** button will open a pop-out Profile Curve Graph that can be resized by user.
+
+|
+
+.. figure:: images/attributes/refine.png
 	:class: with-shadow float-right
 	:width: 250px
 
@@ -154,7 +167,7 @@ Main Attributes
 
 	.. note:: High Refine values (over 150) can have negative impact on the responsiveness of the curve.
 
-.. figure:: https://i.imgur.com/B9FHSmp.png
+.. figure:: images/attributes/smooth.png
 	:class: with-shadow float-right
 	:width: 250px
 
@@ -167,7 +180,7 @@ Main Attributes
 
 |
 
-.. figure:: https://i.imgur.com/lrof51D.gif
+.. figure:: images/attributes/length_unlock.gif
 	:class: with-shadow float-right
 	:width: 250px
 
@@ -176,7 +189,7 @@ Main Attributes
 |
 
 
-.. figure:: https://i.imgur.com/V7oxsUB.gif
+.. figure:: images/attributes/offset.gif
 	:class: with-shadow float-right
 	:width: 250px
 
@@ -192,25 +205,25 @@ Main Attributes
 Solidify Attributes
 ^^^^^^^^^^^^^^^^^^^
 
-.. figure:: https://i.imgur.com/G3lqcLO.gif
+.. figure:: images/attributes/solidify.gif
 	:class: with-shadow float-right
 	:width: 250px
 
 **Solidify** allows you to add thickness to the geometry. Thickness is added in a procedural way so that every other function and attribute is still fully functional. Just tick the "Solidify" checkbox to proceed.
 
-.. figure:: https://i.imgur.com/89iZk5f.gif
+.. figure:: images/attributes/solidify_thickness.gif
 	:class: with-shadow float-right
 	:width: 250px
 
 - **Solidify Thickness** will increase the thickness of the solidified geometry.
 
-.. figure:: https://i.imgur.com/7aV9bW4.gif
+.. figure:: images/attributes/solidify_divisions.gif
 	:class: with-shadow float-right
 	:width: 250px
 
 - **Solidify Divisions** will increase the number of divisions that new solidified geometry has.
 
-.. figure:: https://i.imgur.com/f4FzLXB.gif
+.. figure:: images/attributes/scale_x_y.gif
 	:class: with-shadow float-right
 	:width: 250px
 
@@ -223,7 +236,7 @@ Solidify Attributes
 Transferring Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: https://i.imgur.com/DLijcFH.png
+.. figure:: images/buttons/transfer_attributes.png
 	:class: with-shadow float-right
 	:width: 100px
 
@@ -231,7 +244,7 @@ You can easily **copy** (or **transfer**) attributes from one curve to any numbe
 
 Transfer attributes works in two directions:
 
-.. figure:: https://i.imgur.com/Yv6vnLV.gif
+.. figure:: images/attributes/transfer_attributes.gif
 	:class: with-shadow float-right
 	:width: 400px
 
@@ -246,7 +259,7 @@ Transfer attributes works in two directions:
 |
 |
 
-.. figure:: https://i.imgur.com/JmsEkOI.gif
+.. figure:: images/attributes/transfer_attributes_shift.gif
 	:class: with-shadow float-right
 	:width: 400px
 

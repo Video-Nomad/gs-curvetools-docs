@@ -13,16 +13,21 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
+import datetime
 
+try:
+    YEAR = datetime.datetime.now().year
+except BaseException:
+    YEAR = 2021
 
 # -- Project information -----------------------------------------------------
 
 project = 'GS CurveTools'
-copyright = '2020, George Sladkovsky'
+copyright = '%s, George Sladkovsky' % YEAR
 author = 'George Sladkovsky'
 
 # The full version, including alpha/beta/rc tags
-release = 'v1.1'
+release = 'v1.2'
 
 # -- General configuration ---------------------------------------------------
 

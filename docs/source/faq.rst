@@ -8,22 +8,22 @@ Here you can find some of the common questions/issues and possible solutions to 
 
 This list is always updating.
 
-Maya 2020 and Broken UVs
-^^^^^^^^^^^^^^^^^^^^^^^^
+Maya 2020-2022 and Broken UVs
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Issue:**
 
-.. figure:: https://i.imgur.com/UHVsKCZ.png
+.. figure:: images/broken_uvs_maya2020.png
 	:class: with-shadow float-right
 	:width: 250px
 
-Only for Maya 2020. UVs are not working after save and reload of the scene. UV parameters are correct but UVs on the existing cards seem to be wrong. Changing UV parameters on cards created before the save has no effect. New cards are working correctly.
+Only for Maya 2020 and 2022. UVs are not working after save and reload of the scene. UV parameters are correct but UVs on the existing cards seem to be wrong. Changing UV parameters on cards created before the save has no effect. New cards are working correctly.
 
 **Explanation:**
 
 First of all, this issue is not related to GS CurveTools in any way.
 
-This issue is related to Maya 2020, 2020.1 and 2020.2 and the new bug it has with saving/loading Maya Binary scene files (.mb). During the reload of the scene the inputComponents list used in polyMoveUV nodes is getting corrupted and shows as nmm[*] instead of map[*]. This bug was reported for Maya 2020, 2020.1, 2020.2 and was not fixed as of right now.
+This issue is related to Maya 2020, 2020.1, 2020.2 and 2022 and the "new" bug it has with saving/loading Maya Binary scene files (.mb). During the reload of the scene the inputComponents list used in polyMoveUV nodes is getting corrupted and shows as nmm[*] instead of map[*]. This bug was reported for Maya 2020, 2020.1, 2020.2 and was not fixed as of right now.
 
 **Solution/Workaround:**
 
@@ -33,7 +33,7 @@ Steps:
 
 	1. Open your Maya Binary file 
 
-	2. Apply the "Fix UV Bug" fix in the Options Menu of GS CurveTools 
+	2. Apply the "Fix Maya 2020-2022 UV Bug" fix in the Options Menu of GS CurveTools 
 
 	3. Save the scene as Maya ASCII using "Save Scene As" 
 
@@ -49,7 +49,7 @@ Warp Card Orientation Flip
 
 **Issue:**
 
-.. figure:: https://i.imgur.com/e7rqKlp.gif
+.. figure:: images/warp_card_orientation_flip.gif
 	:class: with-shadow float-right
 	:width: 200px
 
@@ -71,7 +71,7 @@ Since this issues is fundamental to Maya and can't be fixed without rewriting th
 Geometry was Left Behind When Deleting Curves
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: https://i.imgur.com/ZsRo4v2.png
+.. figure:: images/structure_of_card_object.png
 	:alt: Utility Section
 	:class: with-shadow float-right
 	:width: 200px

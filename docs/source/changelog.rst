@@ -4,6 +4,55 @@
 Changelog
 #########
 
+Version 1.2
+^^^^^^^^^^^
+
+Major Update!
+
+**New Features:**
+
+- Fully **Reworked Main UI**.
+- Fully **Reworked Curve Control Window**
+- Full support of **Python 3** and **Maya 2022** (also supports python 2 compatibility mode for 2022)
+- **Bind** and **Unbind** functions (former Warp function). You can now unbind already bound cards, change them, add new cards and bind back to the original curve.
+- **Curve attributes retention**. Curves will now remember their attributes even if you unbind them. Binding back will restore the previous attributes. Can be disabled in options.
+- New **Fill** function. This function works similar to Add Cards/Tubes, but also supports custom bound cards/geometr. All card types are now supported, including Bound cards.
+- New **Subdivide** function. This function will subdivide any selected Card/Tube and replace it with copies of itself based on the Add slider. Increase the density of your cards with ease!
+- New **Card to Curve** function. This function will try to replace any selected cards (one sided geometry) with curves based on their topology. Only one sided cards are supported at this moment. Tubes and other complex shapes will not work.
+- New **Regroup by Layer** function with color mode and custom naming support. Organize your scene in one click!
+- New **Mirror** function. Mirror or Flip your cards.
+- New **Inverted Twist** attribute. Twist the root of the curve (Fully compatible with normal Twist and Twist Graph)
+- New **Profile Graph**. Change the profile of the card along the length of the curve!
+- New **H-Flip UV Attribute**. Horizontally flip UV on any card!
+- New **UV Editor Window**. Interface for all your UV editing needs. No more sliders!:
+
+	- Change UVs on any number of selected cards
+	- Full support of Bound (old Warp) curves. Change UVs without unbinding.
+	- Select, Move, Rotate, Scale multiple UVs
+	- Draw UV rectangle to quickly change UVs
+	- Horizontal or Vertical Flip of UV card
+	- Selected UVs List.
+	- Reset UV, Focus View, Isolate Select and Show All functions
+	- Supports TGA, PNG and JPG(JPEG) texture maps. Other formats may be supported with minor updates.
+
+- New **Import and Export Curves** function in the Options menu. You can now safely export and import your curves to be stored as presets!
+
+- New **Alt Mode for Layers**. Hold Alt + Click to quickly show/hide layers.
+- User can now switch between **20, 30 and 40 Layers** mode. Twice as many layers to work with.
+- Layers can now be used in **Numeric Only Mode**. A-J letters can be dynamically switched to 10-19 layer numbers.
+- New **Custom Colors Window**. **Colorize** your Layers, **Save** as global **Preset**, **Load** on any project, **Apply Colors to Layers**, Gradient and Randomize functions.
+- New **Color Functions**. You can now Sync your Layer Color to the Curve Color and sync your Layer Color to the Outliner (Regroup by Layer function will apply colors)
+- New dedicated **Color Picker for Curve Color**.
+
+**Improvements:**
+
+- Renamed Warp Function to Bind.
+- Bind (old Warp) now has an option to Duplicate before Bind. This will leave the original cards behind and create a duplicate for Binding.
+- Bind will now duplicate original cards if Shift button is pressed with the Bind button.
+- Redundant UV attributes were removed (still available for old projects). Rotate Tip and Rotate Root attributes were deprecated.
+- Numerous rewrites and code improvements.
+- Warp Mode is now the default mode for curve creation.
+
 Version 1.1.5
 ^^^^^^^^^^^^^
 

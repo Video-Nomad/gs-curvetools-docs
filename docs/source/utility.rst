@@ -7,7 +7,7 @@ Utility Functions
 Intro
 ^^^^^
 
-.. figure:: https://i.imgur.com/gG0L4Co.png
+.. figure:: images/utility_section_cropped.png
 	:alt: Utility Section
 	:class: with-shadow float-right
 	:width: 150px
@@ -22,7 +22,7 @@ It also holds Control Curve function and Curve Control Window button.
 Rebuild Curve Slider
 ^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: https://i.imgur.com/iJmNzFq.gif
+.. figure:: images/rebuild_curve_slider.gif
 	:alt: Utility Section
 	:class: with-shadow float-right
 	:width: 300px
@@ -39,23 +39,16 @@ You can also **Manually Type** values in the **Value Field** and as soon as you 
 
 Typing the value over default 50 will still work and **expand the range of the slider** to double of the typed value (if you type 51, it will expand the slider range to 102 and so on).
 
-.. figure:: https://i.imgur.com/OjIrCAY.png
-	:alt: Utility Section
-	:class: with-shadow float-right
-	:width: 25px
-
-If you want to **return to original precision** and range of the slider, simply click on the **"Reset Slider"** button. **"Reset Slider"** button will not rebuild your curve, only dragging the slider or typing values will.
-
 Duplicate
 ^^^^^^^^^
 
-.. figure:: https://i.imgur.com/jUXxtMd.png
+.. figure:: images/buttons/duplicate.png
 	:class: with-shadow float-right
 	:width: 150px
 
 Probably one of the most important and at the same time the most simple function is **Duplicate**.
 
-.. figure:: https://i.imgur.com/Hl7IbTc.gif
+.. figure:: images/duplicate_function.gif
 	:class: with-shadow float-right
 	:width: 250px
 
@@ -72,7 +65,7 @@ Duplicated curves are fully functional, have the same material etc.
 Randomize
 ^^^^^^^^^
 
-.. figure:: https://i.imgur.com/reo8tKF.png
+.. figure:: images/randomize_window.png
 	:class: with-shadow float-right
 	:height: 400px
 
@@ -110,7 +103,7 @@ Randomize button opens the randomization parameters window. This window holds pa
 Extend, Reduce and Smooth
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: https://i.imgur.com/xTovbr5.gif
+.. figure:: images/extend_reduce_function.gif
 	:class: with-shadow float-right
 	:width: 250px
 
@@ -122,7 +115,7 @@ Extend will try to interpolate the next point based on the curvature of the curv
 |
 |
 
-.. figure:: https://i.imgur.com/tXmN6Jd.gif
+.. figure:: images/smooth_function.gif
 	:class: with-shadow float-right
 	:width: 250px
 
@@ -134,7 +127,7 @@ You can smooth CVs on multiple curves at the same time. Just select the curves, 
 
 .. note:: For CVs smoothing to work you need to select at least 3 CVs on each selected curve. Curves with less than 3 CVs selected will be skipped.
 
-.. figure:: https://i.imgur.com/0iNl6ZA.png
+.. figure:: images/smooth_marking_menu.png
 	:class: with-shadow float-right
 	:width: 250px
 
@@ -144,13 +137,29 @@ To access sooth marking menu, simply Hold Right Mouse Button over the Smooth But
 
 You can select from x1, x3, x5 and x10 multipliers. They will increase the strength of the smoothing.
 
+Mirroring
+^^^^^^^^^
+
+.. figure:: images/mirror_menu.png
+	:class: with-shadow float-right
+	:width: 250px
+
+Mirror functions allow to mirror curves from one side of the world to the other across X, Y or Z Axis.
+
+User can switch between Mirror and Flip modes.
+
+In Mirror mode curves will be duplicated and then flipped based on the Axis selected.
+
+In Flip mode curve will be flipped to the opposite side of the world based on the Axis selected.
+
+
 Control Curve
 ^^^^^^^^^^^^^
-.. figure:: https://i.imgur.com/0KZaSft.png
+.. figure:: images/buttons/control_curve.png
 	:class: with-shadow
 	:width: 150px
 
-.. figure:: https://i.imgur.com/sAuPJ2L.gif
+.. figure:: images/control_curve_function.gif
 	:class: with-shadow float-right
 	:width: 250px
 
@@ -158,7 +167,7 @@ Control Curve
 
 Select multiple curves and click on Control Curve button. A new curve will be generated in the middle of the selected curves. Deforming this curve will also deform any bound curve.
 
-.. figure:: https://i.imgur.com/YgkTIXD.png
+.. figure:: images/buttons/apply.png
 	:class: with-shadow
 	:width: 80px
 
