@@ -4,6 +4,18 @@
 Changelog
 #########
 
+Version 1.2.1
+^^^^^^^^^^^^^
+
+Just a small hotfix for Maya 2017 users
+
+**Bugfixes:**
+
+- Maya 2017 and older 2018 updates (<2018.6) errors fixed
+
+**Ignore this update if you had no issues with the plug-in.**
+
+
 Version 1.2
 ^^^^^^^^^^^
 
