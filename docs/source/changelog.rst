@@ -4,17 +4,28 @@
 Changelog
 #########
 
+Version 1.2.2
+^^^^^^^^^^^^^
+
+Just a small hotfix for Maya 2020.4 users
+
+**Ignore this update if you had no issues with the plug-in.**
+
+**Bugfixes:**
+
+- New Warp Curves created in Maya 2020.4 will now behave like intended.
+- Maya 2020.4 Twist and Inverted Twist attribute fix added. To use the fix, run the command in Options -> Fix Maya 2020.4 Twist Attribute
+
 Version 1.2.1
 ^^^^^^^^^^^^^
 
 Just a small hotfix for Maya 2017 users
 
+**Ignore this update if you had no issues with the plug-in.**
+
 **Bugfixes:**
 
 - Maya 2017 and older 2018 updates (<2018.6) errors fixed
-
-**Ignore this update if you had no issues with the plug-in.**
-
 
 Version 1.2
 ^^^^^^^^^^^
