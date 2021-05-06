@@ -167,8 +167,8 @@ Version 1.1.1
 - Fixed some icons on Mac
 - Minor code cleanup
 
-Version 1.1.0
-^^^^^^^^^^^^^
+Version 1.1
+^^^^^^^^^^^
 
 **New Features:**
 
