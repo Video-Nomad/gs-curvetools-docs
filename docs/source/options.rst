@@ -107,4 +107,5 @@ Additional Options
 **Replacing Curve Layer Selection** will disable additive selection for the layers. When holding Ctrl and clicking on a new layer, old layer will be deselected automatically.
 
 **Fix Maya 2020-2022 UV Bug** This option will fix any broken UVs when trying to open old scenes in Maya 2020 or 2022 or when opening scenes in 2020 and 2022 when using Maya Binary file type. This will have no effect on older versions of Maya (<2020). This bug is native to Maya and thus can't be fixed in GS CurveTools plug-in.
+
 **Fix Maya 2020.4 Twist Attribute** This option will fix any broken cards created in Maya 2020.4 before v1.2.2 update.
