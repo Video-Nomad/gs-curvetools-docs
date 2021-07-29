@@ -4,6 +4,18 @@
 Changelog
 #########
 
+Version 1.2.3
+^^^^^^^^^^^^^
+
+**This update is recommended for ALL users**
+
+**Bugfixes:**
+
+- Maya 2020.4 Unbind fixed. New cards will have the fix built-in. Old cards must be fixed using Fix Maya 2020.4 Unbind Function from the Options Menu.
+- Rare Progress Bar bug was fixed in all versions of Maya.
+- Fill function will no longer throw an error if user selected incompatible curves. Those curves will be ignored.
+- Progress bar on Fill function was fixed.
+
 Version 1.2.2
 ^^^^^^^^^^^^^
 

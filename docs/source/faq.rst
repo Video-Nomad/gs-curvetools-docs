@@ -43,6 +43,52 @@ Maya ASCII loading times can be a bit longer, but should work just fine in Maya 
 
 .. note:: This bug was reported to Autodesk and has a bug report number: BSPR-35061
 
+Graphs are Broken After Reloading
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Issue:**
+
+In some rare cases Width or Twist graphs can become broken after the reload of Maya.
+The issue is native to Maya and is caused by the CurveWarp node.
+
+This issue has nothing to do with CurveTools or its code.
+
+**Explanation:**
+
+.. figure:: images/maya_graph_extreme_points.png
+	:class: with-shadow float-right
+	:width: 300px
+
+Maya graphs can be corrupted during safe/reload sequence.
+
+This only occurs when the graph nodes (dots on a graph) are in their extreme points (0 or 1) shown on the image.
+It is something internal to CurveWarp node, to which there is no access. It is a compiled plug-in and it can't be fixed by anyone but Autodesk.
+
+Autodesk repeatedly notified about this issue being fixed (at least in 2019 and 2022 release notes).
+The issue persists still in the 2022.
+
+The issue can be replicated without loading CurveTools, by simply creating a CurveWarp node with geo attached and making aforementioned changes to the built-in graphs.
+
+**Solution/Workaround:**
+
+
+.. figure:: images/resetting_the_graphs.gif
+	:class: with-shadow float-right
+	:width: 300px
+
+Since this issue can't be fixed from my end, there's only workarounds. 
+
+Until a more user-friendly solution is found, the only way to fix this is to click on the graph (when it's in broken state) adding a new node to it, and clicking on "Reset Curve" button to reset it to the default neutral state. After that graphs can be used again.
+
+.. raw:: html
+
+	<video width="320" height="240" controls>
+		<source src="curve_warp_bug.mp4" type="video/mp4">
+	</video>
+	
+
+|
+|
 
 Warp Card Orientation Flip
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
