@@ -82,14 +82,15 @@ Until a more user-friendly solution is found, the only way to fix this is to cli
 
 |
 
+**Video demonstration of CurveWarp node issue (Maya 2022):**
+
 .. raw:: html
 
-	<video width="320" height="240" controls>
+	<video width="400" controls>
 	<source src="_static/curve_warp_bug.mp4" type="video/mp4">
 	Your browser does not support the video tag.
 	</video>
 
-|
 |
 
 Warp Card Orientation Flip
