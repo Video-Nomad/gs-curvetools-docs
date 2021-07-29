@@ -80,12 +80,14 @@ Since this issue can't be fixed from my end, there's only workarounds.
 
 Until a more user-friendly solution is found, the only way to fix this is to click on the graph (when it's in broken state) adding a new node to it, and clicking on "Reset Curve" button to reset it to the default neutral state. After that graphs can be used again.
 
+|
+
 .. raw:: html
 
 	<video width="320" height="240" controls>
-		<source src="curve_warp_bug.mp4" type="video/mp4">
+	<source src="_static/curve_warp_bug.mp4" type="video/mp4">
+	Your browser does not support the video tag.
 	</video>
-	
 
 |
 |
