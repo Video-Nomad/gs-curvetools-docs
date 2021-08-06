@@ -43,6 +43,8 @@ Maya ASCII loading times can be a bit longer, but should work just fine in Maya 
 
 .. note:: This bug was reported to Autodesk and has a bug report number: BSPR-35061
 
+.. _broken-graphs:
+
 Graphs are Broken After Reloading
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -78,9 +80,12 @@ The issue can be replicated without loading CurveTools, by simply creating a Cur
 
 Since this issue can't be fixed from my end, there's only workarounds. 
 
-Until a more user-friendly solution is found, the only way to fix this is to click on the graph (when it's in broken state) adding a new node to it, and clicking on "Reset Curve" button to reset it to the default neutral state. After that graphs can be used again.
+
+**GS CurveTools v1.2.4+** you can simply click on "Reset Curve" under the graph to reset it to defaults. You can also use "Fix Broken Graphs" function in the options menu to attempt to fix all the graphs in the scene and restore their parameters.
 
 |
+
+.. note:: **BEFORE v1.2.4:** Until a more user-friendly solution is found, the only way to fix this is to click on the graph (when it's in broken state) adding a new node to it, and clicking on "Reset Curve" button to reset it to the default neutral state. After that graphs can be used again.
 
 **Video demonstration of CurveWarp node issue (Maya 2022):**
 

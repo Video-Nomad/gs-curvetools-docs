@@ -12,12 +12,12 @@ Version 1.2.4
 **New Features:**
 
 - **Orient to Normals** function is now available in the Curve Control Window. Orients selected cards to the target mesh. Change number of iterations or angle tolerance to get the result you want. Target mesh is selected and remembered throughout the session. Orient function has dedicated hotkey available.
-
 - **Mass Bind** option is now available in the options menu ("Bind to All Available Empty Curves") Enabling this option will bind selected geo or hair clump to all selected "empty" curves. Previous attributes are retained on the target curves (if they had them from the start).
 
 **Improvements:**
 
 - **Mirror** function was improved. Single cards are now oriented properly during mirror process. Bound cards (clumps) orientation accuracy depends on the complexity of the clump (the more variation, the less accuracy).
+- **Fix Broken Graphs** option is now available in the options menu. Using this fix will attempt to fix all the broken graphs in the scene. Until Autodesk fixes this issue, this is a viable workaround.
 - **Reset Button** on graphs is now improved to cover the edge case of "broken graphs" issue in Maya.
 
 **Bugfixes:**

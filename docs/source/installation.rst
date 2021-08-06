@@ -51,6 +51,7 @@ Installation Steps
 	:class: with-shadow
 	:width: 300px
 	:align: center
+    
 Main Menu, Resetting and Stopping
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
