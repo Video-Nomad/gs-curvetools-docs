@@ -11,9 +11,9 @@ Version 1.2.4
 
 **New Features:**
 
-- **Orient to Normals** function is now availabie in the Curve Control Window. Orients selected cards to the target mesh. Change number of iterations or angle tolerance to get the result you want. Target mesh is selected and remembered throughout the session. Orient function has dedicated hotkey available.
+- **Orient to Normals** function is now available in the Curve Control Window. Orients selected cards to the target mesh. Change number of iterations or angle tolerance to get the result you want. Target mesh is selected and remembered throughout the session. Orient function has dedicated hotkey available.
 
-- **Mass Bind** option is now available in the options menu ("Bind to All Avaiable Empty Curves") Enabling this option will bind selected geo or hair clump to all selected "empty" curves. Previous attributes are retained on the target curves (if they had them from the start).
+- **Mass Bind** option is now available in the options menu ("Bind to All Available Empty Curves") Enabling this option will bind selected geo or hair clump to all selected "empty" curves. Previous attributes are retained on the target curves (if they had them from the start).
 
 **Improvements:**
 
