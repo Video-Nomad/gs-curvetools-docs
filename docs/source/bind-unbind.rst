@@ -104,6 +104,25 @@ You can also use **Maya Non-Linear Deformers** and **Lattice** on the original c
 |
 |
 
+.. _mass-bind:
+
+Mass Bind
+^^^^^^^^^
+
+.. figure:: images/mass_bind_demo.gif
+	:class: with-shadow float-right
+	:width: 350px
+
+You can also bind to an unlimited number of "empty" curves using **Bind to All Available Curves** option in the options menu. This option will also duplicate the original clump before binding (regardless of the Duplicate Before Bind option).
+
+|
+|
+|
+|
+|
+|
+|
+
 Bind and UV Attributes Transfer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
