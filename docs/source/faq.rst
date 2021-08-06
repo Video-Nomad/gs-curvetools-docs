@@ -85,8 +85,6 @@ Since this issue can't be fixed from my end, there's only workarounds.
 
 |
 
-.. note:: **BEFORE v1.2.4:** Until a more user-friendly solution is found, the only way to fix this is to click on the graph (when it's in broken state) adding a new node to it, and clicking on "Reset Curve" button to reset it to the default neutral state. After that graphs can be used again.
-
 **Video demonstration of CurveWarp node issue (Maya 2022):**
 
 .. raw:: html
