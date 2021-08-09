@@ -19,6 +19,7 @@ Version 1.2.4
 - **Mirror** function was improved. Single cards are now oriented properly during mirror process. Bound cards (clumps) orientation accuracy depends on the complexity of the clump (the more variation, the less accuracy).
 - **Fix Broken Graphs** option is now available in the options menu. Using this fix will attempt to fix all the broken graphs in the scene. Until Autodesk fixes this issue, this is a viable workaround.
 - **Reset Button** on graphs is now improved to cover the edge case of "broken graphs" issue in Maya.
+- **Mirror** function will now automatically reset curve pivot point (for mirrored cards).
 
 **Bugfixes:**
 
