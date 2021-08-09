@@ -91,6 +91,7 @@ Supported Platforms
 	Colors <colors>
 	Quick Selection and Grouping <selection>
 	Importing and Exporting Curves <import-export>
+	Orient to Normals <orient-to-normals>
 	Utility Functions <utility>
 	Options Menu <options>
 	FAQ <faq>
