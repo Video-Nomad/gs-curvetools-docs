@@ -51,7 +51,20 @@ Installation Steps
 	:class: with-shadow
 	:width: 300px
 	:align: center
-    
+
+Installation Video
+^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+	<video width="400" controls>
+	<source src="_static/installation.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+	</video>
+
+|
+|
+
 Main Menu, Resetting and Stopping
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
