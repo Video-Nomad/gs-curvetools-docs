@@ -12,7 +12,10 @@ Installation Steps
 
 .. warning:: Only **Windows** version is **fully supported**. **Mac** version is currently in **beta test** and may have some bugs. **Linux** was not tested and currently **not supported**. **Maya LT** was not tested and currently **not supported**.
 
-0. :strike:`Pay for WinRAR`
+
+.. warning:: Please use the latest patches if possible. For example: Maya 2018.1 has issues that were fixed in the latest 2018.6 and are essential for GS CurveTools functionality. Thank you!
+
+1. :strike:`Pay for WinRAR`
 
 #. Unpack and copy **gs_curvetools** folder to:
 

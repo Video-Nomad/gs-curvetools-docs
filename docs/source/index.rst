@@ -65,13 +65,15 @@ Main Features of GS CurveTools
 Supported Platforms
 ^^^^^^^^^^^^^^^^^^^
 
-**Maya 2017-2022 for Windows** -> Fully Tested and Supported.
+**Maya 2017-2022 for Windows** -> Fully Tested and Supported*.
 
-**Maya 2017-2022 for Mac** -> In Beta.
+**Maya 2017-2022 for Mac** -> In Beta*.
 
 **Linux** -> Not Tested and Not Supported.
 
 **Maya LT** -> Not Tested and Not Supported.
+
+.. warning:: \*Please use the latest patches if possible. For example: Maya 2018.1 has issues that were fixed in the latest 2018.6 and are essential for GS CurveTools functionality. Thank you!
 
 .. toctree::
     :maxdepth: 2
