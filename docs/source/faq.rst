@@ -106,6 +106,7 @@ Using orientation parameter of the card after changing the divisions parameters 
 **Explanation:**
 
 This issue appears only in Maya 2018.0 and 2018.1 versions and is not connected to GS CurveTools.
+User can replicate this same behavior by creating any object, applying a lattice deformer to it and trying to change the number of divisions on that object procedurally (on sphere, plane or other starter object) and trying to rotate the object using the deformer transform node.
 This issue is due to lattice deformer bug that was fixed in a subsequent versions.
 
 **Solution/Workaround:**
