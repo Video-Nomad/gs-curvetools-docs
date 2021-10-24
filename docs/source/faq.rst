@@ -96,6 +96,34 @@ Since this issue can't be fixed from my end, there's only workarounds.
 
 |
 
+Maya 2018.0-2018.1 Random Deformations issue
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Issue:**
+
+Using orientation parameter of the card after changing the divisions parameters causes the vertices of the card to deform in an unexpected way.
+
+**Explanation:**
+
+This issue appears only in Maya 2018.0 and 2018.1 versions and is not connected to GS CurveTools.
+This issue is due to lattice deformer bug that was fixed in a subsequent versions.
+
+**Solution/Workaround:**
+
+The only solution to this problem is to use the latest patch of Maya 2018 (2018.6).
+Updating to 2018.6 was confirmed to fix this issue completely.
+
+**Video demo of the issue:**
+
+.. raw:: html
+
+	<video width="400" controls>
+	<source src="_static/2018_deformation_issue.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+	</video>
+
+|
+
 Warp Card Orientation Flip
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
