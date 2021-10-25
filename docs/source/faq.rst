@@ -96,12 +96,12 @@ Since this issue can't be fixed from my end, there's only workarounds.
 
 |
 
-Maya 2018.0-2018.1 Random Deformations issue
+Maya 2018.0-2018.1 Random Deformations Issue
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Issue:**
 
-Using orientation parameter of the card after changing the divisions parameters causes the vertices of the card to deform in an unexpected way.
+Using orientation parameter after changing the divisions parameters causes the vertices of the card to deform in an unexpected way.
 
 **Explanation:**
 
