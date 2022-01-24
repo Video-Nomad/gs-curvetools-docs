@@ -2,9 +2,9 @@
 
 .. _colors-page:
 
-######
-Colors
-######
+######################
+Colors and Layer Names
+######################
 
 Color Mode
 ^^^^^^^^^^
@@ -44,31 +44,34 @@ By holding RMB on Colors Filter you will open the marking menu.
 - Reset Curve Colors will reset the colors of the curves to their default Maya color.
 - Custom Colors Window will open a window where the user can customize Layers color, save a preset and generate new colors.
 
-Custom Colors Window
-^^^^^^^^^^^^^^^^^^^^
+Layers Customization Window
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: images/custom_layer_colors_window.png
+.. figure:: images/layers_customization_window.png
     :class: with-shadow float-right
     :width: 200px
 
-**Custom Colors Window** holds all the controls for the color management of the Layers.
+**Layers Customization Window** holds all the controls for the color and name management of the Layers.
 
 **Gradient** section is used to generate a linear gradient from the two colors selected and the amount of rows to generate the gradient to.
 
 **Randomize** section will randomize the colors in every layer based on saturation minimum and maximum values. Value is fixed to a range of 0.3-0.7
 
-**0-39 Layer Color Pickers** allow to set any custom color to every layer separately by clicking on the color picker, randomizing this single layer (Rand) or resetting the color on the layer by clicking on Reset button.
+**0-39 Layer Color Pickers and Name Fields** allow to set any custom color and name to every layer separately by clicking on the color picker or typing in the field, randomizing this single layer color (Rand) or resetting the color and name of the layer by clicking on Reset button.
 
 **Reset All** button will reset all the layers to the default value.
 
-**Get From Layers** will load the colors from the layers to the color picker area.
+**Get From Layers** will load the colors and names from the scene layers to the window fields and color pickers.
 
-**Set To Layers** will apply the selected colors to the layers in the current document.
+**Set To Layers** will apply the selected colors and names to the layers in the current scene.
 
-**Load Preset** will load a global preset colors to the color picker area.
+**Load Preset** will load a global preset colors and names.
 
-**Save As Preset** will save current colors to a global preset that can be then loaded to any project.
+**Save As Preset** will save current colors and names to a global preset that can be then loaded to any scene.
 
+|
+|
+|
 |
 
 Syncing Curve Color to Layer Color

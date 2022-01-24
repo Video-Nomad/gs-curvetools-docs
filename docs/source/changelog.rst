@@ -7,7 +7,32 @@ Changelog
 Version 1.2.5
 ^^^^^^^^^^^^^
 
-TBD
+**This update is recommended for all users**
+
+**New Features:**
+
+- **Layer Names** - new parameter for every layer. Regroup by Layer will now use the custom names when naming the layers. Custom names can be edited in the Layers Customization window and stored as a global preset, just like the layer colors.
+- **Layer Names & Colors** - new button on the main UI. Opens the name and color editor for layers.
+- **Full Non-Square Texture Map Support** - GS CurveTools UV editor will now properly stretch and scale non-square texture maps (diffuse and alpha map), just like the native Maya UV editor does. Coverage and Translate Frame can be used to further edit the position and scale of the texture map if Use Transforms toggle is enabled.
+- **UV Editor Texture Controls** - new section in the UV editor:
+
+    - **Transform** - this toggle will enable/disable texture map transformations based on the place2dTexture node parameters: Coverage and Translate Frame. Offset parameter is NOT supported. Both diffuse and alpha map should have the same Coverage and Translate Frame parameter for this to work.
+    - **Alpha** - this toggle will enable/disable the use of Alpha map that is connected to the Transparency plug of the material (from separate files or the same file).
+
+- **UV Editor Colors** - new section in the UV editor with 3 editable color swatches for background, grid and frame colors of the UV editor viewport.
+
+**Improvements:**
+
+- **Regroup by Layer** - will no longer use Group Name field as a default name. Group Name field is only used by the Group Curves button to set the name of the new group. Regroup by Layer will use the default name (CT_Layer#) or the name from the Layers Customization window.
+- **Changed the Default Grey Color** for layers to default (0, 0, 0) color. Reset layer will rest to this color as well.
+- **Some Tooltips** added to the UV editor.
+- **UV Editor Cache** - added Texture Map Caching to speed up the UV Editor. Texture map is loaded only once, and if there are no changes to the file it will be loaded from the cache every subsequent time this texture map is needed. Changes to the Diffuse or Alpha map will cause a reload from the disc. Before it was only reloaded if the path changed.
+
+**Bugfixes:**
+
+- **Add Selection to Layer** will now properly sync curve colors if Sync Color Layer to Layer Color is selected in the options.
+- **Zoom and Focus Events** should now properly re-render the texture map in the UV editor to match the screen resolution. Should eliminate shimmer effect on square texture maps completely.
+- **Fixed Some Lags** during zooming in the UV editor.
 
 Version 1.2.4
 ^^^^^^^^^^^^^

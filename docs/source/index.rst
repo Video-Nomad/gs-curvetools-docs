@@ -90,7 +90,7 @@ Supported Platforms
 	Card and Tube Types <cards-and-tubes>
 	Bind/Unbind Function <bind-unbind>
 	Layers <layers>
-	Colors <colors>
+	Layers Customization <layers-customization>
 	Quick Selection and Grouping <selection>
 	Importing and Exporting Curves <import-export>
 	Orient to Normals <orient-to-normals>

@@ -245,3 +245,55 @@ You can easily isolate select or do any other functions with these nested cards 
 |
 |
 |
+
+Options Menu
+^^^^^^^^^^^^
+
+.. figure:: images/uv_editor/options_menu.png
+    :class: with-shadow float-right
+    :width: 300px
+
+In the options menu user can change the texture and viewport visual appearance.
+
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+
+----
+
+.. figure:: images/place2dtexture_node.png
+    :class: with-shadow float-right
+    :width: 400px
+
+.. figure:: images/coverage_translateframe.png
+    :class: with-shadow float-right
+    :width: 400px
+
+**Transform** - this toggle will enable/disable texture map transformations based on the place2dTexture node parameters: Coverage and Translate Frame.
+
+.. warning:: **Offset** parameter is **NOT** supported. Both diffuse and alpha map should have the same Coverage and Translate Frame parameter or use the same place2dTexture node for this to work.
+
+--------
+
+**Alpha** - this toggle will enable/disable the use of Alpha map that is connected to the Transparency plug of the material (from separate files or the same file).
+
+.. important:: It is recommended for the Diffuse and Alpha map to have the same resolution and aspect ratio.
+
+--------
+
+.. figure:: images/uv_editor/options_menu.png
+    :class: with-shadow float-right
+    :width: 300px
+
+**Color Controls** - Using three color pickers you can change uv editor viewport background (1), grid (2) and frame(3) colors.
+
+The colors set here will be saved and used in every project.
+
+To reset the colors, reset the plug-in to default using CT Reset icon on the shelf.
