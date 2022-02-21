@@ -4,10 +4,20 @@
 Changelog
 #########
 
-Version 1.2.5
+Version 1.2.6
 ^^^^^^^^^^^^^
 
-**This update is recommended for all users**
+**Improvements:**
+
+- More precise generation of **Control Curve** deformer. Generated control curve should now better match the curvature of the selected curves.
+
+**Bugfixes:**
+
+- **Control Curve** deformer will now be properly generated even if the selected curves had the root CVs deleted at some point.
+- **Mirror and Flip** functions will never invert the Width graph after the fix. Before the fix it was the case for some users.
+
+Version 1.2.5
+^^^^^^^^^^^^^
 
 **New Features:**
 
@@ -37,8 +47,6 @@ Version 1.2.5
 Version 1.2.4
 ^^^^^^^^^^^^^
 
-**This update is recommended for all users**
-
 **New Features:**
 
 - **Orient to Normals** function is now available in the Curve Control Window. Orients selected cards to the target mesh. Change number of iterations or angle tolerance to get the result you want. Target mesh is selected and remembered throughout the session. Orient function has dedicated hotkey available.
@@ -61,8 +69,6 @@ Version 1.2.4
 
 Version 1.2.3
 ^^^^^^^^^^^^^
-
-**This update is recommended for ALL users**
 
 **Bugfixes:**
 
