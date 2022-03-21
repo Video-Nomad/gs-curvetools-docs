@@ -114,3 +114,22 @@ Updating the Plug-in
 ^^^^^^^^^^^^^^^^^^^^
 
 To update the plug-in to a new version just **delete** the old **gs_curvetools** folder and repeat the `Installation Steps`_.
+
+Troubleshooting
+^^^^^^^^^^^^^^^
+
+*Installation issues on Windows:*
+
+Most of the problems with the installation happen when the user copies the gs_curvetools folder to the wrong folder.
+
+Use **only** the **version specific** scripts folder, and **NOT** the shared scripts folder.
+
+For example - **correct** folder for me:
+
+*C:\\Users\\George\\Documents\\maya\\2022\\scripts*
+
+**Incorrect** folder:
+
+*C:\\Users\\George\\Documents\\maya\\scripts*
+
+P.S. If you are using OneDrive, your documents folder might be in the OneDrive folder.

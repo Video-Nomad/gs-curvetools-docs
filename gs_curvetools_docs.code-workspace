@@ -16,6 +16,7 @@
 			"**/*.code-workspace": true,
 			"**/*.pyc": true
 		},
-		"explorerExclude.backup": null
+		"explorerExclude.backup": null,
+		"esbonio.sphinx.confDir": ""
 	}
 }
