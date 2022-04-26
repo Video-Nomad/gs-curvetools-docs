@@ -28,7 +28,7 @@ Maya Viewport default settings are not very well suited for the needs of hair cr
 |
 |
 
-Better Curve Visibility in Viewport (Maya 2017-2020 only)
+Better Curve Visibility in Viewport (Maya 2017-2023)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: images/ao_transparency_trick.gif
@@ -41,9 +41,15 @@ It can be tricky sometimes to see curves using default Maya settings, especially
 
 There are a few simple steps you can take to fix this problem:
 
-You can enable Screen-space Ambient Occlusion but without any actual occlusion happening. Maya 2017-2020 viewport will increase the visibility of the curves if you have Ambient Occlusion enabled. 
+Since v1.2.7 you can use a new hotkey or marking menu in the "Curve" filter button to quickly toggle "Always on Top" mode.
 
-|
+Clicking on a layer with Ctrl modifier will also toggle the "Always on Top" mode for each layer (only for Maya 2022+)
+
+It works differently for Maya 2018-2020 and for 2022+ versions. Older versions will toggle AO with minimal settings to have a "see-through" effect on curves. 2022+ versions will toggle "Draw Always on Top" parameter for every curve.
+
+**OLD WORKAROUNDS BELOW (before v1.2.7):**
+
+You can enable Screen-space Ambient Occlusion but without any actual occlusion happening. Maya 2017-2020 viewport will increase the visibility of the curves if you have Ambient Occlusion enabled. 
 
 .. note:: This bug was fixed in Maya 2022+ and no longer works, which is a shame. It would be better if Autodesk fixed the UV bug instead, but hey, I guess you only get so much funding in a multi-million dollar company. One bug in a decade.
 

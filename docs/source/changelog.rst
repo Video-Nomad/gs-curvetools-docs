@@ -4,6 +4,28 @@
 Changelog
 #########
 
+Version 1.2.7
+^^^^^^^^^^^^^
+
+**New Features:**
+
+- **Maya 2023 Support**
+- Global and Per-Layer **Always-On-Top** toggle for curves ("Per-Layer" is only for Maya 2022+)
+- **(BETA) Convert** one type of Card/Tube to the other type (Warp->Extrude, and vice versa).
+
+  - Might have issues with orientation when converting
+  - Might have other issues with old Cards/Tubes
+  - Recommended to use only on newly created cards/tubes (v1.2.7+) and NOT on the old ones.
+
+**Improvements:**
+
+- **Scale Factor** is now stored in the scene as well as in every created curve. This will allow for better compatibility with other functions and more reliable workflows in the future.
+
+
+**Deprecation:**
+
+- Maya 2017 support is dropped. Might work just fine with this update, but there will be no bug fixes for 2017.
+
 Version 1.2.6
 ^^^^^^^^^^^^^
 

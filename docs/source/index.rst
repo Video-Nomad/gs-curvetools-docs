@@ -2,7 +2,7 @@
 GS CurveTools for Autodesk Maya Documentation
 #############################################
 
-**For Maya 2017-2022**
+**For Maya 2018-2023**
 
 Links
 ^^^^^
@@ -65,13 +65,15 @@ Main Features of GS CurveTools
 Supported Platforms
 ^^^^^^^^^^^^^^^^^^^
 
-**Maya 2017-2022 for Windows** -> Fully Tested and Supported*.
+**Maya 2018-2023 for Windows** -> Fully Tested and Supported*.
 
-**Maya 2017-2022 for Mac** -> In Beta*.
+**Maya 2018-2023 for Mac** -> In Beta*.
 
 **Linux** -> Not Tested and Not Supported.
 
 **Maya LT** -> Not Tested and Not Supported.
+
+**Maya 2017** -> Is no longer supported since v1.2.7
 
 .. warning:: \*Please use the latest patches if possible. For example: Maya 2018.1 has issues that were fixed in the latest 2018.6 and are essential for GS CurveTools functionality. Thank you!
 

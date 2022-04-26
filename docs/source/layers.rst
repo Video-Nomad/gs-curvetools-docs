@@ -30,7 +30,7 @@ There are four **Filters** available:
 	:class: with-shadow float-right
 	:width: 100px
 
-- **Filter Curves** - this filter will show only **Curves** and hide the **Geometry** in all the Layers.
+- **Filter Curves** - this filter will show only **Curves** and hide the **Geometry** in all the Layers. Also has **Marking Menu (Hold RMB)** that allows for the toggle of **"Always on Top"** visibility mode.
 
 .. figure:: images/buttons/geo.png
 	:class: with-shadow float-right
@@ -85,6 +85,8 @@ You can easily **Move Layers** by simply clicking and dragging with Middle Mouse
 	:width: 150px
 
 If you want to **Merge Layers**, simply click and drag with Middle Mouse Button and release it over another Filled Layer.
+
+**Toggling per-layer "Always on Top"** rendering mode: Hold CTRL and Click on layer to toggle. Or toggle it globally by using a hotkey or "Curve" filter button marking menu.
 
 .. figure:: images/display_layers.png
 	:class: with-shadow float-right
