@@ -94,8 +94,8 @@ Since this issue can't be fixed from my end, there's only workarounds.
 
 |
 
-Maya 2018.0-2018.1 Random Deformations Issue
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Maya 2018.0-2018.1 Random Deformations Issue (stuck vertices)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Issue:**
 
