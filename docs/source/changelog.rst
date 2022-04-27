@@ -22,6 +22,10 @@ Version 1.2.7
 - **Scale Factor** is now stored in the scene as well as in every created curve. This will allow for better compatibility with other functions and more reliable workflows in the future.
 
 
+**Bug Fixes:**
+
+- UV Bug that was in 2020 and 2022 was fixed in 2023 by Autodesk. 2020 and 2022 still have it, obviously.
+
 **Deprecation:**
 
 - Maya 2017 support is dropped. Might work just fine with this update, but there will be no bug fixes for 2017.
