@@ -23,7 +23,7 @@ Only for Maya 2020 and 2022. UVs are not working after save and reload of the sc
 
 First of all, this issue is not related to GS CurveTools in any way.
 
-This issue is related to Maya 2020, 2020.1, 2020.2 and 2022 and the "new" bug it has with saving/loading Maya Binary scene files (.mb). During the reload of the scene the inputComponents list used in polyMoveUV nodes is getting corrupted and shows as nmm[*] instead of map[*]. This bug was reported for Maya 2020, 2020.1, 2020.2 and was not fixed as of right now.
+This issue is related to Maya 2020, 2020.1, 2020.2 and 2022 and the "new" bug it has with saving/loading Maya Binary scene files (.mb). During the reload of the scene the inputComponents list used in polyMoveUV nodes is getting corrupted and shows as nmm[*] instead of map[*]. This bug was reported for Maya 2020, 2020.1, 2020.2, 2022 and was FIXED in 2023.
 
 **Solution/Workaround:**
 
@@ -40,8 +40,6 @@ Steps:
 	4. It should now work perfectly fine 
 
 Maya ASCII loading times can be a bit longer, but should work just fine in Maya 2020.
-
-.. note:: This bug was reported to Autodesk and has a bug report number: BSPR-35061
 
 .. _broken-graphs:
 
