@@ -4,6 +4,39 @@
 Video Tutorials
 ###############
 
+Version 1.2.8 New Features Tutorial
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <div style="position: relative; height: 400; overflow: hidden; max-width: 100%;">
+        <iframe width="696" height="391" src="https://youtu.be/5Iw615ojWQs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+|
+
+Version 1.2.7 New Features Tutorial
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <div style="position: relative; height: 400; overflow: hidden; max-width: 100%;">
+        <iframe width="696" height="391" src="https://www.youtube.com/watch?v=odkT1yVdeag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+|
+
+Version 1.2.5 New Features Tutorial
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <div style="position: relative; height: 400; overflow: hidden; max-width: 100%;">
+        <iframe width="696" height="391" src="https://www.youtube.com/watch?v=dB3L9Vvwv5g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+|
+
 Version 1.2.4 New Features Tutorial
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
