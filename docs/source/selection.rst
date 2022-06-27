@@ -74,7 +74,11 @@ You can also use **Modifier** buttons to change the behavior of the slider:
 	:class: with-shadow float-right
 	:width: 300px
 
-- Holding **Shift + Control** button will Deselect any selected CVs based on the slider position.
+- Holding **Alt** button will Deselect any selected CVs based on the slider position.
+
+|
+
+- Holding **Ctrl** button will temporarily disable the slider and allow you to reposition it without changing the selection on the curve.
 
 |
 |

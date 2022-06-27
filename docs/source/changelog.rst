@@ -4,6 +4,70 @@
 Changelog
 #########
 
+Version 1.2.8
+^^^^^^^^^^^^^
+  
+**New Features:**
+
+- All the relevant buttons now have (optional) tooltips. Can be disabled in the Options.
+
+**Improvements:**
+
+- **Convert Curves** is now out of beta (in the Options menu):
+
+  - Card -> Card conversion will now correctly keep original orientation and profile.
+  - Will now retain original materials on conversion.
+  - Performance was improved.
+
+- **Twist, Width and Profile Graphs** are now applied to ALL selected curves.
+
+- **Card to Curve** algorithm was rewritten and improved:
+
+  - Better compatibility and reliability for one-sided cards with different vert orders.
+  - Optimization and speed-up of the algorithm
+  - Cards with no width spans are now correctly converted.
+
+- Massive improvement of the **Mirror** operation:
+
+  - Improved orientation and profile calculation during mirror for all Warp and Extrude cards.
+  - Speed-up and optimization.
+  - Much less orientation "drift" when using "Flip".
+
+- **Orient to Normals** algorithm improvements:
+
+  - Optimization and speed-up.
+  - Increased precision with less iterations.
+  - Cards will not flip or change orientation on continuous use on already aligned cards.
+  - Reduced angle tolerance to 1 degree by default.
+
+- **Select CVs** slider was improved. Current hotkeys:
+
+  - **Shift + Drag**: additive selection.
+  - **Alt + Drag**: deselect CVs.
+  - **Ctrl + Drag**: allows for slider movement without selection change.
+
+- **Expanded supported texture formats** list for the **UV editor**. Added TIFF (TIF). 
+
+  - Full list of supported texture formats: JPG, JPEG, PNG, **TIF, TIFF,** TGA (24bit, no RLE).
+  - Also added additional info for the "Wrong format" error message. It will now specify that TGA has no support for RLE compression.
+
+- Minor improvements for curve creation algorithm (better refinement and divisions calculation)
+
+- Some minor UI adjustments
+
+**Bug Fixes:**
+
+- Fixed a **hotkey conflict** with layer selection:
+
+  - Holding **Ctrl + clicking** on Layer should now select the contents of that layer, and deselect everything else like intended.
+  - **Show Always on Top** hotkey changed to **Ctrl+Alt**.
+
+- Fixed a bug where **"Layer Isolation Selection" hotkey** was not working properly. Now holding Shift+Alt and clicking on Layer will isolate select this layer properly.
+
+- **Transfer UVs** will now correctly transfer H-Flip UV attribute.
+
+- **Select CVs** slider will no longer deselect the last selected CV when using subtractive mode.
+
 Version 1.2.7
 ^^^^^^^^^^^^^
 

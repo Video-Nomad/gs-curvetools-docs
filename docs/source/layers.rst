@@ -69,10 +69,12 @@ You can **Select Curves** from a specific layer by holding **Ctrl** and clicking
 
 You can **Select** curves from **Multiple Layers** by holding **Shift** button and clicking on multiple Layers.
 
+
+You can **Isolate Select** curves from **Specific Layers** by holding **Shift+Alt** button and clicking on multiple Layers. Only the layer clicked will be shown and others will be hidden.
+
 |
 |
-|
-|
+
 
 .. figure:: images/mouse_drag_layer.gif
 	:class: with-shadow float-right
@@ -86,7 +88,7 @@ You can easily **Move Layers** by simply clicking and dragging with Middle Mouse
 
 If you want to **Merge Layers**, simply click and drag with Middle Mouse Button and release it over another Filled Layer.
 
-**Toggling per-layer "Always on Top"** rendering mode: Hold CTRL and Click on layer to toggle. Or toggle it globally by using a hotkey or "Curve" filter button marking menu.
+**Toggling per-layer "Always on Top"** rendering mode: Hold **Ctrl+Alt** and Click on layer to toggle. Or toggle it globally by using a hotkey or "Curve" filter button marking menu.
 
 .. figure:: images/display_layers.png
 	:class: with-shadow float-right
