@@ -37,6 +37,60 @@ Small rectangle at the base of the UV rectangle indicates the root of this UV an
 |
 |
 
+Material Setup
+^^^^^^^^^^^^^^
+
+In order for the UV Editor to work correctly a correct material should be used for the cards.
+    
+Lambert with PNG, JPG/JPEG or TIF/TIFF (LZW or No Compression) texture file is recommended. TGA (24bit and no RLE) is also supported.
+
+Simply connect Out Color of Diffuse File to Color of the Lambert and Out Transparency to Transparency.
+
+Out Transparency can either be from separate file or from the same file if supported by the format.
+
+**Final Material:**
+
+.. figure:: images/Lambert_Final_Material.png
+	:class: with-shadow
+	:width: 50%
+
+**Material setup process:**
+
+1. Select newly created curve(s).
+2. Click on Select Geo.
+3. Holding right mouse button in the viewport select Assign New Material -> Lambert.
+4. In Attribute Editor Click on checker button |pic1| near the Color Slider -> File (Fig 1).
+5. Under the Image Name field click on a folder icon and select your Diffuse(color) texture (Fig 2).
+6. If you have separate Alpha, return back to the lambert node by clicking on the box with the right arrow with Right Mouse Button and selecting the lambert.color. (Fig 2)
+7. Repeat steps 4, 5 for the Alpha if you have separate Alpha file.
+
+.. |pic1| image:: images/checker_button.png
+   :width: 20px
+   :height: 20px
+
+.. list-table::
+    :widths: 200 200
+
+    * - .. figure:: images/Lambert_Material_01.png
+    
+        Fig 1: Lambert color and transparency sliders
+
+      - .. figure:: images/Lambert_Material_02.png
+      
+        Fig 2: File and how to get back to lambert
+
+**Video of the setup:**
+
+.. raw:: html
+
+	<video width="50%" controls>
+	<source src="_static/uv_editor_material_setup.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+	</video>
+
+|
+|
+
 Select, Move, Rotate, Scale and Draw
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
