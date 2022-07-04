@@ -4,6 +4,13 @@
 Changelog
 #########
 
+Version 1.2.9
+^^^^^^^^^^^^^
+
+**Bug Fixes:**
+
+- Fixed a bug with UV Editor not showing textures in older (Python 2) Maya versions.
+
 Version 1.2.8
 ^^^^^^^^^^^^^
   
