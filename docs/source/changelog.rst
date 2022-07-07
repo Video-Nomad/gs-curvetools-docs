@@ -4,6 +4,19 @@
 Changelog
 #########
 
+Version 1.2.10
+^^^^^^^^^^^^^^
+
+**Improvements:**
+
+- Fill function will now automatically reset pivot to the root CV on newly created curves.
+
+**Bug Fixes:**
+
+- Fixed an encoding issue with tooltips.md file that caused an error on some Korean PCs during the startup of the plug-in (Maya 2022 confirmed, possibly 2023).
+- Fixed an issue with Twist and Width graphs not being able to be reset using Reset Curve button.
+- Fixed an issue with Twist and Width graphs not copying the values correctly if multiple curves were selected in component mode.
+
 Version 1.2.9
 ^^^^^^^^^^^^^
 
