@@ -100,3 +100,8 @@ Supported Platforms
 	Options Menu <options>
 	FAQ <faq>
 	Useful Tips <useful-tips>
+
+
+.. raw:: html
+	
+	<a href="_static/latest-version.txt" Latest Version>Latest Version</a>
