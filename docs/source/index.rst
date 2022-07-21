@@ -62,18 +62,24 @@ Main Features of GS CurveTools
 - Custom window for all curve controls
 - Powerful attributes (controls) for curves, including Twist, Width and Profile along the curve.
 
+Recommended Maya Versions
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- 2018.6
+- 2019.3.1
+- 2020.4
+- 2022.4
+- 2023.0
+- 2023.1
+
 Supported Platforms
 ^^^^^^^^^^^^^^^^^^^
 
-**Maya 2018-2023 for Windows** -> Fully Tested and Supported*.
-
-**Maya 2018-2023 for Mac** -> In Beta*.
-
-**Linux** -> Not Tested and Not Supported.
-
-**Maya LT** -> Not Tested and Not Supported.
-
-**Maya 2017** -> Is no longer supported since v1.2.7
+- **Maya 2018-2023 for Windows** -> Fully Tested and Supported*.
+- **Maya 2018-2023 for Mac** -> In Beta*.
+- **Linux** -> Not Tested and Not Supported.
+- **Maya LT** -> Not Tested and Not Supported.
+- **Maya 2017** -> Is no longer supported since v1.2.7
 
 .. warning:: \*Please use the latest patches if possible. For example: Maya 2018.1 has issues that were fixed in the latest 2018.6 and are essential for GS CurveTools functionality. Thank you!
 
