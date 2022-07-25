@@ -15,7 +15,6 @@ Installation Steps
 
 .. warning:: Please use the latest patches if possible. For example: Maya 2018.1 has issues that were fixed in the latest 2018.6 and are essential for GS CurveTools functionality. Thank you!
 
-1. :strike:`Pay for WinRAR`
 
 #. Unpack and copy **gs_curvetools** folder to:
 
