@@ -17,6 +17,6 @@
 			"**/*.pyc": true
 		},
 		"explorerExclude.backup": null,
-		"esbonio.sphinx.confDir": ""
+		"esbonio.sphinx.confDir": "${workspaceFolder}\\docs\\source"
 	}
 }

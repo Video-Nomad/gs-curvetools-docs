@@ -73,6 +73,8 @@ Recommended Maya Versions
 - 2022.4
 - 2023.0
 - 2023.1
+- 2023.2
+- 2023.3
 
 Supported Platforms
 ^^^^^^^^^^^^^^^^^^^
@@ -112,4 +114,4 @@ Supported Platforms
 
 .. raw:: html
 	
-	<a href="_static/latest-version.txt" Latest Version>Latest Version</a>
+	<a href="_static/latest-version.json" Latest Version>Latest Version</a>
