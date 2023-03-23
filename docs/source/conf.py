@@ -18,7 +18,7 @@ import datetime
 try:
     YEAR = datetime.datetime.now().year
 except BaseException:
-    YEAR = 2022
+    YEAR = 2023
 
 # -- Project information -----------------------------------------------------
 
@@ -35,7 +35,10 @@ release = 'v1.2.10'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'sphinx_copybutton'
 ]
+
+numfig = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -74,13 +77,13 @@ html_theme_options = {
     'sticky_navigation': True,
     'navigation_depth': 2,
     'includehidden': True,
-    'titles_only': False
+    'titles_only': False,
 }
-
-html_logo = 'images/logo.png'
-
-html_favicon = 'images/favicon.png'
 
 html_css_files = [
     'css/custom.css',
 ]
+
+html_logo = 'images/logo.png'
+
+html_favicon = 'images/favicon.png'
