@@ -11,6 +11,7 @@ Links
 - `Discord Support Server <https://discord.gg/KyPCW6F>`_
 - `YouTube Channel <https://www.youtube.com/channel/UCmIFpG98OqbUecaf5H-ixKQ>`_
 - `ArtStation <https://www.artstation.com/sladkovsky3d>`_
+- `Directly support free updates <https://www.buymeacoffee.com/videonomad>`_
 
 Introduction
 ^^^^^^^^^^^^
