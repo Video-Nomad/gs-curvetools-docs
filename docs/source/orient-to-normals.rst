@@ -1,11 +1,13 @@
 .. currentmodule:: <index>
 
+.. _orient-to-normals:
+
 #################
 Orient to Normals
 #################
 
-.. figure:: images/orient_to_normals_correct_incorrect.png
-	:class: with-shadow float-right
+.. image:: images/orient_to_normals_correct_incorrect.png
+	:align: right
 	:width: 350px
 
 When creating hair (especially the shorter variations), it can be tricky to place all the cards and orient them correctly to the scalp. This manual process can take hours, and even days.
@@ -17,29 +19,25 @@ Orient to Normals main function is to orient all the selected cards to the norma
 Main Menu
 ^^^^^^^^^
 
-.. figure:: images/orient_to_normals_menu.png
-	:class: with-shadow float-right
+.. image:: images/orient_to_normals_menu.png
+	:align: right
 	:width: 350px
 
-Orient to Normal consists of a Menu that can be found in a Curve Control Window. This menu will be active when either polygon mesh or nurbs curve is selected.
+Orient to Normal consists of a Menu that can be found in the :ref:`Curve Control Window<attributes>`. This menu will be active when either polygon mesh or NURBS curve is selected.
 
 In this menu you can find a target mesh field as well as "Select Target" button.
 
 Selecting a Target Mesh
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-To select a mesh as a target you can simply type the name of the mesh in the field, or select the mesh in the viewport (or outliner) and click on "Select Target".
-
-.. figure:: images/orient_to_normals_demo.gif
-	:class: with-shadow float-right
+.. image:: images/orient_to_normals_demo.gif
+	:align: right
 	:width: 350px
+
+To select a mesh as a target you can simply type the name of the mesh in the field, or select the mesh in the viewport (or outliner) and click on "Select Target".
 
 Now that you have your target polygon mesh selected, you can simply select all the curves you wish to orient and click on "Orient".
 
-|
-|
-|
-|
 |
 |
 |
@@ -52,10 +50,10 @@ Now that you have your target polygon mesh selected, you can simply select all t
 Options
 ^^^^^^^
 
-.. figure:: images/orient_to_normals_options.png
-	:class: with-shadow float-right
+.. image:: images/orient_to_normals_options.png
+	:align: right
 	:width: 350px
-    
+	
 You also have some options available for Orient to Normals function.
 
 - **Refresh VP** checkbox will Enable/Disable viewport updates during the orientation process. Disabling the updates can save some computation time and speed up the process, especially if you are orienting hundreds of cards.

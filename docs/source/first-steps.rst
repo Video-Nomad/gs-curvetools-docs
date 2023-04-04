@@ -1,8 +1,8 @@
 .. currentmodule:: <index>
 
-###########
-First Steps
-###########
+#########################
+Main Menu and First Steps
+#########################
 
 Intro
 ^^^^^
@@ -20,36 +20,35 @@ In this chapter we will go through the main concepts of the plug-in.
 Basic Workflow Example
 ^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: images/new_card.png
-	:alt: Utility Section
-	:class: with-shadow float-right
-	:width: 200px
+.. image:: images/new_card.png
+    :align: right
+    :width: 200px
 
 Start by creating a simple curve card with Add Card button. Now try modifying the curve that was created. 
 
-.. figure:: images/component_selection_mode.png
-	:alt: Utility Section
-	:class: with-shadow float-right
-	:width: 100px
+.. image:: images/component_selection_mode.png
+    :align: right
+    :width: 100px
 
 You can switch to "Control Vertex" editing mode by selecting "Select by Component Type" in the Maya Menu or by pressing F8. 
 
-.. figure:: images/control_vertex_object_mode.png
-	:alt: Utility Section
-	:class: with-shadow float-right
-	:width: 200px
+.. image:: images/control_vertex_object_mode.png
+    :align: right
+    :width: 200px
 
 You can also access Marking Menu of the curve by holding RMB. There you can switch between control vertex and object selection modes.
 
-Now open Curve Control Window by pressing the button with the same name.
+Now open :ref:`Curve Control Window <attributes>` by pressing the button with the same name.
 
 Here you will find all the main controls for the curve.
 
-Now select your curve and click Duplicate button. You now have two curves with the same attributes, UVs and material.
+Now select your curve and click :ref:`Duplicate <duplicate>` button. You now have two curves with the same attributes, UVs and material.
 
 .. note:: To read about UVs setup, please read the appropriate section in the Table of Contents (Textures and UVs, UV Editor)
 
-By default, Layer 0 is selected and all new curves will go there. You can switch between layers by simply clicking on them. All the new curves (except for duplicated ones) will go into selected layers. Duplicated curves will inherit the layer of the original selected curve.
+By default, :ref:`Layer <layers>` 0 is selected and all new curves will go there. You can switch between layers by simply clicking on them. All the new curves (except for duplicated ones) will go into selected layers. Duplicated curves will inherit the layer of the original selected curve.
+
+.. _main-menu:
 
 Main Menu
 ^^^^^^^^^
@@ -58,124 +57,107 @@ Main Menu is a simple window that can be docked to any place within Maya main wi
 
 Main Menu is split into 5 logical sections:
 
-	.. figure:: images/options_help_about.png
-		:alt: Options Section
-		:class: with-shadow float-right
-		:width: 150px
+    .. image:: images/options_help_about.png
+        :align: right
+        :width: 150px
 
-#. On the top of the menu is **Options, Help and About** drop down menus:
+#. On the top of the menu are :ref:`Options <options>`, Help and About drop down menus:
 
-	a. **Options** menu holds various tweaks that you can use to alter functionality of the plug-in
+    a. **Options** menu holds various tweaks that you can use to alter functionality of the plug-in.
+    #. **Help** menu holds main links to documentation as well as contacts and social media links of the author.
+    #. **About** menu holds information about the version of the plug-in and licensing details.
 
-	#. **Help** menu holds main links to documentation as well as contacts and social media links of the author
+    .. image:: images/creation_section.png
+        :align: right
+        :width: 150px
 
-	#. **About** menu holds information about the version of the plug-in and licensing details
+#. In the :ref:`Creation Section <creating-cards-and-tubes>` you will find all the commands that create new cards or tubes, modify existing curves, add cards between other cards, convert edges of poly objects to curves and advanced geometry and curves binding function - :ref:`Bind and Unbind <bind-unbind>`.
+    
+    a. Switch buttons :ref:`Warp <warp-cards>` and :ref:`Extrude <extrude-cards>` will switch between two curve creation modes. Extrude is the basic geometry creation that existed before v1.1 and Warp is the new, advanced, algorithm that adds a lot of new controls to created curves.
+    #. :ref:`New Card <new-card-button>` and :ref:`New Tubes <new-card-button>` will create a default card or tube in the center of the world.
+    #. :ref:`Curve Card <curve-card-button>` or :ref:`Curve Tube <curve-card-button>` will convert any Maya curve to fully functional Curve Card or Tube
+    #. :ref:`Bind and Unbind <bind-unbind>` buttons allow for advanced binding of geometry and curves to other curves. More details in the **Bind** section.
+    #. :ref:`Add Cards and Add Tubes <add-cards-button>` will create new Cards or Tubes between selected Curve Cards or Curve Tubes. The number of created curves is controlled by **Add** slider
+    #. :ref:`Fill <fill-button>` will create duplicate selected Cards, Tubes or Bound objects and distribute them in-between selected curves. In comparison to Add Cards and Add Tubes, Fill is faster, more reliable, compatible with Bound objects and in general a recommended way of adding new cards in-between other cards.
+    #. :ref:`Edge to Curve <edge-to-curve>` will convert any selected edge groups to CV curves.
+    #. :ref:`Card to Curve <card-to-curve>` function allows to convert selected one sided geometry to Curve Cards.
+    #. :ref:`Subdivide <subdivide>` will replace any selected card with multiple duplicates based on the Add slider.
 
-	.. figure:: images/creation_section.png
-		:alt: Creation Section
-		:class: with-shadow float-right
-		:width: 150px
+    .. image:: images/layer_section.png
+        :align: right
+        :width: 150px
 
-#. In the **Creation Section** you will find all the commands that create new cards or tubes, modify existing curves, add cards between other cards, convert edges of poly objects to curves and advanced geometry and curves binding function - Warp.
-	
-	a. Switch buttons **"Warp and Extrude"** will switch between two curve creation modes. Extrude is the basic geometry creation that existed before v1.1 and Warp is the new, advanced, algorithm that adds a lot of new controls to created curves.
+#. :ref:`Layer Section <layers>` consists of three filters and one color mode toggle, 20, 30, 40, 60 or 80 available curve layers and geometry extraction buttons:
 
-	#. **New Card** or **New Tube** will create a default card or tube in the center of the world.
+    a. :ref:`Filters <layers>` allow you to quickly show/hide all curve cards, show only curves, show only geometry and enable geometry colorization mode.
+    #. :ref:`Color mode <layer-customization>` will change the color of all the cards based on the Layer color.
+    #. :ref:`20 Layers <layers>` (by default) switch buttons allow for advanced and intuitive organization of curve cards. New curves are placed in the selected layer. Using Marking Menu (Hold RMB) you can transfer curves between layers, hide individual layers, change selectability of geometry and more.
+    #. :ref:`Extract Selected <extract-buttons>` will extract geometry from selected curves. Holding Shift during extraction will result in separated cards, instead of one combined mesh. Holding Ctrl will open Export window and delete extracted geometry after export.
+    #. :ref:`Extract All <extract-buttons>` will extract geometry from all layers. Holding Shift during extraction will result in separated cards, instead of one combined mesh. Holding Ctrl will open Export window and delete extracted geometry after export.
 
-	#. **Curve Card** or **Curve Tube** will convert any Maya curve to fully functional Curve Card or Tube
+    .. image:: images/selection_transfer_section.png
+        :align: right
+        :width: 150px
 
-	#. **Bind** and **Unbind** buttons allow for advanced binding of geometry and curves to other curves. More details in the **Bind** section.
+#. :ref:`Selection and Transfer Section <selection>` adds additional useful functions to control Curve Cards/Tubes attributes and grouping.
 
-	#. **Add Cards** and **Add Tubes** will create new Cards or Tubes between selected Curve Cards or Curve Tubes. The number of created curves is controlled by **Add** slider
+    a. :ref:`Select Curve, Select Geo, Select Group <selection>` will select the appropriate Curve Card component. Refer to `Structure of the Curve Card/Tube Object`_.
+    #. :ref:`Group Curves button and Group Name<group-curves>` field allows for quick grouping of selected curves in the Outliner. Selected curves will be placed in one group named based on the Group Name filed text. Default name will be used if the filed is empty.
+    #. :ref:`Select CVs Slider <select-slider>` will quickly select CVs based on the slider position. Select curves and drag the slider.
+    #. :ref:`Transfer Attr<transferring-attributes>` and :ref:`Transfer UVs<transferring-uvs>` button will transfer appropriate attributes and UVs from one selected curve to all other curves in selection list. Holding RMB on these buttons will open a marking menu to :ref:`Copy-Paste<copy-paste-attributes>` and :ref:`Filter<attribute-filters>` transferred attributes.
+    #. :ref:`Reset Pivot <reset-pivot>` will reset the manipulator pivot to the first CV of the curve.
+    
+    .. image:: images/utility_section.png
+        :align: right
+        :width: 150px
 
-	#. Edge to Curve will convert any selected edge groups to CV curves.
+#. :ref:`Utility Section <utility>` holds advanced functions that change the curve density, length, smoothness and more:
 
-	#. **Subdivide** will replace any selected card with multiple duplicates based on the Add slider.
+    a. :ref:`Rebuild Curve Slider <rebuild-curve-slider>` will interactively rebuild selected curves (change the number of CVs).
+    #. :ref:`Duplicate <duplicate>` button is probably the most important function for quick duplication of already existing Curve Cards and Tubes. Simply select any number of curves and click duplicate.
+    #. :ref:`Extend and Reduce <extend-reduce-smooth>` will lengthen or shorten the selected curves based on the Factor Slider.
+    #.  :ref:`Smooth <extend-reduce-smooth>` will Smooth selected curves or selected CVs based on the Factor slider.
+    #. :ref:`Curve Control and Apply<control-curve>` buttons create a deformer curve that can deform selected curves. So apply the deformer, simply select it and click Apply.
+    #. :ref:`Curve Control Window<attributes>` Will open a separate menu that holds sliders and graphs that control curve attributes and UVs.
+    #. :ref:`UV Editor<uv-editor>` Window will open the UV Editor 
 
-	.. figure:: images/layer_section.png
-		:alt: Layer Section
-		:class: with-shadow float-right
-		:width: 150px
+.. note:: 
+    You might notice a **small triangle** ▲ on some icons. This triangle indicates that there is an alternative algorithm available for this function. To activate it, just **Hold Shift** before clicking the button.
 
-#. **Layer Section** consists of four filters, 20, 30 or 40 curve layers and geometry extraction buttons:
-
-	a. **Filters** allow you to quickly show/hide all curve cards, show only curves, show only geometry and enable geometry colorization mode.
-
-	#. **20 layers** switch buttons allow for advanced and intuitive organization of curve cards. New curves are placed in the selected layer. Using Marking Menu (Hold RMB) you can transfer curves between layers, hide individual layers, change selectability of geometry and more.
-
-	#. **Extract Selected** will extract geometry from selected curves. **Extract All** will extract geometry from all layers. Holding Shift during extraction will result in separated cards, instead of one combined mesh.
-
-	.. figure:: images/selection_transfer_section.png
-		:alt: Selection and Transfer Section
-		:class: with-shadow float-right
-		:width: 150px
-
-#. **Selection and Transfer Section** adds additional useful functions to control Curve Cards/Tubes attributes and grouping.
-
-	a. **Select Curve**, **Select Geo**, **Select Group** will select the appropriate Curve Card component.
-
-	#. **Group Curves** button and field allows for quick grouping of selected curves in the Outliner.
-
-	#. **Select CVs Slider** will quickly select CVs based on the slider position. Select curves and drag the slider.
-	
-	#. **Transfer Attr** and **Transfer UVs** button will transfer appropriate attributes (settings) from one selected curve to all other curves in selection list.
-	
-	#. **Reset Pivot** will reset the manipulator pivot to the first CV of the curve.
-	
-	.. figure:: images/utility_section.png
-		:alt: Utility Section
-		:class: with-shadow float-right
-		:width: 150px
-
-#. **Utility Section** holds advanced functions that change the curve density, length, smoothness and more:
-
-	a. **Rebuild Curve Slider** will interactively rebuild selected curves (change the number of CVs).
-
-	#. **Duplicate** button is probably the most important function for quick duplication of already existing Curve Cards and Tubes. Simply select any number of curves and click duplicate.
-	
-	#. **Extend** and **Reduce** will lengthen or shorten the selected curves based on the Factor Slider.
-
-	#. **Smooth** will Smooth selected curves or selected CVs based on the Factor slider.
-
-	#. **Curve Control** and **Apply** buttons create a deformer curve that can deform selected curves. So apply the deformer, simply select it and click Apply.
-
-	#. **Curve Control Window** Will open a separate menu that holds sliders and graphs that control curve attributes and UVs.
-
-	#. **UV Editor** Window will open the UV Editor 
-
-.. note:: You might notice a **small triangle** on the bottom left of some icons. This triangle indicates that there is an alternative algorithm available for this function. To activate it, just **Hold Shift** before clicking the button.
+.. note:: 
+    Some buttons also have **three horizontal lines** ≡ icon that indicates that this button has marking menu. Holding RMB on that button will open it.
 
 Curve Control Window
 ^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: images/curve_control_window.png
-	:alt: Utility Section
-	:class: with-shadow float-right
-	:width: 250px
+.. image:: images/curve_control_window.png
+    :align: right
+    :width: 250px
 
-Curve Control Window holds all the sliders and checkboxes that control the attributes of any selected curves. Window is dockable to any part of Maya UI. It is multi-selection capable and have 4 main sections:
+:ref:`Curve Control Window<attributes>` holds all the sliders and checkboxes that control the attributes of any selected curves. Window is dockable to any part of Maya UI. It is multi-selection capable and have several sections:
 
-#. At the top there are controls for **Curve Layer**, **Geometry Color** in Colorization mode, **Curve Name** and **Curve Thickness**.
+#. At the top there are controls for :ref:`Curve Layer<layers>` drop-down menu, :ref:`Geometry Color swatch in Color mode<layer-customization>`, :ref:`Curve Color swatch<layer-customization>`, Curve Name and :ref:`Geometry Color in Color mode<options>`.
+#. Main :ref:`Attributes<attributes>` Section holds all the main sliders and graphs for curve control.
+#. Other holds less used attributes, like :ref:`Sampling Accuracy<sampling-accuracy>` and Refine.
+#. :ref:`Orient to Normals<orient-to-normals>` holds all the controls for orient to normals algorithm
+#. :ref:`Solidify Section<attributes>` holds sliders and checkbox to enable solidify (extrusion) of selected curves
+#. :ref:`UV controls<uv-editor>` holds all the UV attributes (mostly unused since UV Editor release)
+#. :ref:`Advanced Visibility<advanced-visibility>` Holds all the options for highlighting of the selected curves and geo.
 
-#. **Main Attributes Section** holds all the main sliders and graphs for curve control.
+**Reset Sliders Range** button will reset sliders minimum and maximum values to preset default values.
 
-#. **UV's Section** holds sliders for procedural UVs editing.
+.. note:: 
+    You can always extend the range of the sliders by manually typing values into a value field.
 
-#. **Solidify Section** holds sliders and checkbox to enable solidify (extrusion) of selected curves
 
-**Reset Sliders Range** will reset sliders minimum and maximum values to preset default values.
-
-.. note:: You can always extend the range of the sliders by manually typing values into a value field.
-
-|
+.. _structure-of-curve-object:
 
 Structure of the Curve Card/Tube Object
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: images/structure_of_card_object.png
-	:alt: Utility Section
-	:class: with-shadow float-right
-	:width: 200px
+.. image:: images/structure_of_card_object.png
+    :align: right
+    :width: 200px
 
 Curve Cards and Tubes are complex objects and thus they consist of multiple simple objects grouped together.
 

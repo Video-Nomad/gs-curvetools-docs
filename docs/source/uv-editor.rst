@@ -9,9 +9,9 @@ UV Editor
 New UV Editor
 ^^^^^^^^^^^^^
 
-.. figure:: images/uv_editor/uv_editor_window.png
-	:class: with-shadow float-right
-	:width: 400px
+.. image:: images/uv_editor/uv_editor_window.png
+	:align: right
+	:width: 350px
 
 Changing UVs in GS CurveTools was always a challenge, because of the procedural limitation of UV attributes. Using slides was always a temporary solution to a problem, and not an elegant one.
 
@@ -27,8 +27,8 @@ UV editor will update every time you select a new curve in Maya Viewport. Incomp
 
 The UVs will dynamically update in the Maya Viewport when you edit them in the UV Editor
 
-.. figure:: images/uv_editor/uv_root.png
-	:class: with-shadow float-right
+.. image:: images/uv_editor/uv_root.png
+	:align: right
 	:width: 200px
 
 Small rectangle at the base of the UV rectangle indicates the root of this UV and its orientation in space.
@@ -40,28 +40,30 @@ Small rectangle at the base of the UV rectangle indicates the root of this UV an
 Material Setup
 ^^^^^^^^^^^^^^
 
-In order for the UV Editor to work correctly a correct material should be used for the cards.
-    
+In order for the UV Editor to work correctly a correct material should be used for the cards (:numref:`material_setup_final_material`).
+	
 Lambert with PNG, JPG/JPEG or TIF/TIFF (LZW or No Compression) texture file is recommended. TGA (24bit and no RLE) is also supported.
 
 Simply connect Out Color of Diffuse File to Color of the Lambert and Out Transparency to Transparency.
 
 Out Transparency can either be from separate file or from the same file if supported by the format.
 
-**Final Material:**
+**Final Material Setup:**
 
 .. figure:: images/Lambert_Final_Material.png
-	:class: with-shadow
+	:name: material_setup_final_material
 	:width: 50%
 
-**Material setup process:**
+	Simple Material Node Connections
+
+**Material Setup Steps:**
 
 1. Select newly created curve(s).
 2. Click on Select Geo.
 3. Holding right mouse button in the viewport select Assign New Material -> Lambert.
-4. In Attribute Editor Click on checker button |pic1| near the Color Slider -> File (Fig 1).
-5. Under the Image Name field click on a folder icon and select your Diffuse(color) texture (Fig 2).
-6. If you have separate Alpha, return back to the lambert node by clicking on the box with the right arrow with Right Mouse Button and selecting the lambert.color. (Fig 2)
+4. In Attribute Editor Click on checker button |pic1| near the Color Slider -> File (:numref:`lambert_material_01`).
+5. Under the Image Name field click on a folder icon and select your Diffuse(color) texture (:numref:`lambert_material_02`).
+6. If you have separate Alpha, return back to the lambert node by clicking on the box with the right arrow with Right Mouse Button and selecting the lambert.color. (:numref:`lambert_material_02`)
 7. Repeat steps 4, 5 for the Alpha if you have separate Alpha file.
 
 .. |pic1| image:: images/checker_button.png
@@ -69,15 +71,18 @@ Out Transparency can either be from separate file or from the same file if suppo
    :height: 20px
 
 .. list-table::
-    :widths: 200 200
 
-    * - .. figure:: images/Lambert_Material_01.png
-    
-        Fig 1: Lambert color and transparency sliders
+	* - .. figure:: images/Lambert_Material_01.png
+		 	:target: _images/Lambert_Material_01.png
+			:name: lambert_material_01
 
-      - .. figure:: images/Lambert_Material_02.png
-      
-        Fig 2: File and how to get back to lambert
+			Lambert color and transparency sliders
+
+	  - .. figure:: images/Lambert_Material_02.png
+		 	:target: _images/Lambert_Material_02.png
+			:name: lambert_material_02
+
+			File and how to get back to lambert
 
 **Video of the setup:**
 
@@ -94,8 +99,8 @@ Out Transparency can either be from separate file or from the same file if suppo
 Select, Move, Rotate, Scale and Draw
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: images/uv_editor/uv_selection.gif
-	:class: with-shadow float-right
+.. image:: images/uv_editor/uv_selection.gif
+	:align: right
 	:width: 400px
 
 **Selection**
@@ -114,8 +119,8 @@ In order to select UV rectangle for edit, simply switch to Select mode (Q) and c
 
 **Move**
 
-.. figure:: images/uv_editor/uv_move.gif
-	:class: with-shadow float-right
+.. image:: images/uv_editor/uv_move.gif
+	:align: right
 	:width: 400px
 
 In order to move selected UVs, change to Move mode (W) and click and drag with LMB on the UV rectangles.
@@ -132,8 +137,8 @@ In order to move selected UVs, change to Move mode (W) and click and drag with L
 
 **Rotate**
 
-.. figure:: images/uv_editor/uv_rotate.gif
-	:class: with-shadow float-right
+.. image:: images/uv_editor/uv_rotate.gif
+	:align: right
 	:width: 400px
 
 In order to rotate selected UVs, change to Rotate mode (E) and click and drag with LMB to rotate the UVs. 
@@ -151,8 +156,8 @@ UV rotation pivot is in the same location as the original UV Rotation Attribute 
 
 **Scale**
 
-.. figure:: images/uv_editor/uv_scale.gif
-	:class: with-shadow float-right
+.. image:: images/uv_editor/uv_scale.gif
+	:align: right
 	:width: 400px
 
 In order to Scale selected UVs, change to Scale mode (R) and click and drag with LMB to scale the UVs.
@@ -167,10 +172,10 @@ You can switch between these modes by clicking on the H or V switch button or by
 
 **Draw**
 
-.. figure:: images/uv_editor/uv_draw.gif
-	:class: with-shadow float-right
+.. image:: images/uv_editor/uv_draw.gif
+	:align: right
 	:width: 400px
-    
+	
 Draw mode (D) allows for quick reposition of the UVs using simple drawing gestures. If will change any number of selected UV rectangles to match the shape that was drawn by the user.
 
 Draw will rotate the UVs to the default rotation angle.
@@ -184,9 +189,9 @@ Draw allows for quick initial positioning of the UV rectangles.
 Utility Functions
 ^^^^^^^^^^^^^^^^^
 
-.. figure:: images/uv_editor/h_flip_indicator.png
-    :class: with-shadow float-right
-    :width: 250px
+.. image:: images/uv_editor/h_flip_indicator.png
+	:align: right
+	:width: 250px
 
 **H-Flip UV**
 
@@ -200,10 +205,10 @@ All horizontally flipped UVs are indicated by the small blue dot at the root of 
 |
 |
 
-.. figure:: images/uv_editor/v_flip_uv.gif
-    :class: with-shadow float-right
-    :width: 400px
-    
+.. image:: images/uv_editor/v_flip_uv.gif
+	:align: right
+	:width: 400px
+	
 **V-Flip UV**
 
 This function will vertically flip the selected UV rectangle allowing for a quick rotation and repositioning. 
@@ -216,10 +221,10 @@ Position, Rotation and Scale does not matter when using this function.
 |
 |
 
-.. figure:: images/uv_editor/uv_reset.gif
-    :class: with-shadow float-right
-    :width: 400px
-    
+.. image:: images/uv_editor/uv_reset.gif
+	:align: right
+	:width: 400px
+	
 **Reset UVs**
 
 This function will reset the UV rectangle to its initial default position and rotation.
@@ -233,18 +238,60 @@ This function will reset the UV rectangle to its initial default position and ro
 |
 |
 |
+|
+
+.. image:: images/uv_editor/sync-selection.gif
+	:align: right
+	:width: 400px
+
+**Sync Selection** - This function will select curves in Maya Viewport based on the currently selected (highlighted) UV rectangles.
+
+|
+|
+|
+|
+|
+|
+|
 
 **Focus View**
 
 This function will simply focus the viewport on currently selected UVs or reset it to the default position if nothing is selected.
 
 
+Randomize Function
+^^^^^^^^^^^^^^^^^^
+
+This function will randomize the positions of the selected UV rectangles inside the UV editor.
+
+Randomization only occurs between already existing UV rectangle positions and they will only move between those original positions. 
+
+.. image:: images/uv_editor/normal-randomize.gif
+	:align: right
+	:width: 400px
+
+**Normal click** on the Randomize button will ensure that the original density distribution stays the same. For example, if there were 3 uv rectangles in the position on the left and 10 uv rectangles on the right, selecting all of those rectangles and clicking randomize will still give you this 3-10 distribution (3 on the left and 10 on the right), but the which cards is where will be randomized.
+
+|
+
+.. image:: images/uv_editor/full-randomize.gif
+	:align: right
+	:width: 400px
+
+Pressing the **Shift** button before the randomization will ignore this density distribution and fully randomize the selected UVs between the original locations.
+
+|
+|
+|
+|
+|
+
 UV List
 ^^^^^^^
 
-.. figure:: images/uv_editor/uv_list.png
-    :class: with-shadow float-right
-    :width: 400px
+.. image:: images/uv_editor/uv_list.png
+	:align: right
+	:width: 400px
 
 This list holds the information on the selected UVs - their names and visibility.
 
@@ -265,9 +312,9 @@ Deselected UVs will be hidden from viewport.
 Bound Cards UV Editing
 ^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: images/uv_editor/uv_bound_cards.png
-    :class: with-shadow float-right
-    :width: 200px
+.. image:: images/uv_editor/uv_bound_cards.png
+	:align: right
+	:width: 200px
 
 You can easily edit the UVs of the bound card using this UV editor. 
 
@@ -280,9 +327,9 @@ Multiple nested bound cards (when you create a bound group from other bound grou
 |
 |
 
-.. figure:: images/uv_editor/nested_uvs_editing.gif
-    :class: with-shadow float-right
-    :width: 400px
+.. image:: images/uv_editor/nested_uvs_editing.gif
+	:align: right
+	:width: 400px
 
 You can easily isolate select or do any other functions with these nested cards and the result will be visible in Maya Viewport immediately.
 
@@ -303,50 +350,69 @@ You can easily isolate select or do any other functions with these nested cards 
 Options Menu
 ^^^^^^^^^^^^
 
-.. figure:: images/uv_editor/options_menu.png
-    :class: with-shadow float-right
-    :width: 300px
+.. image:: images/uv_editor/options_menu.png
+	:align: right
+	:width: 300px
 
 In the options menu user can change the texture and viewport visual appearance.
 
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
+
+**Transparency** - this toggle will enable/disable the use of Alpha map that is connected to the Transparency plug of the material (from separate files or the same file).
+
+.. important:: It is recommended for the Diffuse and Alpha map to have the same resolution and aspect ratio.
 
 ----
 
-.. figure:: images/place2dtexture_node.png
-    :class: with-shadow float-right
-    :width: 400px
+.. image:: images/uv_editor/alpha_only.png
+	:align: right
+	:width: 400px
 
-.. figure:: images/coverage_translateframe.png
-    :class: with-shadow float-right
-    :width: 400px
+**Alpha Only** - this toggle show only the alpha map with transparency. This helps with the texture readability. This toggle automatically enables Transparency.
 
-**Transform** - this toggle will enable/disable texture map transformations based on the place2dTexture node parameters: Coverage and Translate Frame.
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+
+
+----
+
+.. image:: images/place2dtexture_node.png
+	:align: right
+	:width: 400px
+
+.. image:: images/coverage_translateframe.png
+	:align: right
+	:width: 400px
+
+**Use Transforms** - this toggle will enable/disable texture map transformations based on the place2dTexture node parameters: Coverage and Translate Frame.
 
 .. warning:: **Offset** parameter is **NOT** supported. Both diffuse and alpha map should have the same Coverage and Translate Frame parameter or use the same place2dTexture node for this to work.
 
 --------
 
-**Alpha** - this toggle will enable/disable the use of Alpha map that is connected to the Transparency plug of the material (from separate files or the same file).
+.. image:: images/uv_editor/color_controls.png
+	:align: right
+	:width: 350px
 
-.. important:: It is recommended for the Diffuse and Alpha map to have the same resolution and aspect ratio.
+**Viewport Color Controls** - Using three color pickers you can change uv editor viewport appearance:
 
---------
+- (1) Background color
+- (2) Grid color
+- (3) Frame color
 
-.. figure:: images/uv_editor/options_menu.png
-    :class: with-shadow float-right
-    :width: 300px
+**UV Rectangle Color Controls** - Using these three color pickers you can change the UV Rectangle appearance:
 
-**Color Controls** - Using three color pickers you can change uv editor viewport background (1), grid (2) and frame(3) colors.
+- (4) Selected UV frame color
+- (5) Deselected UV frame color
+- (6) UV Frame background color (fill color).
 
 The colors set here will be saved and used in every project.
 

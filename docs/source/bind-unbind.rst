@@ -1,26 +1,30 @@
 .. currentmodule:: <index>
 
+.. _bind-unbind:
+
 ####################
 Bind/Unbind Function
 ####################
 
 Intro
 ^^^^^
-.. figure:: images/buttons/bind_unbind_buttons.png
-	:class: with-shadow float-right
+.. image:: images/buttons/bind_unbind_buttons.png
+	:align: right
 	:width: 300px
 
 **Bind** button allows for an entire new level of customization of your curves as it allows to bind any selected geometry to a curve AND it also supports binding Curve Cards and Curve Tubes to a single curve, keeping the original geometry shape intact.
 
 **Bind** button will create a group in the outliner, called **bindGroup** or **bindGeo**. Just like with any other group in GS CurveTools, you can rename it to anything you like or group it with other groups, but do not rename or move anything inside this group.
 
+.. note:: Bound curves and geometry will be assigned to the currently highlighted :ref:`layer<layers>`.
+
 **Unbind** will unbind any bound curves. If you bound already bound groups (nested binding) it will unbind only the top "layer" of bound cards.
 
 Binding Geometry to a Curve
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: images/bind_geo_function.gif
-	:class: with-shadow float-right
+.. image:: images/bind_geo_function.gif
+	:align: right
 	:width: 350px
 
 **Bind** function can attach any selected geometry (as long as it's one mesh) to any selected curve. It will automatically detect if there is a geometry selection and choose the first selected curve as its target.
@@ -31,11 +35,13 @@ Original geometry should be roughly **aligned** to any of the three main axis of
 
 |
 
-.. figure:: images/bind_geo_wrong_axis.gif
-	:class: with-shadow float-right
+.. image:: images/bind_geo_wrong_axis.gif
+	:align: right
 	:width: 350px
 	
 If geometry is aligned but was bound in the wrong axis, you can use **"Axis Control"** in the **Curve Control Window** to manually select desired axis. This misalignment can happen if original geometry shape is scaled in a way that makes it wider than its length/height.
+
+Holding **Shift** before clicking on Bind will first duplicate the original curves and then bind the duplicates, leaving the original curves intact.
 
 |
 |
@@ -45,8 +51,8 @@ If geometry is aligned but was bound in the wrong axis, you can use **"Axis Cont
 Binding Curve Cards/Tubes to a Curve
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: images/bind_function.gif
-	:class: with-shadow float-right
+.. image:: images/bind_function.gif
+	:align: right
 	:width: 350px
 
 You can now bind any number and arrangement of Curve Cards/Tubes to one curve for ease of control.
@@ -59,8 +65,10 @@ Binding Curves to a Curve will create a new group called "bindGroup" and place i
 
 You can use Axis Control in the Curve Control Window to change the axis manually or to Flip the direction of bound geometry.
 
-.. figure:: images/edit_orig_curves.gif
-	:class: with-shadow float-right
+Holding **Shift** before clicking on Bind will first duplicate the original curves and then bind the duplicates, leaving the original curves intact.
+
+.. image:: images/edit_orig_curves.gif
+	:align: right
 	:width: 350px
 
 You can **switch back to the original curves and modify** them at any moment using **"Edit Orig. Curves"** button in the **Curve Control Window**. Any changes you make to the original curves will propagate back to its bound copy. You can also freely change any attribute of the original curve or change the UVs, and changes will propagate to the bound copy.
@@ -74,8 +82,8 @@ You can **switch back to the original curves and modify** them at any moment usi
 Unbind
 ^^^^^^
 
-.. figure:: images/unbind_function.gif
-	:class: with-shadow float-right
+.. image:: images/unbind_function.gif
+	:align: right
 	:width: 350px
 
 You can easily unbind already bound cards and tubes by simply selecting the bindGroup curve and clicking on Unbind.
@@ -89,8 +97,8 @@ If you have Keep Curve Attributes option selected in the Options menu, you can t
 Using Maya Deformers on Bind Group
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: images/using_maya_deformers_edit_orig.gif
-	:class: with-shadow float-right
+.. image:: images/using_maya_deformers_edit_orig.gif
+	:align: right
 	:width: 350px
 
 You can also use **Maya Non-Linear Deformers** and **Lattice** on the original curves. You can then either keep them or simply select original curves and Delete by Type -> History (Alt + Shift + D)
@@ -106,14 +114,14 @@ You can also use **Maya Non-Linear Deformers** and **Lattice** on the original c
 
 .. _mass-bind:
 
-Mass Bind
-^^^^^^^^^
+Bind to All Available Curves
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: images/mass_bind_demo.gif
-	:class: with-shadow float-right
+.. image:: images/mass_bind_demo.gif
+	:align: right
 	:width: 350px
 
-You can also bind to an unlimited number of "empty" curves using **Bind to All Available Curves** option in the options menu. This option will also duplicate the original clump before binding (regardless of the Duplicate Before Bind option).
+You can also bind to an unlimited number of "empty" curves using **Bind to All Available Curves** option from the :ref:`options`. This option will also duplicate the original clump before binding (regardless of the Duplicate Before Bind option).
 
 |
 |
@@ -126,14 +134,7 @@ You can also bind to an unlimited number of "empty" curves using **Bind to All A
 Bind and UV Attributes Transfer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: images/bind_attributes_transfer.gif
-	:class: with-shadow float-right
-	:width: 300px
-
-Transferring attributes for Bind Groups is a bit different. You want to select the source curve first and then the entire Bind Group (or multiple groups). After that just click on Transfer UVs and you are done. You can reverse this by holding Shift (UVs will be transferred from the last selection to all other).
-
-This will only work on UV attributes, but not on normal attributes. Normal attributes will be transferred to the Bind group and each individual card and it will create a mess.
-
+Refer to :ref:`Attributes Transfer for Bound Objects<transferring-attributes-to-bound>`.
 
 Additional Options
 ^^^^^^^^^^^^^^^^^^

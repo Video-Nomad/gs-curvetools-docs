@@ -4,6 +4,88 @@
 Changelog
 #########
 
+Version 1.3
+^^^^^^^^^^^
+
+Major update!
+
+**New Features:**
+
+- **New Layer Collections System**. Layer collections allow users to better organize their projects, import curves to a new collection to avoid layer merging, transfer curves between collections and more useful utility features:
+
+  - Create and Delete collections.
+  - Merge, copy, paste, rename and reorder layer collections.
+  - Clear all the curves from the collection.
+  - Auto-Hide curves from inactive layer collections.
+  - Using Ctrl hotkey with layer filters (All, Curve, Geo) will affect all layers in all collections.
+
+- Fully reworked **Color Mode**:
+
+  - User can now work in color mode at all times if he chooses. Duplicate, Fill and other features will not disable the color mode.
+  - Activating color mode will now colorize only the diffuse map and will keep the alpha transparency.
+  - Alpha transparency can be optionally disabled.
+  - Checker pattern is available for both modes.
+  - All the previous features are still available like curve color sync, color randomization and custom colors for each layer.
+  - UV editor will properly work with color mode enabled.
+
+- **New Advanced Visibility** mode in Curve Control Window:
+  
+  - Geometry Highlight option will highlight the geometry component automatically for better card visibility.
+  - Curve Highlight will enable selected curves and CVs to be drawn Always-On-Top with various customizations available.
+  - CVs - size, selected/deselected colors and transparency with soft select support.
+  - Curve - enabled/disable highlight, curve width, curve color and transparency.
+  - Hull - enable/disable hull drawing (lines between CVs) with width, curve color and transparency customization and soft selection support.
+  - Other advanced options like Distance Colors and Occlusion.
+
+- **New Dynamic Length Divisions** toggle. With this option enabled, curves will now auto-calculate the appropriate number of divisions based on the length of the curve. L-Div slider will act as a "Density" slider when this option is enabled. The higher the L-Div value, the denser the auto-calculated divisions will be. Old cards will be auto-converted to use this mode. New cards are automatically created with this option (disabled by default).
+- **New Card to Curve** algorithm. Card to curve now has the ability to automatically create cards and match their parameters to the original one-sided geometry card. Card to Curve button will now open a separate window with various options available:
+
+  - Output Type will control the desired output of the operation - Cards or Curves Only.
+  - Card Type will determine the final card variant - Warp or Extrude.
+  - Match Attributes selector will toggle the attributes matching for newly created cards (Orientation, Width, etc.)
+  - UV Match Options have optional post-process commands as Vertical and Horizontal Flip.
+  - Reverse curve will reverse the final curve direction (enabled by default for better result).
+  - NOTE: matching parameters is not a perfect process and resulting procedural cards might have slightly different shape.
+  
+- **Copy and Paste Attributes and UVs**. Attributes and UVs can now be copied and pasted from card to card (or many cards) as an alternative to the old Transfer Attr. and UV commands. Copy-Paste functions can be accessed by holding RMB on Transfer Attr. or Transfer UVs. button.
+- **Transfer (and copy-paste) attribute filter**. User can now choose which attributes to transfer when using Transfer Attr. or Copy-Paste commands. Attribute filters can be accessed through the Transfer Attr. (or Transfer UVs) button marking menu by holding RMB on those buttons. Option rectangle ▢ near the Copy-Paste buttons will open the filter menu. Highlighted attributes will be transferred and unchecked will be ignored. Orientation attribute is unchecked by default.
+- **New Randomize Selection** slider inside Randomize window. Will randomize current selection based on the slider value.
+- **Select Original Curves** command will select the original curves that were used to create bound object. This allows for easy modification of the basic parameters, such as Orientation, Twist etc.
+- **Auto-Refine**. Refine slider was reworked and now has Auto mode enabled by default. This allows for much better overall viewport performance of the cards but may result in a less precise geometry fit to the curve. Can always be disabled to have the original control over the Refine parameter.
+- **UV Editor Sync Selection**. This button will change the viewport selection based on the selected UV rectangle inside the UV Editor.
+- **UV Editor Randomize** function. This button will randomize the positions of the selected UV rectangles based on their original position. The UV rectangles will jump between these original positions in a random order but will keep the original density distribution (meaning if you had 3 cards in one position and 6 in the other, they will still have this 3-6 distribution). Alternative mode (holding SHIFT during click) will ignore the density distribution and randomize.
+- **UV Editor Additional Options**:
+  
+  - Alpha only mode - show only alpha map in the UV editor for better contrast and editing experience.
+  - UV rectangle color customization: selected, fill and border.
+  
+- **Rebuild Curve** slider now has Rebuild with current value button [R] and reset slider range button.
+- **Custom Delete Curve Hotkey** was added to the hotkeys list. This delete command should be able to safely delete selected curves without the need to switch to the group selection first.
+
+**Improvements:**
+
+- **Even more layers** available. Number of active layers can now be up to 80. User can optionally change layer number to be 20, 30, 40, 60 and 80!
+- **Layer customization windows** was updated to make use of additional layers.
+- New projects will now use the updated layer system that will not clutter the Display Layer window in the Channel Box. All the layers are still there and accessible through the Window->Relationship Editors->Display Layers. User can manually update old layer system to the new one using Options->Other Options->Convert to New Layer System.
+- **Layer Hotkeys** (key combinations) were slightly **changed**:
+
+  - Show Always On Top is now SHIFT+CTRL+ALT+Click
+  - Toggle Geometry Visibility is now CTRL+ALT+Click
+
+- **Import and Export** curves will now use its own file extension ".curves" to easily distinguish them from regular maya ".ma" files. User can still save and import ".ma" files as an option.
+- **Extract Selected and Extract All** buttons have new key modifier available - Ctrl. Holding Ctrl will automatically open Export window after the extraction process is finished and after exporting the geometry the extracted geo will be deleted from the scene. Holding Ctrl will also disable layer hide feature during Extract All process.
+- **Bind, Unbind and Mirror** will now flip the UVs before performing the operation to achieve better results. This is optional and can be disable in the options.
+- **Options Menu** was reordered and compressed to have better visibility and organization.
+- **UVs** will now be **properly transferred** form and to Bound geometry.
+- User can now open the **log file** using Help->Open Log File (Windows only) in case of any errors.
+
+**Bug Fixes:**
+
+- Unbind command was fixed for Maya 2021+. Unbind was failing on bound objects with warp curves in the scene that was saved and reloaded.
+- A bug that caused objects to be duplicated twice when clicking the "Duplicate" button has been fixed. Duplicate button should now be more consistent.
+- Fixed Axis Flip and Axis Direction parameters update in Curve Control Window.
+
+
 Version 1.2.10
 ^^^^^^^^^^^^^^
 
@@ -136,8 +218,8 @@ Version 1.2.5
 - **Full Non-Square Texture Map Support** - GS CurveTools UV editor will now properly stretch and scale non-square texture maps (diffuse and alpha map), just like the native Maya UV editor does. Coverage and Translate Frame can be used to further edit the position and scale of the texture map if Use Transforms toggle is enabled.
 - **UV Editor Texture Controls** - new section in the UV editor:
 
-    - **Transform** - this toggle will enable/disable texture map transformations based on the place2dTexture node parameters: Coverage and Translate Frame. Offset parameter is NOT supported. Both diffuse and alpha map should have the same Coverage and Translate Frame parameter for this to work.
-    - **Alpha** - this toggle will enable/disable the use of Alpha map that is connected to the Transparency plug of the material (from separate files or the same file).
+  - **Transform** - this toggle will enable/disable texture map transformations based on the place2dTexture node parameters: Coverage and Translate Frame. Offset parameter is NOT supported. Both diffuse and alpha map should have the same Coverage and Translate Frame parameter for this to work.
+  - **Alpha** - this toggle will enable/disable the use of Alpha map that is connected to the Transparency plug of the material (from separate files or the same file).
 
 - **UV Editor Colors** - new section in the UV editor with 3 editable color swatches for background, grid and frame colors of the UV editor viewport.
 

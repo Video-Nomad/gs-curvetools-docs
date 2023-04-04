@@ -13,8 +13,8 @@ Maya 2020-2022 and Broken UVs
 
 **Issue:**
 
-.. figure:: images/broken_uvs_maya2020.png
-	:class: with-shadow float-right
+.. image:: images/broken_uvs_maya2020.png
+	:align: right
 	:width: 250px
 
 Only for Maya 2020 and 2022. UVs are not working after save and reload of the scene. UV parameters are correct but UVs on the existing cards seem to be wrong. Changing UV parameters on cards created before the save has no effect. New cards are working correctly.
@@ -55,8 +55,8 @@ This issue has nothing to do with CurveTools or its code.
 
 **Explanation:**
 
-.. figure:: images/maya_graph_extreme_points.png
-	:class: with-shadow float-right
+.. image:: images/maya_graph_extreme_points.png
+	:align: right
 	:width: 300px
 
 Maya graphs can be corrupted during safe/reload sequence.
@@ -72,8 +72,8 @@ The issue can be replicated without loading CurveTools, by simply creating a Cur
 **Solution/Workaround:**
 
 
-.. figure:: images/resetting_the_graphs.gif
-	:class: with-shadow float-right
+.. image:: images/resetting_the_graphs.gif
+	:align: right
 	:width: 300px
 
 Since this issue can't be fixed from my end, there's only workarounds. 
@@ -128,8 +128,8 @@ Warp Card Orientation Flip
 
 **Issue:**
 
-.. figure:: images/warp_card_orientation_flip.gif
-	:class: with-shadow float-right
+.. image:: images/warp_card_orientation_flip.gif
+	:align: right
 	:width: 200px
 
 In some cases Warp bound geometry (Warp Cards, Tubes and Custom Geometry) can randomly flip its orientation and behave seemingly erratic.
@@ -150,9 +150,8 @@ Since this issues is fundamental to Maya and can't be fixed without rewriting th
 Geometry was Left Behind When Deleting Curves
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: images/structure_of_card_object.png
-	:alt: Utility Section
-	:class: with-shadow float-right
+.. image:: images/structure_of_card_object.png
+	:align: right
 	:width: 200px
 
 **Explanation:**
@@ -160,6 +159,8 @@ Geometry was Left Behind When Deleting Curves
 If the user deletes only the curve component (**pathCurve#**), but no the entire card group, in some cases (**warp cards, tubes**) there might be a leftover geometry in the scene.
 
 **Solution/Workaround:**
+
+Since v1.3 there is a convenient hotkey available in the Hotkey Editor -> Custom Scripts -> GS -> GS_CurveTools -> Utilities -> Delete Curves
 
 The **correct** way to delete cards/tubes is to **delete the entire group** that holds all of the components of that card/tube. **Do not** delete only the curve (**pathCurve#**), delete the entire group (**curveCard, curveTube etc.**). Select the **Curve** -> **press UP** on the keyboard (this will select the entire card) -> **Delete**.
 
