@@ -80,6 +80,7 @@ After `Installation Steps`_ **GS** tab will appear on **Maya Shelf**:
 **Buttons Function:**
 
 .. list-table:: 
+  :widths: 1 6
 
   * - ..  image:: images/buttons/gs_ui.png
         :class: float-left
