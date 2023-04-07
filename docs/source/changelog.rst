@@ -4,6 +4,14 @@
 Changelog
 #########
 
+
+Version 1.3 Hotfix 1
+^^^^^^^^^^^^^^^^^^^^
+
+**Bug Fixes:**
+
+- Fixed an error in Maya 2018-2020 when clicking on layer Filters.
+
 Version 1.3
 ^^^^^^^^^^^
 
