@@ -27,7 +27,7 @@ There are 3 main types of attributes:
 
 Some attributes are common for all types of curves. Others can only be found on, for example, :ref:`Tubes or Warp Cards<creating-cards-and-tubes>`
 
-`Bind <bind-unbind>`_ curves have their own set of attributes.
+:ref:`Bind <bind-unbind>` curves have their own set of attributes.
 
 Main Attributes
 ^^^^^^^^^^^^^^^
