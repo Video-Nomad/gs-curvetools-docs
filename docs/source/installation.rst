@@ -45,9 +45,9 @@ Installation Steps
 
 #. Copy and Paste this code to **Python Command Field** at the bottom (switch from MEL by clicking on it) or to the script editor:
 
-  .. code-block:: python
+    .. code-block:: python
 
-    import gs_curvetools.init as ct_init;from imp import reload;reload(ct_init);ct_init.Init();
+      import gs_curvetools.init as ct_init;from imp import reload;reload(ct_init);ct_init.Init();
 
 
 
