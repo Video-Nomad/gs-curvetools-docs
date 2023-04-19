@@ -79,7 +79,7 @@ Recommended Maya Versions
 - 2018.6
 - 2019.3
 - 2019.3.1
-- 2020.4
+- (2020.4)\*
 - 2022.3
 - 2022.4
 - 2023.0
@@ -87,6 +87,10 @@ Recommended Maya Versions
 - 2023.2
 - 2023.3
 - 2024
+
+.. note:: 
+	
+	\*Maya **2020.4** has a native bug with width and twist graphs that can't be fixed on my end. Only Autodesk could fix that, but they didn't. In general, Maya 2020 is NOT recommended if you have other options. :ref:`More details<stuck-graphs>`.
 
 Supported Platforms
 ^^^^^^^^^^^^^^^^^^^

@@ -41,6 +41,25 @@ Steps:
 
 Maya ASCII loading times can be a bit longer, but should work just fine in Maya 2020.
 
+
+.. _stuck-graphs:
+
+Maya 2020 Width and Twist graphs "stuck"
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Issue:**
+
+In Maya 2020 it is hard to move points on Width and Twist graphs. Creating new points works fine, but moving existing ones feels like they are loosing left click "signal". Consecutive clicks and drags will eventually move the point properly.
+
+**Explanation:**
+
+This is a bug with Maya 2020 and its widget called "falloffCurveAttr". This issue is only present in Maya 2020. All the other versions behave as expected. This can't be fixed in GS CurveTools as this is a native Maya issue. Autodesk did not fix it in Maya 2020.4, the latest patch for 2020.
+
+**Solution/Workaround:**
+
+The only option is to downgrade to 2019 or update to 2022+ versions since Autodes rarely patches old versions.
+
+
 .. _broken-graphs:
 
 Graphs are Broken After Reloading
