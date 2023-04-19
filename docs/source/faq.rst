@@ -57,7 +57,7 @@ This is a bug with Maya 2020 and its widget called "falloffCurveAttr". This issu
 
 **Solution/Workaround:**
 
-The only option is to downgrade to 2019 or update to 2022+ versions since Autodes rarely patches old versions.
+The only option is to downgrade to 2019 or update to 2022+ versions since Autodesk rarely patches old versions.
 
 
 .. _broken-graphs:
