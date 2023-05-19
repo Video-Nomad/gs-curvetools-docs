@@ -130,8 +130,8 @@ User can see errors like:
 	--------------------------------------------------------------
 	ValueError: invalid literal for int() with base 10: 'curveGrp'
 	--------------------------------------------------------------
-	[GS CurveTools|ERROR]: Display layer pasted__curveGrp_7_Geo has corrupted name. Please delete corrupted layers and curves
-	# Warning: Display layer pasted__curveGrp_7_Geo has corrupted name. Please delete corrupted layers and curves
+	[GS CurveTools|ERROR]: Failed to extract layer ID from layer "pasted__curveGrp_1_Geo". Display Layer name is corrupted. Please delete corrupted layers and curves.
+	Warning: Failed to extract layer ID from layer "pasted__curveGrp_1_Geo". Display Layer name is corrupted. Please delete corrupted layers and curves.
 
 or similar...
 
