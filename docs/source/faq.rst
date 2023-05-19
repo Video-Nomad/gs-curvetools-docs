@@ -137,7 +137,7 @@ or similar...
 
 **Explanation:**
 
-This mainly happens when user accidentally Copies and Pastes cards in the scene (Ctrl+C, Ctrl+V) instead of using :ref:`Duplicate<duplicate>` command. This leads to name corruption and other errors.
+This mainly happens when user accidentally Copies and Pastes cards in the scene (Ctrl+C, Ctrl+V) instead of using :ref:`Duplicate<duplicate>` command. This leads to name corruption and other errors. This issue can also happen if user imports (using Maya import) from a scene with GS CurveTools objects (cards or tubes). Only import and export curves using GS CurveTools -> Options -> Export/Import function.
 
 **Solution:**
 
