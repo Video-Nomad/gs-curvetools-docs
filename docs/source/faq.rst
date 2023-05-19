@@ -8,6 +8,8 @@ Here you can find some of the common questions/issues and possible solutions to 
 
 This list is always updating.
 
+---------
+
 Maya 2020-2022 and Broken UVs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -41,6 +43,7 @@ Steps:
 
 Maya ASCII loading times can be a bit longer, but should work just fine in Maya 2020.
 
+---------
 
 .. _stuck-graphs:
 
@@ -59,6 +62,7 @@ This is a bug with Maya 2020 and its widget called "falloffCurveAttr". This issu
 
 The only option is to downgrade to 2019 or update to 2022+ versions since Autodesk rarely patches old versions.
 
+---------
 
 .. _broken-graphs:
 
@@ -111,7 +115,54 @@ Since this issue can't be fixed from my end, there's only workarounds.
 	Your browser does not support the video tag.
 	</video>
 
-|
+---------
+
+Corrupted Layer Names
+^^^^^^^^^^^^^^^^^^^^^
+
+**Issue:**
+
+Sometimes, layer names can become corrupted due to user error.
+User can see errors like:
+
+.. code:: text
+
+	--------------------------------------------------------------
+	ValueError: invalid literal for int() with base 10: 'curveGrp'
+	--------------------------------------------------------------
+	[GS CurveTools|ERROR]: Display layer pasted__curveGrp_7_Geo has corrupted name. Please delete corrupted layers and curves
+	# Warning: Display layer pasted__curveGrp_7_Geo has corrupted name. Please delete corrupted layers and curves
+
+or similar...
+
+**Explanation:**
+
+This mainly happens when user accidentally Copies and Pastes cards in the scene (Ctrl+C, Ctrl+V) instead of using :ref:`Duplicate<duplicate>` command. This leads to name corruption and other errors.
+
+**Solution:**
+
+The only solution to this issue is to delete the pasted cards and tubes and also delete pasted display layers. You can find the display layers in Windows->Relationship Editors->Display Layers window.
+
+**Video Demonstration of deleting the corrupted cards:**
+
+.. raw:: html
+
+	<video width="400" controls>
+	<source src="_static/deleting_corrupted_cards.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+	</video>
+
+
+**Video Demonstration of deleting the corrupted layers:**
+
+.. raw:: html
+
+	<video width="400" controls>
+	<source src="_static/deleting_corrupted_layers.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+	</video>
+
+---------
 
 Maya 2018.0-2018.1 Random Deformations Issue (stuck vertices)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -140,7 +191,8 @@ Updating to 2018.6 was confirmed to fix this issue completely.
 	Your browser does not support the video tag.
 	</video>
 
-|
+
+---------
 
 Warp Card Orientation Flip
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -166,6 +218,8 @@ Since this issues is fundamental to Maya and can't be fixed without rewriting th
 
 .. note:: In general using curve parameters such as **Width** and **Orientation** is recommended over Mayas Rotation and Scale parameters.
 
+---------
+
 Geometry was Left Behind When Deleting Curves
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -182,6 +236,8 @@ If the user deletes only the curve component (**pathCurve#**), but no the entire
 Since v1.3 there is a convenient hotkey available in the Hotkey Editor -> Custom Scripts -> GS -> GS_CurveTools -> Utilities -> Delete Curves
 
 The **correct** way to delete cards/tubes is to **delete the entire group** that holds all of the components of that card/tube. **Do not** delete only the curve (**pathCurve#**), delete the entire group (**curveCard, curveTube etc.**). Select the **Curve** -> **press UP** on the keyboard (this will select the entire card) -> **Delete**.
+
+---------
 
 Can I use Z-up World Coordinates?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
