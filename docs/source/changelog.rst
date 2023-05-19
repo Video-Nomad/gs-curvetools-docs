@@ -4,6 +4,17 @@
 Changelog
 #########
 
+Version 1.3.1
+^^^^^^^^^^^^^
+
+**Improvements:**
+
+- Changed node id in plug-ins for a proper one from Autodesk. Should avoid conflicts with other plug-ins in the future.
+- Better error handling and error message for corrupted layer names (copy-pasted curves or improperly imported curves).
+
+**Bug Fixes:**
+
+- Fixed a critical bug with Attribute and UV transfer (and Copy-Paste) filters. They will now work properly when deselecting some attributes in filter window and transferring attributes to different type of card/tube.
 
 Version 1.3 Hotfix 1
 ^^^^^^^^^^^^^^^^^^^^
