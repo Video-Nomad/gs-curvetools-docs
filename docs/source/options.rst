@@ -69,16 +69,18 @@ Set AO Settings
 
 This button will change the settings of AO in the current scene to match those described in the Useful Tips section. Only useful for older versions of Maya. Using Maya's XRay and :ref:`advanced-visibility` is advised.
 
-Set Transparency Settings
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Transparency Settings
+^^^^^^^^^^^^^^^^^^^^^
 
-This button will change the settings of transparency in the the current scene for better rendering of hair cards in the current scene.
+This option will change the transparency settings in the current viewport for optimal hair cards rendering.
+
+**Depth Transparency** is recommended.
 
 There are three transparency modes available:
 
-- **Simple Transparency** is fast but very inaccurate render mode. Only suitable for simple, one layer hair.
-- **Object Sorting Transparency** has average performance impact and quality. Can have issues on complex multi-layered grooms.
-- **Depth Transparency** - these are the optimal settings for the highest quality of the hair cards preview. Can have performance impact on slower systems.
+- **Simple Transparency** - fast but very inaccurate render mode. Only suitable for simple, one layer hair.
+- **Object Sorting Transparency** - has average performance impact and quality. Can have issues on complex multi-layered grooms.
+- **Depth Transparency** - sets the optimal settings for the highest quality of the hair cards preview. Can have performance impact on slower systems.
 
 Convert Curves
 ^^^^^^^^^^^^^^
