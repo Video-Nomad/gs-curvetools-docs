@@ -24,7 +24,7 @@ Basic Workflow Example
 	:align: right
 	:width: 200px
 
-Start by creating a simple curve card with Add Card button. Now try modifying the curve that was created. 
+Start by creating a simple curve card with New Card button. Now try modifying the curve that was created. 
 
 .. image:: images/component_selection_mode.png
 	:align: right
