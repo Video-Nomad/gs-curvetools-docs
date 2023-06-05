@@ -58,6 +58,7 @@ You can also change curve thickness manually in :ref:`Curve Control Window<attri
 |
 |
 |
+|
 
 Resetting Maya for GS CurveTools
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

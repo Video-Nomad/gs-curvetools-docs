@@ -245,3 +245,41 @@ Can I use Z-up World Coordinates?
 The plug-in should work just fine in Z-up, however you might encounter some issues like default cards being created in a different orientation and some inconsistencies in orientations of cards created using **Curve Card** and **Add Card** functions.
 
 In general it is recommended to use Y-up world coordinates to avoid any incompatibilities.
+
+"Bad Magic Number" Error
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: images/bad_magic_number.png
+	:align: right
+	:width: 400px
+
+**Explanation:**
+
+Bad Magic Number error indicates that the host (Maya) is using different version of Python then the script (GS CurveTools).
+
+.. image:: images/maya_versions_in_zip.png
+	:align: right
+	:width: 250px
+
+**Solution/Workaround:**
+
+During the :ref:`installation of GS CurveTools<initialize>` make sure to use the correct version of Maya in the zip file. Read the "How to choose version.txt" for details:
+
+.. code-block::
+
+	How to choose version
+
+	If you are using old versions of Maya (2017-2020):
+	- Use Maya 2017-2022 (Python 2) folder
+
+	If you are using Maya 2022, but run it in Python 2 compatibility mode (for older scripts):
+	- Use Maya 2017-2022 (Python 2) folder
+
+	If you are using Maya 2022 in the default Python 3 mode:
+	- Use Maya 2022 (Python 3) folder
+
+	If you are using Maya 2023:
+	- Use Maya 2023 folder
+
+	If you are using Maya 2024:
+	- Use Maya 2024 folder
