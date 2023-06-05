@@ -257,7 +257,7 @@ In general it is recommended to use Y-up world coordinates to avoid any incompat
 
 **Explanation:**
 
-Bad Magic Number error indicates that the host (Maya) is using different version of Python then the script (GS CurveTools).
+Bad Magic Number error indicates that the host (Maya) is using different version of Python than the script (GS CurveTools).
 
 .. image:: images/maya_versions_in_zip.png
 	:align: right
