@@ -246,6 +246,8 @@ The plug-in should work just fine in Z-up, however you might encounter some issu
 
 In general it is recommended to use Y-up world coordinates to avoid any incompatibilities.
 
+---------
+
 "Bad Magic Number" Error
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
