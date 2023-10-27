@@ -21,7 +21,7 @@ There are four **Filters** and **20, 30, 40, 60 or 80 Layers** available for the
   :align: right
   :width: 200px
 
-Number of layers can be changed in the Options->Number of active Layers
+Number of layers can be changed in the Options⇨Number of active Layers
 
 |
 
@@ -96,7 +96,7 @@ Here are all the hotkeys and motions available for layers:
 
   Layers are utilizing native Maya display layer system.
 
-  They are typically named **curveGrp_#_Curve**, **curveGrp_#_Geo**, **curveGrp_#_Inst** and can be found in Windows->Relationship Editors->Display Layer window.
+  They are typically named **curveGrp_#_Curve**, **curveGrp_#_Geo**, **curveGrp_#_Inst** and can be found in Windows⇨Relationship Editors⇨Display Layer window.
 
   Starting from v1.3 GS CurveTools layers are hidden from Channel Box/Layer Editor Window.
 
@@ -201,7 +201,7 @@ How To Access Hidden Layers
 
 Starting from version 1.3 GS CurveTools layers will be hidden from Channel Box/Layer Editor window to avoid cluttering the view.
 
-User can still access those layers, if he needs additional control. They are still visible and accessible in the **Windows -> Relationship Editor -> Display Layers** Window
+User can still access those layers, if he needs additional control. They are still visible and accessible in the **Windows ⇨ Relationship Editor ⇨ Display Layers** Window
 
 |
 |

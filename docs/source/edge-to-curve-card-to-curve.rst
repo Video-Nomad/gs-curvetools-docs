@@ -3,7 +3,7 @@
 .. _edge-to-curve-card-to-curve:
 
 ###############################
-Edge to Curve and Card to Curve
+Edge to Curve and Geo to Curve
 ###############################
 
 .. _edge-to-curve:
@@ -20,40 +20,42 @@ Edge groups are edge selections that are not connected (have no common vertices)
 
 .. _card-to-curve:
 
-Card to Curve
+Geo to Curve
 ^^^^^^^^^^^^^
 
-.. image:: images/buttons/card_to_curve.png
+.. image:: images/buttons/geo_to_curve.png
     :width: 150px
 
-.. image:: images/card-to-curve-window.png
+.. image:: images/geo-to-curve-window.png
     :align: right
     :width: 250px
 
-Card to Curve function will create a GS CurveTools procedural cards from any number of selected one sided geometry cards.
+Geo to Curve function will create a GS CurveTools procedural cards or tubes from any number of selected compatible geometry.
 
-Clicking on Card to Curve button will open a new window where user can configure the operation.
+Clicking on Geo to Curve button will open a new window where user can configure the options and convert selection.
 
-Selecting any compatible one sided geometry and clicking on Convert Selected will attempt to convert the selection to GS CurveTools Cards.
+Selecting any compatible one sided geometry or geometry tube and clicking on Convert Selected will attempt to convert the selection to GS CurveTools Cards or Tubes based on the topology and options selected.
 
-Source geometry cards should be separate objects, have no construction history and be one-sided.
+Source geometry cards or tubes should be separate objects, have no construction history and be one-sided cards or hollow tubes.
 
-It is recommended for the source geometry cards to have evenly spaced quad geometry.
+It is recommended for the source geometry cards and tubes to have evenly spaced quad geometry, but it is not mandatory.
 
 .. figure:: images/card-to-curve-demo.gif
     :align: center
     :width: 400px
 
-    Card to Curve function in action
+    Geo to Curve function in action
 
-**Card to Curve Parameters:**
+**Geo to Curve Parameters:**
 
 .. warning:: Profile attribute matching is only supported when scene units are set to centimeters "cm" (default for Maya). Any other units like inches, meters etc. will not work with Profile matching.
 
 - **Output Type** - controls the desired result of the operation
 
-    - **Cards** will generate Curve Cards with all the options and attributes 
-    - **Curves** only will generate simple Maya NURBS curves
+    - **Auto** will determine the shape of the original object (card or tube) and generate new Curve Card or Curve Tube. 
+    - **Cards** will generate procedural Curve Cards with all the options and attributes.
+    - **Tubes** will generate procedural Curve Tubes with all the options and attributes.
+    - **Curves** will only generate simple Maya NURBS curves.
 
 - **Card Type** - determines the output Card type (:ref:`Warp<warp-cards>` or :ref:`Extrude <extrude-cards>`)
 
@@ -66,3 +68,7 @@ It is recommended for the source geometry cards to have evenly spaced quad geome
 - **UV Match Options** - will apply a vertical or horizontal flip to the final UVs after matching.
 
 - **Reverse Curve** will reverse the final curve (enabled by default)
+
+- **Delete Original Objects** will delete the original geometry objects after the new procedural cards or tubes were created.
+
+- **Use Aim Mesh** will activate the aim mesh mode. When this mode is active and the Aim Mesh is set in the field the algorithm will check to see if the root CV of the generated curve is the closest to the Aim Mesh surface. If the root CV is further from the mesh than the tip CV, the curve will be flipped. This is useful to ensure that the root CV is the closest to the scalp of the model, as it should be in most of the hair models. Select Aim Mesh will copy the name of the selected mesh to the field.

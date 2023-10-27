@@ -95,11 +95,11 @@ Recommended Maya Versions
 Supported Platforms
 ^^^^^^^^^^^^^^^^^^^
 
-- **Maya 2018-2024 for Windows** -> Fully Tested and Supported*.
-- **Maya 2018-2024 for Mac** -> In Beta*.
-- **Linux** -> Not Tested and Not Supported.
-- **Maya LT** -> Not Tested and Not Supported.
-- **Maya 2017** -> Is no longer supported since v1.2.7
+- **Maya 2018-2024 for Windows** ⇨ Fully Tested and Supported*.
+- **Maya 2018-2024 for Mac** ⇨ In Beta*.
+- **Linux** ⇨ Not Tested and Not Supported.
+- **Maya LT** ⇨ Not Tested and Not Supported.
+- **Maya 2017** ⇨ Is no longer supported since v1.2.7
 
 .. important:: \*Please use the latest patches if possible. For example: Maya 2018.1 has issues that were fixed in the latest 2018.6 and are essential for GS CurveTools functionality. Thank you!
 
@@ -116,7 +116,7 @@ Supported Platforms
 	Textures and UVs <uvs>
 	UV Editor <uv-editor>
 	Creating Cards and Tubes <creating-cards-and-tubes>
-	Bind/Unbind Function <bind-unbind>
+	Bind/Unbind/Unpack Functions <bind-unbind>
 	Edge to Curve/Card to Curve <edge-to-curve-card-to-curve>
 	Layers <layers>
 	Color Mode and Layer Customization <layers-customization>

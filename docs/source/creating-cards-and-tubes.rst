@@ -72,6 +72,8 @@ Fill function is similar to :ref:`Add Cards and Tubes <add-cards-button>`, but i
 
 Fill function is generally a recommended way of adding new curves in-between other curves as it is faster and more reliable than Add Cards and Tubes.
 
+Fill can also output curves without the geometry (as an option in the :ref:`Options Menu<options>`)
+
 .. image:: images/buttons/add_cards.png
 	:name: add-cards-button
 	:width: 150px
@@ -92,7 +94,7 @@ Holding **Shift** button while clicking **Add Cards**/**Tubes** buttons will dis
 
 The number of crated curves is defined by the **Add** slider. The number of the slider indicates how many curves will be created between each pair of selected curves.
 
-**Selection order is extremely important** here because it defines the direction of added curves. The algorithm adds curves from the first selected curve, to the next in the selection order. So First -> Second -> Third and so on.
+**Selection order is extremely important** here because it defines the direction of added curves. The algorithm adds curves from the first selected curve, to the next in the selection order. So First ⇨ Second ⇨ Third and so on.
 
 Here is an example of two different selection orders:
 
@@ -223,7 +225,7 @@ Using Maya Deformers
 
 You can use **Maya Deformers** on any number of selected curves without any issues.
 
-If you want to apply the deformer, simply select curves and the deformer and Delete By Type -> History (Alt + Shift + D). Original curves will stay fully functional.
+If you want to apply the deformer, simply select curves and the deformer and Delete By Type ⇨ History (Alt + Shift + D). Original curves will stay fully functional.
 
 Supported and tested deformers are:
 

@@ -2,9 +2,9 @@
 
 .. _bind-unbind:
 
-####################
-Bind/Unbind Function
-####################
+############################
+Bind/Unbind/Unpack Functions
+############################
 
 Intro
 ^^^^^
@@ -79,6 +79,8 @@ You can **switch back to the original curves and modify** them at any moment usi
 |
 |
 
+.. _unbind:
+
 Unbind
 ^^^^^^
 
@@ -92,6 +94,23 @@ You will get the original cards/tubes as well as the original curve.
 
 If you have Keep Curve Attributes option selected in the Options menu, you can then easily edit and Bind these unbound objects back to the original curve and keep the original orientation, twist etc.
 
+.. _unpack:
+
+Unpack
+^^^^^^
+
+.. image:: images/unpack_demo.gif
+	:align: right
+	:width: 350px
+
+**Unpack** is an alternative mode to the :ref:`Unbind<unbind>` button. It is activated by holding **Shift** and clicking on the :ref:`Unbind<unbind>` button while having the **Bound object selected in the viewport**. **Bound object** is the object created by :ref:`Bind<bind-unbind>` function.
+
+**Unpack** will **attempt** to recreate the original objects (cards or tubes only) from the :ref:`Bound<bind-unbind>` object and place them in the exact same position as they are currently placed with all the deformations and world position.
+
+In practice, the recreation and positioning process in not 100% precise as you effectively creating a new set of procedural objects during the Unpack. However, it is close enough in most cases to prove useful and add additional layer of customization for the hair cards.
+
+Unpacking the Bound object is **irreversible** (unless you press Undo, of course). You can't re-bind the new objects back, as they are now deformed to mimic the Bind object they were created from.
+
 |
 
 Using Maya Deformers on Bind Group
@@ -101,18 +120,19 @@ Using Maya Deformers on Bind Group
 	:align: right
 	:width: 350px
 
-You can also use **Maya Non-Linear Deformers** and **Lattice** on the original curves. You can then either keep them or simply select original curves and Delete by Type -> History (Alt + Shift + D)
-
-|
-|
-|
-|
-|
-|
-|
-|
+You can also use **Maya Non-Linear Deformers** and **Lattice** on the original curves. You can then either keep them or simply select original curves and Delete by Type ⇨ History (Alt + Shift + D)
 
 .. _mass-bind:
+
+|
+|
+|
+|
+|
+|
+|
+|
+|
 
 Bind to All Available Curves
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -139,4 +159,18 @@ Refer to :ref:`Attributes Transfer for Bound Objects<transferring-attributes-to-
 Additional Options
 ^^^^^^^^^^^^^^^^^^
 
-User can also enable **Duplicate Before Bind** option in the options menu to automatically duplicate curves before applying Bind operation. This will create a copy of the curves and leave the original unbound curves behind.
+.. image:: images/bind_unbind_unpack_options.png
+	:align: right
+	:width: 250px
+
+- **Duplicate Curves Before Bind** option in the options menu to automatically duplicate curves before applying Bind operation. This will create a copy of the curves and leave the original unbound curves behind.
+
+- **Bound Curves Follow Parent** is a very important option that ensures that Bound curves follow parent when you move the parent curve between layers. Should be enabled most of the time.
+
+- **Bind to All Available Empty Curves** is a :ref:`Mass Bind<mass-bind>` option that will look for any "empty" curves in the selection and duplicate and bind the GS CurveTools objects or any custom geometry in the selection to those curves.
+
+- **Flip UVs before Bind** will flip the UVs before binding the objects to a single curve to compensate for Maya's own UV flipping. Should be enabled most of the time.
+
+- **Unpack Deletes Original Objects** will enable deletion of original :ref:`Bound<bind-unbind>` objects during the :ref:`Unpack<unpack>`. By default :ref:`Unpack<unpack>` will just place the new curves on top of the old geo.
+
+- **Unpack Matches the Original CV Count** will enable curve rebuilding after the :ref:`Unpack<unpack>` to match the original curve CV count. In most cases it is not recommended as the unpacked objects might have different deformation and complexity compared to the Bound object curve and some of the details might be lost.

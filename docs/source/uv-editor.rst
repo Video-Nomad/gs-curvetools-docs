@@ -60,8 +60,8 @@ Out Transparency can either be from separate file or from the same file if suppo
 
 1. Select newly created curve(s).
 2. Click on Select Geo.
-3. Holding right mouse button in the viewport select Assign New Material -> Lambert.
-4. In Attribute Editor Click on checker button |pic1| near the Color Slider -> File (:numref:`lambert_material_01`).
+3. Holding right mouse button in the viewport select Assign New Material ⇨ Lambert.
+4. In Attribute Editor Click on checker button |pic1| near the Color Slider ⇨ File (:numref:`lambert_material_01`).
 5. Under the Image Name field click on a folder icon and select your Diffuse(color) texture (:numref:`lambert_material_02`).
 6. If you have separate Alpha, return back to the lambert node by clicking on the box with the right arrow with Right Mouse Button and selecting the lambert.color. (:numref:`lambert_material_02`)
 7. Repeat steps 4, 5 for the Alpha if you have separate Alpha file.

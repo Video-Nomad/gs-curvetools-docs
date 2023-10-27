@@ -89,15 +89,6 @@ Main Attributes
   * - **Profile Graph Options** - **Number input field** (1.00) controls the magnitude of the Profile Curve Graph effect **Smoothing** will control the smoothness of the profile curve graph effect **Auto and Manual** will enable/disable automatic equalization of the curve. **^** button will open a pop-out Profile Curve Graph that can be resized by user.
     - .. image:: images/attributes/profile-graph-demo.gif
         :target: _images/profile-graph-demo.gif
-  * - **Refine** - Adds additional "virtual" CVs to a curve to achieve additional precision in geometry deformation. Real CVs stay the same. If you see that geometry is not exactly on the curve (this can sometimes happen on long curves), just increase Refine value. **Warning** - High refine values can cause severe performance issues.
-    - .. image:: images/attributes/refine.png
-        :target: _images/refine.png
-  * - **Auto-Refine** - changes the refine algorithm (on by default). Faster, but less precise than manual refinement.
-    - .. image:: images/attributes/auto-refine.png
-        :target: _images/auto-refine.png
-  * - **Smooth** - This attribute (do no confuse it with Smooth Function in the Main Menu) will interactively smooth pinched or highly deformed parts of the curve.
-    - .. image:: images/attributes/smooth.png
-        :target: _images/smooth.png
   * - **Normals and Reverse Normals** - Slider will smoothen or harden normals of the geo. Checkbox will flip the normals direction.
     - .. image:: images/attributes/reverse-normals.png
         :target: _images/reverse-normals.png
@@ -108,10 +99,26 @@ Main Attributes
     - .. image:: images/attributes/offset.gif
         :target: _images/offset.gif
 
+      .. _auto-sampling:
+  * - **Auto-Sampling Toggle** - this toggle enables the automatic calculation of the sampling accuracy based on the number of CVs on the curve. It will increase the sampling rate on low CV counts and decrease it on high CV counts to avoid lag in the viewport. Should be enabled for most use cases.
+    - .. image:: images/attributes/auto-sampling.png
+        :target: _images/auto-sampling.png
+
+  * - **Auto-Refine Toggle** - changes the refine algorithm (on by default). Faster, but less precise than manual refinement. Should be enabled for most use cases.
+    - .. image:: images/attributes/auto-refine.png
+        :target: _images/auto-refine.png
+
       .. _sampling-accuracy:
   * - **Sampling Accuracy** - This slider will increase or decrease the accuracy of the deformation for :ref:`Bound<bind-unbind>` objects and :ref:`Warp Cards and Tubes<warp-cards>`. Values higher than 1.0 can significantly degrade performance based on the density of the curve. Only increase past 0.5 if you observe geometry stretching and deformations that can happen on very low CV counts (<6).
-    -  .. image:: images/attributes/sampling-accuracy-demo.gif
+    - .. image:: images/attributes/sampling-accuracy-demo.gif
         :target: _images/sampling-accuracy-demo.gif
+
+  * - **Refine** - Adds additional "virtual" CVs to a curve to achieve additional precision in geometry deformation. Real CVs stay the same. If you see that geometry is not exactly on the curve (this can sometimes happen on long curves), just increase Refine value. **Warning** - High refine values can cause severe performance issues.
+    - .. image:: images/attributes/refine.png
+        :target: _images/refine.png
+  * - **Smooth** - This attribute (do no confuse it with Smooth Function in the Main Menu) will interactively smooth pinched or highly deformed parts of the curve. Can only be used on manual Refinement modes.
+    - .. image:: images/attributes/smooth.png
+        :target: _images/smooth.png
 
 .. note::
   For UV attributes, please visit :ref:`UVs<uvs>` chapter. It is recommended to use :ref:`UV Editor<uv-editor>` instead of the old UV attributes.
@@ -158,7 +165,7 @@ Transfer attributes works in two directions:
   :align: right
   :width: 400px
 
-- By default, it will transfer **From First Selected Curve** -> **To All Other Curves**.
+- By default, it will transfer **From First Selected Curve** ⇨ **To All Other Curves**.
 
 |
 |
@@ -173,7 +180,7 @@ Transfer attributes works in two directions:
   :align: right
   :width: 400px
 
-- Using **Shift** modifier, you can reverse the direction of the transfer. It will now transfer **From Last Selected Curve** -> **To All Other Curves**.
+- Using **Shift** modifier, you can reverse the direction of the transfer. It will now transfer **From Last Selected Curve** ⇨ **To All Other Curves**.
 
 |
 |
@@ -210,7 +217,7 @@ Transferring to and from Bound Objects
 
 Transferring (or copy-pasting) attributes for Bind Groups is a bit different than on regular Warp or Extrude cards. 
 
-When transferring "Bound -> Bound" it will match the number of original curves of the source and target objects and if they match - it will transfer the attributes and UVs to matching curves. If the source and target objects do not match it will transfer from the first original curve to all the target curves that make up the target bound object.
+When transferring "Bound ⇨ Bound" it will match the number of original curves of the source and target objects and if they match - it will transfer the attributes and UVs to matching curves. If the source and target objects do not match it will transfer from the first original curve to all the target curves that make up the target bound object.
 
 When transferring from any other object type it will simply transfer to all the same attributes to all original curves of the bound object.
 

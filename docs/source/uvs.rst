@@ -67,7 +67,7 @@ Transfer UVs work in two directions:
 	:align: right
 	:width: 400px
 
-- By default, it will transfer **From First Selected Curve** -> **To All Other Curves**.
+- By default, it will transfer **From First Selected Curve** ⇨ **To All Other Curves**.
 
 |
 |
@@ -82,7 +82,7 @@ Transfer UVs work in two directions:
 	:align: right
 	:width: 400px
 
-- Using **Shift** modifier, you can reverse the direction of the transfer. It will now transfer **From Last Selected Curve** -> **To All Other Curves**.
+- Using **Shift** modifier, you can reverse the direction of the transfer. It will now transfer **From Last Selected Curve** ⇨ **To All Other Curves**.
 
 |
 |
@@ -132,7 +132,7 @@ If you try to set the UVs using Maya UV Editor, it will work but only until you 
 	:align: right
 	:width: 250px
 
-Here is an example of broken UVs, when using regular Maya UV workflow and trying to change length division attribute ->
+Here is an example of broken UVs, when using regular Maya UV workflow and trying to change length division attribute ⇨
 
 |
 |

@@ -14,6 +14,8 @@ Compatibility
 
 .. important:: Please use the latest Maya patches if possible. For example: Maya 2018.1 has issues that were fixed in the latest 2018.6 and are essential for GS CurveTools functionality.
 
+.. _installation-steps:
+
 Installation Steps
 ^^^^^^^^^^^^^^^^^^
 
@@ -107,9 +109,11 @@ Hotkeys
 
 After you Initialize_ the plug-in you can find all the hotkeys in::
 
-  Hotkey Editor -> Custom Scripts -> GS -> GS_CurveTools
+  Hotkey Editor ⇨ Custom Scripts ⇨ GS ⇨ GS_CurveTools
 
 .. _Initialize: `Installation Steps`_
+
+.. _update-instructions:
 
 Updating the Plug-in
 ^^^^^^^^^^^^^^^^^^^^

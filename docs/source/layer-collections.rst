@@ -63,7 +63,7 @@ When selected collection is not the Main collection user can delete this collect
 Importing Into a New Collection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-By default, imported curves (using Options->Import Curves) will now go to a new collection called "Imported Curves".
+By default, imported curves (using Options⇨Import Curves) will now go to a new collection called "Imported Curves".
 
 .. image:: images/layer_collections/options_menu.png
   :align: right
@@ -90,6 +90,8 @@ Curve collections have several utility functions available. They are accessed by
 - **Merge Up and Merge Down** - used to combine all the curves in the current collection with the collection immediately above or below it. Merged collection will be deleted.
 - **Move Up and Move Down** - will reorder the collections list and move the current collection one index up or down in the list.
 - **Copy and Paste** - will copy all the curves from the currently selected collection and paste it to another selected collection. Original curves will not be deleted.
+
+.. _auto-hide-curves-collections:
 
 Auto-hide Curves on Inactive Collections
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

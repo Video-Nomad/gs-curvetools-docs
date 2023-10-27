@@ -43,7 +43,7 @@ The scale factor is a simple multiplier and ranges from 0.001 to basically infin
 
 There are three number fields: Global, Scene, and Selected. They show the values of the scale factor that is saved globally (Global), in the scene (Scene), and on every new curve.
 
-The scale factor has a priority of Selected > Scene > Global. When the user changes the scale factor, it will be saved as scene and global. If the scene has no scale factor set, the global value will be used.
+The scale factor has a priority of Selected ⇨ Scene ⇨ Global. When the user changes the scale factor, it will be saved as scene and global. If the scene has no scale factor set, the global value will be used.
 
 Each curve also has its own scale factor that will have priority over Scene or Global. This value is important when working with curves that have different scale factors (imported or created in the same scene after changing the scale factor).
 
@@ -96,6 +96,17 @@ These functions will convert selected type of curves to any other type of curves
 
 .. warning:: Convert functions do not support :ref:`Bound<bind-unbind>` objects.
 
+.. _duplicate-and-unparent-curves:
+
+Duplicate and Unparent Curves
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Duplicates selected NURBS curves and unparents them (parents them to the world).
+Original curves are not deleted.
+Can be used to easily extract and export curves from GS CurveTools objects.
+
+.. note:: This function is basically the same as using Ctrl+D and then Shift+P. Using a function instead of hotkeys ensures that you won't duplicate the curve twice or duplicate and forget to unparent.
+
 General Options
 ^^^^^^^^^^^^^^^
 
@@ -103,6 +114,7 @@ These are the general options that affect the functionality of the plug-in:
 
 - **Keep Curve Attributes** will remember and read the curve attributes on on the curve, even if the curve is detached from the curve card/tube node network (duplicated, exported, etc.)
 - **Add Cards/Tubes Blend Attributes** enables blending of the attributes when using Add Cards/Tubes or Fill functions.
+- **Fill Creates Only Curves** will enable curve only output during :ref:`Fill<fill-button>` function
 - **Auto Convert Instances will** automatically convert instanced curves to normal curves before any other function is applied.
 - **Use Auto-Refine on New Curves** - will automatically enabled :ref:`Auto-Refine<attributes>` mode on newly created curves and tubes.
 - **Flip UVs After Mirror** - will automatically flip UVs after the mirror (or flip) function is used. This allows for more accurate mirroring.
@@ -120,9 +132,15 @@ Bind Options
 ^^^^^^^^^^^^
 
 - **Bound Curves Follow Parent** will ensure that moving a parent curve in a Bound Object (Bound Group) will also move all the child curves along with it to a new layer.
-- **Bind to All Available Curves** will bind selected hair clump (or geometry) to all selected "empty" curves. More info here: :ref:`mass-bind`
+- **Bind to All Available Curves** will bind selected hair clump (or geometry) to all selected "empty" curves. More info here: :ref:`Mass Bind<mass-bind>`
 - **Duplicate Curves Before Bind** will automatically duplicate the curves before binding them to the curve, leaving old curves behind with no edits.
 - **Flip UVs before Bind** will flip the UVs on original curves before using Bind command. This eliminates the Bind mirroring effect.
+
+Unpack Options
+^^^^^^^^^^^^^^
+
+- **Unpack Deletes Original Objects** will enable deletion of original :ref:`Bound<bind-unbind>` objects during the :ref:`Unpack<unpack>`.
+- **Unpack Matches the Original CV Count** will enable matching the CV count of the original curves during the :ref:`Unpack<unpack>` operation.
 
 Layer Options
 ^^^^^^^^^^^^^

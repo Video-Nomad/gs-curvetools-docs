@@ -25,7 +25,7 @@ Only for Maya 2020 and 2022. UVs are not working after save and reload of the sc
 
 First of all, this issue is not related to GS CurveTools in any way.
 
-This issue is related to Maya 2020, 2020.1, 2020.2 and 2022 and the "new" bug it has with saving/loading Maya Binary scene files (.mb). During the reload of the scene the inputComponents list used in polyMoveUV nodes is getting corrupted and shows as nmm[*] instead of map[*]. This bug was reported for Maya 2020, 2020.1, 2020.2, 2022 and was FIXED in 2023.
+This issue is related to Maya 2020, 2020.1, 2020.2 and 2022 and the bug it has with saving/loading Maya Binary scene files (.mb). During the reload of the scene the inputComponents list used in polyMoveUV nodes is getting corrupted and shows as nmm[*] instead of map[*]. This bug was reported for Maya 2020, 2020.1, 2020.2, 2022 and was FIXED in 2023.
 
 **Solution/Workaround:**
 
@@ -137,11 +137,11 @@ or similar...
 
 **Explanation:**
 
-This mainly happens when user accidentally Copies and Pastes cards in the scene (Ctrl+C, Ctrl+V) instead of using :ref:`Duplicate<duplicate>` command. This leads to name corruption and other errors. This issue can also happen if user imports (using Maya import) from a scene with GS CurveTools objects (cards or tubes). Only import and export curves using GS CurveTools -> Options -> Export/Import function.
+This mainly happens when user accidentally Copies and Pastes cards in the scene (Ctrl+C, Ctrl+V) instead of using :ref:`Duplicate<duplicate>` command. This leads to name corruption and other errors. This issue can also happen if user imports (using Maya import) from a scene with GS CurveTools objects (cards or tubes). Only import and export curves using GS CurveTools ⇨ Options ⇨ Export/Import function.
 
 **Solution:**
 
-The only solution to this issue is to delete the pasted cards and tubes and also delete pasted display layers. You can find the display layers in Windows->Relationship Editors->Display Layers window.
+The only solution to this issue is to delete the pasted cards and tubes and also delete pasted display layers. You can find the display layers in Windows⇨Relationship Editors⇨Display Layers window.
 
 **Video Demonstration of deleting the corrupted cards:**
 
@@ -233,9 +233,9 @@ If the user deletes only the curve component (**pathCurve#**), but no the entire
 
 **Solution/Workaround:**
 
-Since v1.3 there is a convenient hotkey available in the Hotkey Editor -> Custom Scripts -> GS -> GS_CurveTools -> Utilities -> Delete Curves
+Since v1.3 there is a convenient hotkey available in the Hotkey Editor ⇨ Custom Scripts ⇨ GS ⇨ GS_CurveTools ⇨ Utilities ⇨ Delete Curves
 
-The **correct** way to delete cards/tubes is to **delete the entire group** that holds all of the components of that card/tube. **Do not** delete only the curve (**pathCurve#**), delete the entire group (**curveCard, curveTube etc.**). Select the **Curve** -> **press UP** on the keyboard (this will select the entire card) -> **Delete**.
+The **correct** way to delete cards/tubes is to **delete the entire group** that holds all of the components of that card/tube. **Do not** delete only the curve (**pathCurve#**), delete the entire group (**curveCard, curveTube etc.**). Select the **Curve** ⇨ **press UP** on the keyboard (this will select the entire card) ⇨ **Delete**.
 
 ---------
 

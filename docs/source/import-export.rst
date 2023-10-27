@@ -10,7 +10,7 @@ Importing and Exporting Curves
     :align: right
     :width: 200px
 
-User can export curves from the scene and import them into the scene by using :ref:`Options<options>` -> **Export/Import** curves
+User can export curves from the scene and import them into the scene by using :ref:`Options<options>` ⇨ **Export/Import** curves
 
 Using this function, user can easily export one or multiple curve cards/tubes or bound cards to a new file, and then import it into any other project.
 
@@ -35,7 +35,7 @@ In the "Save File" dialog, enter the name of the file and click Save.
 Importing Curves
 ^^^^^^^^^^^^^^^^
 
-Importing Curves is a simple process. Just click on :ref:`Options<options>` -> **Import Curves** and in the file dialog, find and load the file you created before, using "**Export Curves**" functions.
+Importing Curves is a simple process. Just click on :ref:`Options<options>` ⇨ **Import Curves** and in the file dialog, find and load the file you created before, using "**Export Curves**" functions.
 
 **Import Curves** will use its own ".curves" file extension, however user can also choose to use Maya ASCII format ".ma" for import.
 

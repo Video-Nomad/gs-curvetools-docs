@@ -34,7 +34,7 @@ There are four options available for the color mode:
   :width: 200px
   :align: right
 
-You can change between the color modes using :ref:`Options<options>` -> Color Options menu
+You can change between the color modes using :ref:`Options<options>` ⇨ Color Options menu
 
 |
 

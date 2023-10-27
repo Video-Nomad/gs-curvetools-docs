@@ -4,6 +4,37 @@
 Changelog
 #########
 
+Version 1.3.2
+^^^^^^^^^^^^^
+
+**Important note:**
+
+- This update has a lot of internal code changes so it is **critical** to completely re-install GS CurveTools. :ref:`Installation<installation-steps>` and :ref:`Update Instructions<update-instructions>`. Everything is backwards-compatible but just in case it is recommended to finish the old projects before updating.
+
+**New Features:**
+
+- New **Unpack** function. :ref:`Unpack<unpack>` function allows to recreate the original objects (cards or tubes) from the :ref:`Bound<bind-unbind>` object and place them in the exact same position as they are currently placed with all the deformations and world position. Accessed by selecting the :ref:`Bound<bind-unbind>` object and Shift+Clicking on :ref:`Unbind<unbind>` button.
+- New :ref:`Auto-Sampling<auto-sampling>` toggle attribute that will automatically increase sampling rate for Warp based objects on low CV counts. This allows for optimal performance on high CV counts and good accuracy on low CV counts.
+- New :ref:`Duplicate and Unparent Curves<duplicate-and-unparent-curves>` utility function (in the Options ⇨ Utility) that will duplicate curves and unparent them (parent them to the world). This is useful when you need to export only curves without construction history, or if you need the curves for something else in the scene.
+
+**Improvements:**
+
+- :ref:`Geo to Curve<edge-to-curve-card-to-curve>` (previously Card to Curve) now supports tube shapes for the original geometry as well as Auto Mode. Auto Mode will automatically determine if the target geometry is a curve or a tube and create the procedural objects accordingly.
+- :ref:`Geo to Curve<edge-to-curve-card-to-curve>` can now automatically delete the original objects after the conversion (optional).
+- :ref:`Geo to Curve<edge-to-curve-card-to-curve>` can now use Aim Mesh to determine the correct position of the root CV after the conversion.
+- :ref:`Geo to Curve<edge-to-curve-card-to-curve>` algorithm was greatly improved. UVs adjustment and placement is much more precise now. Width calculation is now more accurate.
+- :ref:`UV Editor<uv-editor>` now supports Maya 2024 Standard Surface material.
+- :ref:`UV Editor<uv-editor>` internal texture search was improved. Shader graphs can now have nodes between the texture file and material nodes (for example color correction nodes etc.)
+- :ref:`Fill<fill-button>` can now create curves without the geometry as an option. The option is toggled in the :ref:`Options<options>` menu.
+- :ref:`Rebuild Curve<rebuild-curve-slider>` slider now has limited support for curves with construction history. The slider will rebuild them, but the preview will not be shown for those curves.
+- A lot of internal code changes to improve future features.
+
+**Bug Fixes:**
+
+- Fixed a bug with :ref:`Curve Tubes<attributes>` (warp) not scaling properly with high WidthX or WidthZ values.
+- Fixed a bug with :ref:`Auto-Hide Curves on Inactive Collections<auto-hide-curves-collections>` checkbox. It will now work properly with :ref:`Layer<layers>` filters.
+- GS CurveTools will now automatically load built-in Maya plug-ins that it needs. If user disabled those plug-ins in the past it should not cause errors now. For now it's "curveWarp" and "lookdevKit" plug-ins that are required.
+
 Version 1.3.1
 ^^^^^^^^^^^^^
 
@@ -85,7 +116,7 @@ Major update!
 
 - **Even more layers** available. Number of active layers can now be up to 80. User can optionally change layer number to be 20, 30, 40, 60 and 80!
 - **Layer customization windows** was updated to make use of additional layers.
-- New projects will now use the updated layer system that will not clutter the Display Layer window in the Channel Box. All the layers are still there and accessible through the Window->Relationship Editors->Display Layers. User can manually update old layer system to the new one using Options->Other Options->Convert to New Layer System.
+- New projects will now use the updated layer system that will not clutter the Display Layer window in the Channel Box. All the layers are still there and accessible through the Window⇨Relationship Editors⇨Display Layers. User can manually update old layer system to the new one using Options⇨Other Options⇨Convert to New Layer System.
 - **Layer Hotkeys** (key combinations) were slightly **changed**:
 
   - Show Always On Top is now SHIFT+CTRL+ALT+Click
@@ -96,7 +127,7 @@ Major update!
 - **Bind, Unbind and Mirror** will now flip the UVs before performing the operation to achieve better results. This is optional and can be disable in the options.
 - **Options Menu** was reordered and compressed to have better visibility and organization.
 - **UVs** will now be **properly transferred** form and to Bound geometry.
-- User can now open the **log file** using Help->Open Log File (Windows only) in case of any errors.
+- User can now open the **log file** using Help⇨Open Log File (Windows only) in case of any errors.
 
 **Bug Fixes:**
 
@@ -136,7 +167,7 @@ Version 1.2.8
 
 - **Convert Curves** is now out of beta (in the Options menu):
 
-  - Card -> Card conversion will now correctly keep original orientation and profile.
+  - Card ⇨ Card conversion will now correctly keep original orientation and profile.
   - Will now retain original materials on conversion.
   - Performance was improved.
 
@@ -196,7 +227,7 @@ Version 1.2.7
 
 - **Maya 2023 Support**
 - Global and Per-Layer **Always-On-Top** toggle for curves ("Per-Layer" is only for Maya 2022+)
-- **(BETA) Convert** one type of Card/Tube to the other type (Warp->Extrude, and vice versa).
+- **(BETA) Convert** one type of Card/Tube to the other type (Warp⇨Extrude, and vice versa).
 
   - Might have issues with orientation when converting
   - Might have other issues with old Cards/Tubes
@@ -298,7 +329,7 @@ Just a small hotfix for Maya 2020.4 users
 **Bugfixes:**
 
 - New Warp Curves created in Maya 2020.4 will now behave like intended.
-- Maya 2020.4 Twist and Inverted Twist attribute fix added. To use the fix, run the command in Options -> Fix Maya 2020.4 Twist Attribute
+- Maya 2020.4 Twist and Inverted Twist attribute fix added. To use the fix, run the command in Options ⇨ Fix Maya 2020.4 Twist Attribute
 
 Version 1.2.1
 ^^^^^^^^^^^^^
@@ -396,9 +427,9 @@ Version 1.1.3
 
 **New Features:**
 
-- Global curve thickness can now be changed and saved in the "Options -> Global Curve Thickness" menu. Update already existing curves using "Update Curves" button and save selected thickness using "Save" button. Line thickness for the new curves is now set automatically. You can still edit individual curve thickness in Curve Control Window.
+- Global curve thickness can now be changed and saved in the "Options ⇨ Global Curve Thickness" menu. Update already existing curves using "Update Curves" button and save selected thickness using "Save" button. Line thickness for the new curves is now set automatically. You can still edit individual curve thickness in Curve Control Window.
 
-- Two new options in the Options menu: "Set AO Settings" and "Set Transparency settings". They will change the viewport settings for the current scene for better curve visibility and transparency. You can then toggle AO by setting a hotkey in the hotkey editor “GS -> GS_CurveTools -> Misc -> GSCT_ToggleAO”.
+- Two new options in the Options menu: "Set AO Settings" and "Set Transparency settings". They will change the viewport settings for the current scene for better curve visibility and transparency. You can then toggle AO by setting a hotkey in the hotkey editor “GS ⇨ GS_CurveTools ⇨ Misc ⇨ GSCT_ToggleAO”.
 
 **Improvements:**
 
@@ -436,8 +467,8 @@ Version 1.1.1
 
 **New Features:**
 
-- Added special Hotkey **"GS -> GS_CurveTools -> Misc -> GSCT_ToggleAO"** to toggle **AO** (refer to Online Documentation -> Useful Tips)
-- Added Hotkey to switch geometry editing for all layers **"GS -> GS_CurveTools -> Misc -> GSCT Toggle Geo Edit"**
+- Added special Hotkey **"GS ⇨ GS_CurveTools ⇨ Misc ⇨ GSCT_ToggleAO"** to toggle **AO** (refer to Online Documentation ⇨ Useful Tips)
+- Added Hotkey to switch geometry editing for all layers **"GS ⇨ GS_CurveTools ⇨ Misc ⇨ GSCT Toggle Geo Edit"**
 
 **Improvements:**
 
@@ -485,7 +516,7 @@ Version 1.1
 
 **Improvements:**
 
-- **Transfer Attr.** and **Transfer UVs** buttons can now work in reverse mode (Shift + Click). Default -> Transfer From **First** selected to all other curves, Shift -> Transfer from **Last** selected to all other curves.
+- **Transfer Attr.** and **Transfer UVs** buttons can now work in reverse mode (Shift + Click). Default ⇨ Transfer From **First** selected to all other curves, Shift ⇨ Transfer from **Last** selected to all other curves.
 
 - **Transfer Attr.** and **Transfer UVs** will now show [Source] curve when transferring the attributes.
  

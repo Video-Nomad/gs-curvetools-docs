@@ -39,7 +39,7 @@ Curve Thickness
 
 You can change the thickness of the curves globally or for each curve individually.
 
-To change curve thickness globally go to GS CurveTools :ref:`Options<options>` -> Global Curve Thickness.
+To change curve thickness globally go to GS CurveTools :ref:`Options<options>` ⇨ Global Curve Thickness.
 
 .. figure:: images/curve_thickness_demo.gif
   :width: 350px
