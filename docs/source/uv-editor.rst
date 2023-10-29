@@ -44,7 +44,7 @@ In order for the UV Editor to work correctly a correct material should be used f
 	
 Lambert with PNG, JPG/JPEG or TIF/TIFF (LZW or No Compression) texture file is recommended. TGA (24bit and no RLE) is also supported.
 
-Supported Maya materials: Lambert, Blinn, Phong, PhongE, Standard Surface
+Supported Maya materials: Lambert, Blinn, Phong, PhongE, Standard Surface.
 
 Simply connect Out Color of Diffuse File to Color of the Lambert and Out Transparency to Transparency (or BaseColor and Opacity for Standard Surface).
 
