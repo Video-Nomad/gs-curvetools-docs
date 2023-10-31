@@ -4,6 +4,13 @@
 Changelog
 #########
 
+Version 1.3.2 Hotfix 1
+^^^^^^^^^^^^^^^^^^^^^^
+
+**Improvements:**
+
+- Ambient Color plug is now also supported by the UV editor for Lambert, Blinn, Phong and PhongE materials. It will now display the texture correctly in the UV editor if this plug is used, instead of the Color plug.
+
 Version 1.3.2
 ^^^^^^^^^^^^^
 
