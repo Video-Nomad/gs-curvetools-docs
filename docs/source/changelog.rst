@@ -4,6 +4,15 @@
 Changelog
 #########
 
+Version 1.3.2 Hotfix 2
+^^^^^^^^^^^^^^^^^^^^^^
+
+**Bug fixes:**
+
+- Using Curve Card and Curve Tube on duplicated and unparented curves will not throw an error anymore.
+- Other minor related fixes.
+
+
 Version 1.3.2 Hotfix 1
 ^^^^^^^^^^^^^^^^^^^^^^
 
