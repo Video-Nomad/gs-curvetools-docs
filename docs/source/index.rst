@@ -117,7 +117,7 @@ Supported Platforms
 	UV Editor <uv-editor>
 	Creating Cards and Tubes <creating-cards-and-tubes>
 	Bind/Unbind/Unpack Functions <bind-unbind>
-	Edge to Curve/Card to Curve <edge-to-curve-card-to-curve>
+	Edge to Curve/Geo to Curve <edge-to-curve-card-to-curve>
 	Layers <layers>
 	Color Mode and Layer Customization <layers-customization>
 	Layer Collections <layer-collections>
