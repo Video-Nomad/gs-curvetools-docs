@@ -20,32 +20,15 @@ Import and Export Curves
 Scale Factor
 ^^^^^^^^^^^^
 
-.. image:: images/scale_factor_window.png
-  :width: 300px
+See :ref:`scale-factor-and-precision`
 
-The scale factor determines the initial scale of the curve created by the buttons New Card, New Tube, Curve Card, Curve Tube, Add Cards, and Add Tubes.
 
-This option is crucial if you need to adjust the scale of new curves, mostly the width, to match the Maya scene's scale. Values ranging from 0.5-1 are usually a good middle ground for any default Maya scene and any project that uses real-world scale.
+Precision Scale
+^^^^^^^^^^^^^^^
 
-.. important::
-  Suppose you import your base mesh, and it's approximately 180 cm tall. In that case, a scale factor value of around 0.75 should generate cards with good width. The length of the cards will change freely based on the length of the curve.
+See :ref:`precision-scale`
 
-The scale factor is a simple multiplier and ranges from 0.001 to basically infinity. The default limit is 10, but you can manually type bigger values.
 
-.. figure:: images/scale_factor_demo.png
-  :width: 400px
-  :align: center
-  :name: scale-factor-figure
-
-  Using different Scale Factors to generate cards of different sizes
-
-.. note:: Scale Factor will only affect new curves. Old curves will not change.
-
-There are three number fields: Global, Scene, and Selected. They show the values of the scale factor that is saved globally (Global), in the scene (Scene), and on every new curve.
-
-The scale factor has a priority of Selected ⇨ Scene ⇨ Global. When the user changes the scale factor, it will be saved as scene and global. If the scene has no scale factor set, the global value will be used.
-
-Each curve also has its own scale factor that will have priority over Scene or Global. This value is important when working with curves that have different scale factors (imported or created in the same scene after changing the scale factor).
 
 Global Curve Thickness
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -177,3 +160,4 @@ Other Options
 - **Fix Maya 2020.4 Twist Attribute** This function will fix any broken cards created in Maya 2020.4 before v1.2.2 update.
 - **Fix Maya 2020.4 Unbind Function** This function will fix any cards that are not unbinding properly created before v1.2.3 update in Maya 2020.4.
 - **Delete All Animation Keys** will delete all animation keys from the curves in the scene. Might fix duplication and other deformation issues.
+- **Reset Legacy Curve Smooth Attribute** will reset the now deprecated curve smooth attribute to 0. Useful, because the slider is no longer available in the Curve Control Window.

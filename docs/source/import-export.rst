@@ -41,4 +41,6 @@ Importing Curves is a simple process. Just click on :ref:`Options<options>` ⇨ 
 
 If :ref:`Layer Collections<layer-collections>` are enabled in the scene and :ref:`Import Into a New Collection<importing-into-a-new-collection>` checkbox is enabled in the :ref:`Options<options>` menu, all the import curves will go to "Imported Curves" collection by default. If layer collections are disabled or the checkbox is not checked, all the imported curves will be merged into the Main collection.
 
+.. note:: It might be necessary to :ref:`Normalize<normalize-scale-factor-and-precision-scale>` freshly imported curves before use in a new project. It's only necessary if the original Scale is different from the project's chosen Scale Factor. Same goes for the Precision Scale.
+
 .. warning:: Only files created by using "**Export Curves**" function are compatible with "**Import Curves**" function. Any other file might have unexpected behavior.

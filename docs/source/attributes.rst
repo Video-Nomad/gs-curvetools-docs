@@ -116,9 +116,6 @@ Main Attributes
   * - **Refine** - Adds additional "virtual" CVs to a curve to achieve additional precision in geometry deformation. Real CVs stay the same. If you see that geometry is not exactly on the curve (this can sometimes happen on long curves), just increase Refine value. **Warning** - High refine values can cause severe performance issues.
     - .. image:: images/attributes/refine.png
         :target: _images/refine.png
-  * - **Smooth** - This attribute (do no confuse it with Smooth Function in the Main Menu) will interactively smooth pinched or highly deformed parts of the curve. Can only be used on manual Refinement modes.
-    - .. image:: images/attributes/smooth.png
-        :target: _images/smooth.png
 
 .. note::
   For UV attributes, please visit :ref:`UVs<uvs>` chapter. It is recommended to use :ref:`UV Editor<uv-editor>` instead of the old UV attributes.

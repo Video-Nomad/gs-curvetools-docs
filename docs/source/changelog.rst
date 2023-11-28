@@ -4,6 +4,27 @@
 Changelog
 #########
 
+Version 1.3.3
+^^^^^^^^^^^^^
+
+**Improvements:**
+
+- Much less geometry deformation and distortion for new Warp Cards, Tubes and Bind objects when scaling them down to very small scales (like for brows, eyelashes etc.). Improved geometry precision and stability overall.
+- An option to change the new :ref:`Precision Scale<precision-scale>` value in the :ref:`Scale Factor and Precision<scale-factor-and-precision>` window.
+- An option to normalize the :ref:`Scale Factor<scale-factor>` and :ref:`Precision Scale<precision-scale>` of the selected Warp Cards, Tubes or Bind objects to the chosen slider values or to default recommended values (Scale Factor = 0.5, Precision Scale = 0.05). Buttons are found in the Scale Factor and Precision window. Also works on Cards, Tubes and Bind objects from older updates.
+- :ref:`Add Card, Add Tube and Fill<add-cards-button>` functions will now use the new Precision Scale and normalize the selected Warp Cards, Tubes or Bind objects before performing the operation. This ensures that no matter the initial scale or scale factor of the selected curves, the function will result in a consistent widths and profiles for the new objects. Works on objects from older updates as well.
+- :ref:`Rebuild<rebuild-curve-slider>` slider will now work properly on small scale curves.
+- New objects should now be able to create more sharp corners when three or more CVs are bunched together.
+
+**Deprecation:**
+
+- Smooth slider was removed from the "Other" tab in the :ref:`Curve Control Window<curve-control-window>` (don't confuse with the :ref:`Smooth<smooth>` function from the main window, it's still there). It was removed because it interfered with the new precision options. There is an option in the Options⇨Other menu to reset the smooth value to 0 if needed for older projects.
+
+**Bug fixes:**
+
+- :ref:`Mirror<mirroring>` will now work properly on Tube objects
+- Opening Log file will no longer block Maya until the log is closed.
+
 Version 1.3.2 Hotfix 2
 ^^^^^^^^^^^^^^^^^^^^^^
 

@@ -129,6 +129,8 @@ Main Menu is split into 5 logical sections:
 .. note:: 
 	Some buttons also have **three horizontal lines** ≡ icon that indicates that this button has marking menu. Holding RMB on that button will open it.
 
+.. _curve-control-window:
+
 Curve Control Window
 ^^^^^^^^^^^^^^^^^^^^
 

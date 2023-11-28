@@ -126,6 +126,7 @@ Supported Platforms
 	Orient to Normals <orient-to-normals>
 	Utility Functions <utility>
 	Advanced Visibility <advanced-visibility>
+	Scale Factor and Precision <scale-factor-and-precision>
 	Options Menu <options>
 	Useful Tips <useful-tips>
 	Questions, Issues and Solutions <faq>

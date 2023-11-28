@@ -138,6 +138,8 @@ Extend will try to interpolate the next point based on the curvature of the curv
   :align: right
   :width: 250px
 
+.. _smooth:
+
 **Smooth** function will smooth the selected curve or only selected CVs, depending on the selection and Factor slider.
 
 You can smooth multiple curves at the same time.
