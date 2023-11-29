@@ -57,7 +57,7 @@ Precision Scale slider will set the default new scale of the Warp objects (Cards
 
 Precision Scale is also used when normalizing the existing object during some operations like Add Card, Add Tube and Fill.
 
-Precision Scale value of 0.05 is recommended as it provides with sufficient precision and does not affect viewport performance too much.
+Precision Scale value of 0.05 is recommended as it provides sufficient precision and does not affect viewport performance too much.
 
 .. _normalize-scale-factor-and-precision-scale:
 
