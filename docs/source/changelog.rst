@@ -4,6 +4,19 @@
 Changelog
 #########
 
+Version 1.3.4
+^^^^^^^^^^^^^
+
+**Improvements:**
+
+- Added tooltips to Scale Factor and Precision window and all the controls.
+- Normalize to Default will now reset the sliders even if no curves were selected in the viewport.
+
+**Bug fixes:**
+
+- Fixed Layer color picker in the Curve Control Window. It will now change layer color properly.
+- Fixed tooltips for all the color pickers in the UI (UV Editor and Curve Control Window).
+
 Version 1.3.3
 ^^^^^^^^^^^^^
 
