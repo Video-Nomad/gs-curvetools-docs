@@ -14,6 +14,7 @@ Version 1.3.4
 
 **Bug fixes:**
 
+- No more errors when trying to Extract All in an empty scene with no curves.
 - Fixed Layer color picker in the Curve Control Window. It will now change layer color properly.
 - Fixed tooltips for all the color pickers in the UI (UV Editor and Curve Control Window).
 
