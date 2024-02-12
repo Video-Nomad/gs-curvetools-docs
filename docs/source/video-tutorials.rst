@@ -4,6 +4,31 @@
 Video Tutorials
 ###############
 
+
+[NEW] Workflow Tutorial
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <div style="position: relative; height: 400; overflow: hidden; max-width: 100%;">
+        <iframe width="696" height="391" src="https://www.youtube.com/embed/3a2KAuT-Xqc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+|
+
+
+[NEW] Full Tutorial
+^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <div style="position: relative; height: 400; overflow: hidden; max-width: 100%;">
+        <iframe width="696" height="391" src="https://www.youtube.com/embed/MrTz-6CqabM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+|
+
+
 Version 1.3.3 Minor Update
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -104,8 +129,8 @@ Version 1.1 Major Update
 
 |
 
-Version 1.0 Full Tutorial
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Version 1.0
+^^^^^^^^^^^
 
 .. raw:: html
 
