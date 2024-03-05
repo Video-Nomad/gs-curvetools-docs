@@ -17,6 +17,7 @@
 			"**/*.pyc": true
 		},
 		"explorerExclude.backup": null,
-		"esbonio.sphinx.confDir": "${workspaceFolder}\\docs\\source"
+		"esbonio.sphinx.confDir": "${workspaceFolder}\\docs\\source",
+		"python.defaultInterpreterPath": "~\\Python\\3.10.8\\python.exe"
 	}
 }

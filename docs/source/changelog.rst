@@ -4,6 +4,19 @@
 Changelog
 #########
 
+Version 1.3.5
+^^^^^^^^^^^^^
+
+**Improvements:**
+
+- Automatically reveal the layer if it is hidden and the new object is being created into it.
+- Old versions (v1.2 and up) are now available as a download for Personal Licenses.
+
+**Bug fixes:**
+
+- :ref:`Unpack<unpack>` will no longer be affected by the selected object type in :ref:`Geo to Curve<card-to-curve>` window.
+- :ref:`Export<import-export-page>` will no longer be locked by the :ref:`Advanced Visibility<advanced-visibility>` node present in the scene.
+
 Version 1.3.4
 ^^^^^^^^^^^^^
 
