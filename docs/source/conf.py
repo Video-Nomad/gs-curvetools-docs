@@ -18,7 +18,7 @@ import datetime
 try:
     YEAR = datetime.datetime.now().year
 except BaseException:
-    YEAR = 2023
+    YEAR = 2024
 
 # -- Project information -----------------------------------------------------
 
