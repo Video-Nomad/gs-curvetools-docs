@@ -66,6 +66,16 @@ There are several ways to fix this issue:
 
 2. Using :ref:`Smooth<smooth>` function right after the rebuild if distortion has occurred.
 
+**Video Demo:**
+
+.. raw:: html
+
+	<video width="400" controls>
+	<source src="_static/curve_rebuild_distortion.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+	</video>
+
+
 ---------
 
 .. _stuck-graphs:
