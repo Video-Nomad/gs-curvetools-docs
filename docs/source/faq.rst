@@ -56,13 +56,13 @@ This issue is also present in native Maya curves and native Maya rebuild command
 
 **Explanation:**
 
-When curves are very small and Maya tries rebulding it it lacks the nesesary precision for certain operations. It's the issue with all maya curves, not only GS CurveTools ones.
+When curves are very small and Maya tries rebuilding it it lacks the necessary precision for certain operations. It's the issue with all maya curves, not only GS CurveTools ones.
 
 **Solution/Workaround:**
 
 There are several ways to fix this issue:
 
-1. Using smaller values :ref:`Precision Scale<precision-scale>`. The default value of 0.05 is suitable for most of the curves in normal project, but sometimes the value can be lowered to 0.01 if distortion occurs.
+1. Using smaller values of :ref:`Precision Scale<precision-scale>`. The default value of 0.05 is suitable for most of the curves in normal project, but sometimes the value can be lowered to 0.01 if distortion occurs.
 
 2. Using :ref:`Smooth<smooth>` function right after the rebuild if distortion has occurred.
 
