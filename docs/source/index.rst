@@ -91,8 +91,8 @@ Recommended Maya Versions
 Supported Platforms
 ^^^^^^^^^^^^^^^^^^^
 
-- **Maya 2018-2024 for Windows** ⇨ Fully Tested and Supported*.
-- **Maya 2018-2024 for Mac** ⇨ In Beta*.
+- **Maya 2018-2025 for Windows** ⇨ Fully Tested and Supported*.
+- **Maya 2018-2025 for Mac** ⇨ In Beta*.
 - **Linux** ⇨ Not Tested and Not Supported.
 - **Maya LT** ⇨ Not Tested and Not Supported.
 - **Maya 2017** ⇨ Is no longer supported since v1.2.7
