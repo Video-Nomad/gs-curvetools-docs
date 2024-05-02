@@ -4,6 +4,17 @@
 Changelog
 #########
 
+Version 1.3.6
+^^^^^^^^^^^^^
+
+**New Features:**
+
+- Maya 2025 support (please report bugs)
+
+**Bug fixes:**
+
+- Minor bug fixes and code refactoring
+
 Version 1.3.5
 ^^^^^^^^^^^^^
 
