@@ -2,7 +2,7 @@
 GS CurveTools for Autodesk Maya Documentation
 #############################################
 
-**For Maya 2018-2024**
+**For Maya 2018-2025**
 
 Links
 ^^^^^
@@ -82,6 +82,7 @@ Recommended Maya Versions
 - 2022.3, 2022.4
 - 2023, 2023.1, 2023.2, 2023.3
 - 2024, 2024.1, 2024.2
+- 2025
 
 .. note:: 
 	
