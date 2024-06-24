@@ -4,6 +4,18 @@
 Changelog
 #########
 
+Version 1.3.7
+^^^^^^^^^^^^^
+
+**Improvements:**
+
+- Drastically improved the performance of graphs (Twist, Width) on large complex scenes.
+
+**Bug fixes:**
+
+- Maya 2022 only: Fixed the visual bug that caused the curve to become visibly smaller when using warp cards/tubes and bind. The bugfix is a workaround, as it is an internal Maya issue with some built-in functions. Due to the workaround, the user will see the intermediate updates of the viewport during the function execution.
+
+
 Version 1.3.6
 ^^^^^^^^^^^^^
 
