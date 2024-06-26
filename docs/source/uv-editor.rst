@@ -13,7 +13,7 @@ New UV Editor
 	:align: right
 	:width: 350px
 
-Changing UVs in GS CurveTools was always a challenge, because of the procedural limitation of UV attributes. Using slides was always a temporary solution to a problem, and not an elegant one.
+Changing UVs in GS CurveTools was always a challenge, because of the procedural limitation of UV attributes. Using sliders was always a temporary solution to a problem, and not an elegant one.
 
 Fortunately, with the release of v1.2 user now have access to a fully functional UV editor that is compatible with current and previous UV Attributes.
 
