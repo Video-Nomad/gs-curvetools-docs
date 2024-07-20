@@ -4,6 +4,23 @@
 Changelog
 #########
 
+Version 1.3.8
+^^^^^^^^^^^^^
+
+**Improvements:**
+
+- UV editor will now display Alpha texture instead of Diffuse when only Alpha map is used in the material graph. Color input can now use color constant or other nodes if needed, instead of being restricted to "file" node only.
+- Color mode is now compatible with materials without Diffuse texture map.
+- Mirror function will now skip cards if they are not compatible or broken for some reason.
+
+**Bug fixes:**
+
+- Profile Curve Graph will now be properly copied when using "Transfer Attribute" or "Copy-Paste Attribute" functions. No need to open the "Filter" window first.
+
+**Technical:**
+
+- Decoupled the plug-in from the "version/scripts" folder for easier use of modules in studio environment. The only "hardcoded" path now is the "log.log" file path. It will be created in the same folder as before "version/scripts/gs_curvetools/log.log" for each user.
+
 Version 1.3.7
 ^^^^^^^^^^^^^
 
