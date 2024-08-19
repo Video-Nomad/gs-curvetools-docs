@@ -262,7 +262,7 @@ Geometry was Left Behind When Deleting Curves
 
 **Explanation:**
 
-If the user deletes only the curve component (**pathCurve#**), but no the entire card group, in some cases (**warp cards, tubes**) there might be a leftover geometry in the scene.
+When the user deletes **only** the curve component (**pathCurve1**) and not the entire card group (**curveCard1**), in some cases (warp cards, tubes) the geometry cards will appear in the origin of the scene (0,0,0). This happens because the curve that was deforming the geometry is deleted, but the geometry itself is still in the scene. That geometry is what appears in the origin of the scene.
 
 **Solution/Workaround:**
 
