@@ -103,7 +103,7 @@ Supported Platforms
     :maxdepth: 2
     :caption: Table of Contents:
 
-	Home <index>
+	Home <self>
 	Changelog <changelog>
 	Video Tutorials <video-tutorials>
 	Installation <installation>
