@@ -6,6 +6,8 @@
 Colors and Layer Names
 ######################
 
+.. _color-mode:
+
 Color Mode
 ^^^^^^^^^^
 

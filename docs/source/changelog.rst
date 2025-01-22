@@ -4,6 +4,21 @@
 Changelog
 #########
 
+Version 1.3.9
+^^^^^^^^^^^^^
+
+**Improvements:**
+
+- PNG with alpha in the RGB channel is now supported for :ref:`color mode<color-mode>`.
+- Improved tooltips parsing.
+
+**Bug fixes:**
+
+- Fixed an error that prevented :ref:`color mode<color-mode>` from being enabled in some cases.
+- Improved error handling in :ref:`color mode<color-mode>` toggle.
+- Fixed an issue with unselectable curves when using :ref:`Apply Curve Colors or Sync Curve Color to Layer Color<color-mode>`.
+- Fixed gray color overlay on some menus in :ref:`Curve Control Window<curve-control-window>`.
+
 Version 1.3.8
 ^^^^^^^^^^^^^
 
