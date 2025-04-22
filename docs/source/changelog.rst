@@ -4,6 +4,24 @@
 Changelog
 #########
 
+Version 1.3.10
+^^^^^^^^^^^^^^
+
+**New Features:**
+
+- Maya 2026 support. Please report any issues.
+
+**Improvements:**
+
+- Bind will no longer automatically flip UVs (back to old behavior)
+- Added automatic initialization that will be triggered when upgrading Maya versions.
+
+**Bug fixes:**
+
+- Fixed Maya's popup dialogs in new Maya versions.
+- Removed deprecated profile magnitude input field. It should not be used. To reset it without the field (old projects) run Options->Other Options->Reset Legacy Profile Magnitude Attribute.
+- Numerous small bug fixes and improvements and major code refactor.
+
 Version 1.3.9
 ^^^^^^^^^^^^^
 
