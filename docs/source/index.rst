@@ -82,12 +82,14 @@ Recommended Maya Versions
 - 2022.3, 2022.4
 - 2023, 2023.1, 2023.2, 2023.3
 - 2024, 2024.1, 2024.2
-- 2025
+- 2025\*\*
 - 2026
 
 .. note:: 
 	
 	\*Maya **2020.4** has a native bug with width and twist graphs that can't be fixed on my end. Only Autodesk could fix that, but they didn't. In general, Maya 2020 is NOT recommended if you have other options. :ref:`More details<stuck-graphs>`.
+	
+	\*\*Maya **2025** (all versions, including 2025.3) has issues with longer scene loading times. If you can use Maya 2024 or 2026 as they are much faster.
 
 Supported Platforms
 ^^^^^^^^^^^^^^^^^^^
