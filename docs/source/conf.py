@@ -27,7 +27,7 @@ copyright = '%s, George Sladkovsky' % YEAR
 author = 'George Sladkovsky'
 
 # The full version, including alpha/beta/rc tags
-release = 'v1.3'
+release = 'v1.3.11'
 
 # -- General configuration ---------------------------------------------------
 

@@ -4,6 +4,14 @@
 Changelog
 #########
 
+Version 1.3.11
+^^^^^^^^^^^^^^
+
+**Bug fixes:**
+
+- Fixed major bug that prevented the layers from being updated on some Maya versions.
+- Other minor fixes.
+
 Version 1.3.10
 ^^^^^^^^^^^^^^
 
