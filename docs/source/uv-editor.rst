@@ -41,10 +41,16 @@ Material Setup
 ^^^^^^^^^^^^^^
 
 In order for the UV Editor to work correctly a correct material should be used for the cards (:numref:`material_setup_final_material`).
-	
-Lambert with PNG, JPG/JPEG or TIF/TIFF (LZW or No Compression) texture file is recommended. TGA (24bit and no RLE) is also supported.
 
-Supported Maya materials: Lambert, Blinn, Phong, PhongE, Standard Surface.
+Supported textures and nodes:
+
+- Shader nodes: Lambert, Blinn, Phong, PhongE, Standard Surface or OpenPBR.
+- File nodes: file and psdFileTex.
+- Texture file formats: JPG/JPEG, PNG, TIF, TIFF, TGA, PSD, EXR, HDR.
+
+.. important::
+
+   Ramp, checker or other procedural textures are not supported as color input. There needs to be an actual texture file for UV Editor to load.
 
 Simply connect Out Color of Diffuse File to Color of the Lambert and Out Transparency to Transparency (or BaseColor and Opacity for Standard Surface).
 
@@ -136,6 +142,7 @@ In order to move selected UVs, change to Move mode (W) and click and drag with L
 |
 |
 |
+|
 
 **Rotate**
 
@@ -143,10 +150,11 @@ In order to move selected UVs, change to Move mode (W) and click and drag with L
 	:align: right
 	:width: 400px
 
-In order to rotate selected UVs, change to Rotate mode (E) and click and drag with LMB to rotate the UVs. 
+In order to rotate selected UVs, change to Rotate mode (E) and click and drag with LMB to rotate the UVs.
 
-UV rotation pivot is in the same location as the original UV Rotation Attribute pivot.
-
+|
+|
+|
 |
 |
 |
@@ -164,13 +172,12 @@ UV rotation pivot is in the same location as the original UV Rotation Attribute 
 
 In order to Scale selected UVs, change to Scale mode (R) and click and drag with LMB to scale the UVs.
 
-There are two modes for scale - H and V. H will scale UV rectangle horizontally, and V will scale vertically.
+There are three modes for scale - H, V and U (disabled by default). H will scale UV rectangle horizontally, and V will scale vertically.
+
+U will scale UVs uniformly in all directions. U mode is disabled by default, but can be enabled by right clicking on the grayed out U button. It can also be temporarily enabled by holding Shift button and using any other scale mode.
 
 You can switch between these modes by clicking on the H or V switch button or by pressing R button on your keyboard multiple times.
 
-|
-|
-|
 
 **Draw**
 
@@ -180,12 +187,10 @@ You can switch between these modes by clicking on the H or V switch button or by
 	
 Draw mode (D) allows for quick reposition of the UVs using simple drawing gestures. If will change any number of selected UV rectangles to match the shape that was drawn by the user.
 
-Draw will rotate the UVs to the default rotation angle.
+Draw will rotate the UVs to the default rotation angle by default but toggling the "Inverted" mode indicated by the "I" button will invert this behavior.
 
 Draw allows for quick initial positioning of the UV rectangles.
 
-|
-|
 |
 
 Utility Functions
@@ -213,7 +218,7 @@ All horizontally flipped UVs are indicated by the small blue dot at the root of 
 	
 **V-Flip UV**
 
-This function will vertically flip the selected UV rectangle allowing for a quick rotation and repositioning. 
+This function will vertically flip the selected UV rectangle allowing for a quick rotation and repositioning.
 
 Position, Rotation and Scale does not matter when using this function.
 
@@ -354,37 +359,30 @@ Options Menu
 
 .. image:: images/uv_editor/options_menu.png
 	:align: right
-	:width: 300px
+	:width: 150px
 
 In the options menu user can change the texture and viewport visual appearance.
 
 
-**Transparency** - this toggle will enable/disable the use of Alpha map that is connected to the Transparency plug of the material (from separate files or the same file).
-
 .. important:: It is recommended for the Diffuse and Alpha map to have the same resolution and aspect ratio.
-
-----
 
 .. image:: images/uv_editor/alpha_only.png
 	:align: right
 	:width: 400px
 
-**Alpha Only** - this toggle show only the alpha map with transparency. This helps with the texture readability. This toggle automatically enables Transparency.
+
+**Transparency modes:**
+
+- **Off** - Show the diffuse map only without any transparency.
+- **On** - Show the diffuse map with transparency.
+- **Alpha** - Show only the alpha map with transparency. This helps with the texture readability.
 
 |
 |
 |
 |
 |
-|
-|
-|
-|
-|
-|
 
-
-----
 
 .. image:: images/place2dtexture_node.png
 	:align: right

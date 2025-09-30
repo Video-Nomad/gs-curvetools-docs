@@ -4,16 +4,51 @@
 Changelog
 #########
 
+Version 1.3.12
+^^^^^^^^^^^^^^
+
+*???*
+
+**New Features:**
+
+- OpenPBR material support for UV Editor.
+- Added support for PSD, EXR and HDR file format for UV editor.
+- Added support for psdFileTex as a file node type.
+- UVItem rotation will now rotate at the center of the UVItem.
+- Groups of selected UVItems will now rotate around shared pivot point.
+- New UV Draw Mode (normal/inverted) for the UV drawing tool.
+- UV Scale now has Uniform mode. User can switch to it (disabled by default) by enabling it with right click and clicking or just hold SHIFT modifier in any Scale mode.
+
+**Improvements:**
+
+- Replaced separate transparency and alpha-only toggles with a unified three-state control (Off, On, Alpha).
+- Maya 2026 C++ plug-in added (Advanced Visibility).
+- Improved rotation circle rendering for UV editor.
+- Improved selection mode logic.
+- Selection mode will now select only one time if not in drag rect mode.
+- Drag rect mode will only show if dragged for specific threshold.
+- Randomize selection will select the last preview curves, not a new random pattern.
+
+**Bug Fixes:**
+
+- Reset pivot will now work properly even if there's a deformer present on the curve.
+- UV Editor Alt+Scroll zoom fix.
+- Layer Collection drop-down menu styling fixes.
+
 Version 1.3.11
 ^^^^^^^^^^^^^^
 
-**Bug fixes:**
+*13-May-2025*
+
+**Bug Fixes:**
 
 - Fixed major bug that prevented the layers from being updated on some Maya versions.
 - Other minor fixes.
 
 Version 1.3.10
 ^^^^^^^^^^^^^^
+
+*22-Apr-2025*
 
 **New Features:**
 
@@ -24,7 +59,7 @@ Version 1.3.10
 - Bind will no longer automatically flip UVs (back to old behavior)
 - Added automatic initialization that will be triggered when upgrading Maya versions.
 
-**Bug fixes:**
+**Bug Fixes:**
 
 - Fixed Maya's popup dialogs in new Maya versions.
 - Removed deprecated profile magnitude input field. It should not be used. To reset it without the field (old projects) run Options->Other Options->Reset Legacy Profile Magnitude Attribute.
@@ -33,12 +68,14 @@ Version 1.3.10
 Version 1.3.9
 ^^^^^^^^^^^^^
 
+*22-Jan-2025*
+
 **Improvements:**
 
 - PNG with alpha in the RGB channel is now supported for :ref:`color mode<color-mode>`.
 - Improved tooltips parsing.
 
-**Bug fixes:**
+**Bug Fixes:**
 
 - Fixed an error that prevented :ref:`color mode<color-mode>` from being enabled in some cases.
 - Improved error handling in :ref:`color mode<color-mode>` toggle.
@@ -48,13 +85,15 @@ Version 1.3.9
 Version 1.3.8
 ^^^^^^^^^^^^^
 
+*20-Jul-2024*
+
 **Improvements:**
 
 - UV editor will now display Alpha texture instead of Diffuse when only Alpha map is used in the material graph. Color input can now use color constant or other nodes if needed, instead of being restricted to "file" node only.
 - Color mode is now compatible with materials without Diffuse texture map.
 - Mirror function will now skip cards if they are not compatible or broken for some reason.
 
-**Bug fixes:**
+**Bug Fixes:**
 
 - Profile Curve Graph will now be properly copied when using "Transfer Attribute" or "Copy-Paste Attribute" functions. No need to open the "Filter" window first.
 
@@ -65,11 +104,13 @@ Version 1.3.8
 Version 1.3.7
 ^^^^^^^^^^^^^
 
+*24-Jun-2024*
+
 **Improvements:**
 
 - Drastically improved the performance of graphs (Twist, Width) on large complex scenes.
 
-**Bug fixes:**
+**Bug Fixes:**
 
 - Maya 2022 only: Fixed the visual bug that caused the curve to become visibly smaller when using warp cards/tubes and bind. The bugfix is a workaround, as it is an internal Maya issue with some built-in functions. Due to the workaround, the user will see the intermediate updates of the viewport during the function execution.
 
@@ -77,23 +118,27 @@ Version 1.3.7
 Version 1.3.6
 ^^^^^^^^^^^^^
 
+*05-Apr-2024*
+
 **New Features:**
 
 - Maya 2025 support (please report bugs)
 
-**Bug fixes:**
+**Bug Fixes:**
 
 - Minor bug fixes and code refactoring
 
 Version 1.3.5
 ^^^^^^^^^^^^^
 
+*05-Mar-2024*
+
 **Improvements:**
 
 - Automatically reveal the layer if it is hidden and the new object is being created into it.
 - Old versions (v1.2 and up) are now available as a download for Personal Licenses.
 
-**Bug fixes:**
+**Bug Fixes:**
 
 - :ref:`Unpack<unpack>` will no longer be affected by the selected object type in :ref:`Geo to Curve<card-to-curve>` window.
 - :ref:`Export<import-export-page>` will no longer be locked by the :ref:`Advanced Visibility<advanced-visibility>` node present in the scene.
@@ -101,12 +146,14 @@ Version 1.3.5
 Version 1.3.4
 ^^^^^^^^^^^^^
 
+*11-Dec-2023*
+
 **Improvements:**
 
 - Added tooltips to Scale Factor and Precision window and all the controls.
 - Normalize to Default will now reset the sliders even if no curves were selected in the viewport.
 
-**Bug fixes:**
+**Bug Fixes:**
 
 - No more errors when trying to Extract All in an empty scene with no curves.
 - Fixed Layer color picker in the Curve Control Window. It will now change layer color properly.
@@ -114,6 +161,8 @@ Version 1.3.4
 
 Version 1.3.3
 ^^^^^^^^^^^^^
+
+*28-Nov-2023*
 
 **Improvements:**
 
@@ -128,7 +177,7 @@ Version 1.3.3
 
 - Smooth slider was removed from the "Other" tab in the :ref:`Curve Control Window<curve-control-window>` (don't confuse with the :ref:`Smooth<smooth>` function from the main window, it's still there). It was removed because it interfered with the new precision options. There is an option in the Options⇨Other menu to reset the smooth value to 0 if needed for older projects.
 
-**Bug fixes:**
+**Bug Fixes:**
 
 - :ref:`Mirror<mirroring>` will now work properly on Tube objects
 - Opening Log file will no longer block Maya until the log is closed.
@@ -136,7 +185,9 @@ Version 1.3.3
 Version 1.3.2 Hotfix 2
 ^^^^^^^^^^^^^^^^^^^^^^
 
-**Bug fixes:**
+*29-Oct-2023*
+
+**Bug Fixes:**
 
 - Using Curve Card and Curve Tube on duplicated and unparented curves will not throw an error anymore.
 - Other minor related fixes.
@@ -145,12 +196,16 @@ Version 1.3.2 Hotfix 2
 Version 1.3.2 Hotfix 1
 ^^^^^^^^^^^^^^^^^^^^^^
 
+*28-Oct-2023*
+
 **Improvements:**
 
 - Ambient Color plug is now also supported by the UV editor for Lambert, Blinn, Phong and PhongE materials. It will now display the texture correctly in the UV editor if this plug is used, instead of the Color plug.
 
 Version 1.3.2
 ^^^^^^^^^^^^^
+
+*27-Oct-2023*
 
 **Important note:**
 
@@ -183,6 +238,8 @@ Version 1.3.2
 Version 1.3.1
 ^^^^^^^^^^^^^
 
+*19-May-2023*
+
 **Improvements:**
 
 - Changed node id in plug-ins for a proper one from Autodesk. Should avoid conflicts with other plug-ins in the future.
@@ -195,12 +252,16 @@ Version 1.3.1
 Version 1.3 Hotfix 1
 ^^^^^^^^^^^^^^^^^^^^
 
+*05-Apr-2023*
+
 **Bug Fixes:**
 
 - Fixed an error in Maya 2018-2020 when clicking on layer Filters.
 
 Version 1.3
 ^^^^^^^^^^^
+
+*04-Apr-2023*
 
 Major update!
 
@@ -284,6 +345,8 @@ Major update!
 Version 1.2.10
 ^^^^^^^^^^^^^^
 
+*07-Jul-2022*
+
 **Improvements:**
 
 - Fill function will now automatically reset pivot to the root CV on newly created curves.
@@ -297,13 +360,17 @@ Version 1.2.10
 Version 1.2.9
 ^^^^^^^^^^^^^
 
+*04-Jul-2022*
+
 **Bug Fixes:**
 
 - Fixed a bug with UV Editor not showing textures in older (Python 2) Maya versions.
 
 Version 1.2.8
 ^^^^^^^^^^^^^
-  
+
+*27-Jun-2022*
+
 **New Features:**
 
 - All the relevant buttons now have (optional) tooltips. Can be disabled in the Options.
@@ -368,6 +435,8 @@ Version 1.2.8
 Version 1.2.7
 ^^^^^^^^^^^^^
 
+*20-Mar-2022*
+
 **New Features:**
 
 - **Maya 2023 Support**
@@ -394,6 +463,8 @@ Version 1.2.7
 Version 1.2.6
 ^^^^^^^^^^^^^
 
+*21-Feb-2022*
+
 **Improvements:**
 
 - More precise generation of **Control Curve** deformer. Generated control curve should now better match the curvature of the selected curves.
@@ -405,6 +476,8 @@ Version 1.2.6
 
 Version 1.2.5
 ^^^^^^^^^^^^^
+
+*24-Jan-2022*
 
 **New Features:**
 
@@ -434,6 +507,8 @@ Version 1.2.5
 Version 1.2.4
 ^^^^^^^^^^^^^
 
+*09-Aug-2021*
+
 **New Features:**
 
 - **Orient to Normals** function is now available in the Curve Control Window. Orients selected cards to the target mesh. Change number of iterations or angle tolerance to get the result you want. Target mesh is selected and remembered throughout the session. Orient function has dedicated hotkey available.
@@ -457,6 +532,8 @@ Version 1.2.4
 Version 1.2.3
 ^^^^^^^^^^^^^
 
+*20-May-2021*
+
 **Bugfixes:**
 
 - Maya 2020.4 Unbind fixed. New cards will have the fix built-in. Old cards must be fixed using Fix Maya 2020.4 Unbind Function from the Options Menu.
@@ -466,6 +543,8 @@ Version 1.2.3
 
 Version 1.2.2
 ^^^^^^^^^^^^^
+
+*04-May-2021*
 
 Just a small hotfix for Maya 2020.4 users
 
@@ -479,6 +558,8 @@ Just a small hotfix for Maya 2020.4 users
 Version 1.2.1
 ^^^^^^^^^^^^^
 
+*04-May-2021*
+
 Just a small hotfix for Maya 2017 users
 
 **Ignore this update if you had no issues with the plug-in.**
@@ -489,6 +570,8 @@ Just a small hotfix for Maya 2017 users
 
 Version 1.2
 ^^^^^^^^^^^
+
+*28-Apr-2021*
 
 Major Update!
 
@@ -539,6 +622,8 @@ Major Update!
 Version 1.1.5
 ^^^^^^^^^^^^^
 
+*02-Sep-2020*
+
 Small transition update before v1.2
 
 **Improvements:**
@@ -547,12 +632,14 @@ Small transition update before v1.2
 - Fixed text alignment in some menus.
 - General code optimization and maintenance.
 
-**Fixed Bugs:**
+**Bug Fixes:**
 
 - Extracting geometry from selected curves will no longer throw an error and stop if one or more curves are broken. Now it will just skip those curves and print their names in the console.
 
 Version 1.1.4
 ^^^^^^^^^^^^^
+
+*30-Jul-2020*
 
 **Improvements:**
 
@@ -560,7 +647,7 @@ Version 1.1.4
 - Removed minimize and maximize buttons from Scale Factor, Global Curve Thickness and Randomize windows.
 - Changed the name of the Randomize window from "Randomize" to "Randomize Curves".
 
-**Fixed Bugs:**
+**Bug Fixes:**
 
 - Fixed a Randomize window bug where it failed to properly construct the window if the main plug-in window was docked. It should now properly create a floating window regardless of the main window position or docking.
 - Fixed a bug with Control Curve Apply button where it deleted wrong curves after applying the deformer. This only happened with the Curve Cards/Tubes that were created using Curve Card/Tube or Warp buttons out of duplicated Control Curve curves.
@@ -569,6 +656,8 @@ Version 1.1.4
 
 Version 1.1.3
 ^^^^^^^^^^^^^
+
+*09-May-2020*
 
 **New Features:**
 
@@ -582,7 +671,7 @@ Version 1.1.3
 
 - Group Curves command will no longer append a number to the end of the name of the group. Maya should handle this automatically.
 
-**Fixed Bugs:**
+**Bug Fixes:**
 
 - Fixed an error that appeared on commands Reset Pivot, Rebuild Curve and Select Curve when there were matching names in the scene.
 
@@ -590,6 +679,8 @@ Version 1.1.3
 
 Version 1.1.2
 ^^^^^^^^^^^^^
+
+*13-Apr-2020*
 
 **New Features:**
 
@@ -600,7 +691,7 @@ Version 1.1.2
 
 - More predictable behavior of "Flip Axis" button. It will now automatically reverse normals (affects only curves created in v1.1.2 and higher)
 
-**Fixed Bugs:**
+**Bug Fixes:**
 
 - Attaching custom geometry to a curve will no longer cause "offset" if target curve has transforms or offset pivot.
 - Fixed an error and "stuck" progress bar when pressing Duplicate button with no curves selected.
@@ -609,6 +700,8 @@ Version 1.1.2
 
 Version 1.1.1
 ^^^^^^^^^^^^^
+
+*30-Mar-2020*
 
 **New Features:**
 
@@ -620,7 +713,7 @@ Version 1.1.1
 - **Rebuild Curve Slider** will no longer throw warning messages when used with no curves selected
 - **Twist Magnitude** field upper limit increased to 99
 
-**Fixed Bugs:**
+**Bug Fixes:**
 
 - **Fixed Hotkeys**. They will now save properly between Maya sessions
 - **Open Online Documentation** will now properly work on Mac
@@ -629,6 +722,8 @@ Version 1.1.1
 
 Version 1.1
 ^^^^^^^^^^^
+
+*10-Mar-2020*
 
 **New Features:**
 
@@ -687,7 +782,7 @@ Version 1.1
 
 - **Mac OS** support is now in Beta. If you have any bugs, please report them.
 
-**Fixed Bugs:**
+**Bug Fixes:**
 
 - Switching workspaces and closing Maya will not cause blank window to appear when Maya is launched next time.
 
@@ -710,11 +805,13 @@ Version 1.1
 Version 1.0.15
 ^^^^^^^^^^^^^^
 
+*05-Jan-2020*
+
 **Improvements:**
 
 - Added full Maya 2020 Support
 
-**Fixed Bugs:**
+**Bug Fixes:**
 
 - Fixed some minor bugs for all Maya versions
 - Fixed Curve Control Window error for Maya 2017 and 2018
@@ -722,7 +819,9 @@ Version 1.0.15
 Version 1.0.1
 ^^^^^^^^^^^^^
 
-**Fixed Bugs:**
+*05-Dec-2019*
+
+**Bug Fixes:**
 
 - Fixed a bug where accidental duplication (Ctrl+D) of path curve led to unexpected behavior of layers
 - Other minor improvements
@@ -730,16 +829,20 @@ Version 1.0.1
 Version 1.0.05
 ^^^^^^^^^^^^^^
 
+*06-Nov-2019*
+
 **Improvements:**
 
 - Supported Maya versions now have separate plugins for better compatibility. Report bugs with Maya version attached.
 
-**Fixed Bugs:**
+**Bug Fixes:**
 
 - Fixed huge Shelf icons some users of Maya 2018 and 2017 have experienced
 - Fixed a few bugs in Maya 2017 version
 
 Version 1.0
 ^^^^^^^^^^^
+
+*08-Oct-2019*
 
 - Initial Release
