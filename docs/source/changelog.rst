@@ -4,10 +4,23 @@
 Changelog
 #########
 
+
+Version 1.3.13
+^^^^^^^^^^^^^^
+
+*15-Oct-2025*
+
+**Bug Fixes:**
+
+- Bind no longer fails to reset the pivot when binding Cards to an empty curve.
+- Bind no longer fails to bind Geometry to an empty curve.
+- UV Editor no texture found error was fixed (when texture file was deleted by the user but still present in the file node).
+
+
 Version 1.3.12
 ^^^^^^^^^^^^^^
 
-*???*
+*30-Sep-2025*
 
 **New Features:**
 
