@@ -113,5 +113,3 @@ Reset Pivot
 Holding **Shift** Modifier will position the pivot point at the last CV of the curve (tip of the curve).
 
 This command is extremely useful because if you move the first CV, or all CVs at the same time in component mode (not the curve itself in the object mode) your pivot point will not follow the curve.
-
-

@@ -65,8 +65,8 @@ Extrude Mode
 |
 
 .. image:: images/buttons/fill.png
-	:name: fill-button
-	:width: 150px
+    :name: fill-button
+    :width: 150px
 
 Fill function is similar to :ref:`Add Cards and Tubes <add-cards-button>`, but it is compatible with :ref:`Bind <bind-unbind>` geometry. It will copy the first selected curve and distribute it like Add Cards does.
 

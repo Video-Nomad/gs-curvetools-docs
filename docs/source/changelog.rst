@@ -5,6 +5,35 @@ Changelog
 #########
 
 
+Version 1.3.14
+^^^^^^^^^^^^^^
+
+*16-Nov-2025*
+
+**New Features:**
+
+- UV Editor UDIM texture support:
+
+    - Properly named textures will now display as UDIM tiles.
+    - Select UDIM tile dropdown menu will allow to select any tile from the texture set.
+    - Move Selected UVs one tile left/right/up/down.
+
+- UV Editor GPU acceleration. Can be disabled in the options.
+- New Settings window to de-clutter the Options Menu.
+- New Layer Collection indicator/dropdown menu in Curve Control Window.
+
+**Improvements:**
+
+- Mouse scrolling was disabled for Layer and Collection selectors in Curve Control Window. Can be enabled in the Settings menu.
+- Removed Offset attribute as it was broken for some time and unusable.
+- Improved UV Editor visuals (better grid drawing, better selection rectangle and Draw rectangle).
+
+**Bug Fixes:**
+
+- Fixed Layer Collections special characters issue. Now Layer Collections can be named using any characters and they will not interfere with Extract and Group functions.
+- Profile Graph will now properly be reset to default even if the "Auto" mode is enabled.
+- Numerous little bug fixes and code improvements...
+
 Version 1.3.13
 ^^^^^^^^^^^^^^
 

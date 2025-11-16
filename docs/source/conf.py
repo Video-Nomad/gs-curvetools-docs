@@ -16,32 +16,30 @@
 import datetime
 
 try:
-    YEAR = datetime.datetime.now().year
+    copyright_year = datetime.datetime.now().year
 except BaseException:
-    YEAR = 2025
+    copyright_year = 2025
 
 # -- Project information -----------------------------------------------------
 
-project = 'GS CurveTools'
-copyright = '%s, George Sladkovsky' % YEAR
-author = 'George Sladkovsky'
+project = "GS CurveTools"
+copyright = "%s, George Sladkovsky" % copyright_year
+author = "George Sladkovsky"
 
 # The full version, including alpha/beta/rc tags
-release = 'v1.3.11'
+release = "v1.3.14"
 
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = [
-    'sphinx_copybutton'
-]
+extensions = ["sphinx_copybutton"]
 
 numfig = True
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ["_templates"]
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -50,40 +48,40 @@ exclude_patterns = []
 
 # -- Options for LaTeX output
 
-latex_toplevel_sectioning = 'chapter'
+latex_toplevel_sectioning = "chapter"
 
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+html_theme = "sphinx_rtd_theme"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ["_static"]
 
-master_doc = 'index'
+master_doc = "index"
 
 html_theme_options = {
-    'canonical_url': '',
-    'logo_only': False,
-    'display_version': False,
-    'prev_next_buttons_location': 'bottom',
-    'style_nav_header_background': '#5285A6',
+    "canonical_url": "",
+    "logo_only": False,
+    "display_version": False,
+    "prev_next_buttons_location": "bottom",
+    "style_nav_header_background": "#5285A6",
     # Toc options
-    'collapse_navigation': True,
-    'sticky_navigation': True,
-    'navigation_depth': 2,
-    'includehidden': True,
-    'titles_only': False,
+    "collapse_navigation": True,
+    "sticky_navigation": True,
+    "navigation_depth": 2,
+    "includehidden": True,
+    "titles_only": False,
 }
 
 html_css_files = [
-    'css/custom.css',
+    "css/custom.css",
 ]
 
-html_logo = 'images/logo.png'
+html_logo = "images/logo.png"
 
-html_favicon = 'images/favicon.png'
+html_favicon = "images/favicon.png"

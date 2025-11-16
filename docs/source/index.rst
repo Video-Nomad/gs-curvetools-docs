@@ -127,6 +127,7 @@ Supported Platforms
 	Advanced Visibility <advanced-visibility>
 	Scale Factor and Precision <scale-factor-and-precision>
 	Options Menu <options>
+	Settings Menu <settings>
 	Useful Tips <useful-tips>
 	Questions, Issues and Solutions <faq>
 
