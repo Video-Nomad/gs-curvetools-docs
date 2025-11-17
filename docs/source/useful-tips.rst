@@ -4,6 +4,33 @@
 Useful Tips
 ###########
 
+Resetting Maya for GS CurveTools
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Sometimes, Maya internal preferences can become corrupted or in general behave weirdly. This can affect GS CurveTools performance and functions as well, since it uses Maya functions for its operation.
+
+In that case the only option might be to reset Maya preferences to defaults. This can be done while keeping the hotkeys, shelves and workspaces intact.
+
+How to reset Maya preferences:
+
+.. figure:: images/userPrefs.png
+  :width: 250px
+  :align: right
+
+  userPrefs.mel file on Windows
+
+1. Close Maya and locate **prefs** folder. It is a folder that holds all the preferences for Maya and is located here: "**\\Documents\\maya\\2024\\prefs**" (Windows and Maya 2024 as an example)
+  
+2. Locate the **userPrefs.mel** file inside the prefs folder.
+
+3. Rename it to userPrefs.backup or userPrefs_backup.mel or to anything similar. This file holds all the Maya internal preferences for all the functions and variables. Your shelves and custom hotkeys as well as workspaces should remain intact.
+
+4. Open Maya and run the :ref:`init command for GS CurveTools again<initialize>`.
+
+5. Check the functions that were not working. If they are still not functional - file a bug report.
+
+6. If this reset didn't help, you can close Maya again, return to the prefs folder, delete newly generated **userPrefs.mel** file and rename the old **userPrefs_backup.mel** back to **userPrefs.mel**. This will restore all the previous settings back.
+
 Better Transparency Settings Viewport
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -48,41 +75,3 @@ To change curve thickness globally go to GS CurveTools :ref:`Options<options>` â
   Curve Thickness changed on selected curves
 
 You can also change curve thickness manually in :ref:`Curve Control Window<attributes>` using number field on the top right. This will not change global curve thickness. Only selected curves will be affected.
-
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-
-Resetting Maya for GS CurveTools
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Sometimes, Maya internal preferences can become corrupted or in general behave weirdly. This can affect GS CurveTools performance and functions as well, since it uses Maya functions for its operation.
-
-In that case the only option might be to reset Maya preferences to defaults. This can be done while keeping the hotkeys, shelves and workspaces intact.
-
-How to reset Maya preferences:
-
-.. figure:: images/userPrefs.png
-  :width: 250px
-  :align: right
-
-  userPrefs.mel file on Windows
-
-1. Close Maya and locate **prefs** folder. It is a folder that holds all the preferences for Maya and is located here: "**\\Documents\\maya\\2024\\prefs**" (Windows and Maya 2024 as an example)
-  
-2. Locate the **userPrefs.mel** file inside the prefs folder.
-
-3. Rename it to userPrefs.backup or userPrefs_backup.mel or to anything similar. This file holds all the Maya internal preferences for all the functions and variables. Your shelves and custom hotkeys as well as workspaces should remain intact.
-
-4. Open Maya and run the :ref:`init command for GS CurveTools again<initialize>`.
-
-5. Check the functions that were not working. If they are still not functional - file a bug report.
-
-6. If this reset didn't help, you can close Maya again, return to the prefs folder, delete newly generated **userPrefs.mel** file and rename the old **userPrefs_backup.mel** back to **userPrefs.mel**. This will restore all the previous settings back.
