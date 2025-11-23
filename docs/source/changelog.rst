@@ -4,6 +4,15 @@
 Changelog
 #########
 
+Version 1.3.14
+^^^^^^^^^^^^^^
+
+*23-Nov-2025*
+
+**Bug Fixes:**
+
+- Fixed a critical bug that prevented Curve Control Window updates on fresh installations due to options mismatch.
+
 
 Version 1.3.14
 ^^^^^^^^^^^^^^
