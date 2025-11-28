@@ -130,6 +130,8 @@ Extend, Reduce and Smooth
 
 Extend will try to interpolate the next point based on the curvature of the curve. However, on high Factor values this can behave unpredictably.
 
+Holding Shift will extend from the Root instead of the Tip.
+
 |
 |
 |

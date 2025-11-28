@@ -4,7 +4,31 @@
 Changelog
 #########
 
-Version 1.3.14
+Version 1.3.16
+^^^^^^^^^^^^^^
+
+*28-Nov-2025*
+
+**New Features:**
+
+- Added Reduce and Extend from the Root (Shift + Click)
+- Added Reduce and Extend from the Root Hotkeys
+
+**Improvements:**
+
+- Options are now saved as json file in prefs folder (more minor improvements there)
+- Better logging handling if user has non-English Maya and Python 2 (unicode handling).
+
+**Bug Fixes:**
+
+- Disabled UV Editor GPU acceleration in Maya 2018-2024 for now. 2025 and 2026 still benefit from faster UV Editor. Will investigate further how to fix 2018-2024.
+- Fixed add/fill failing with wrong selection.
+- Fixed group and regroup by layer error when wrong curves were selected.
+- Fixed scale factor and precision failing if wrong curves were selected.
+- Fixed subdivide failing with wrong selection.
+
+
+Version 1.3.15
 ^^^^^^^^^^^^^^
 
 *23-Nov-2025*
