@@ -8,6 +8,14 @@ img.align-center {
     display: block;
 }
 
+img {
+    border-radius: 6px !important;
+}
+
+video {
+    border-radius: 6px !important;
+}
+
 /* override table no-wrap */
 .wy-table-responsive table td,
 .wy-table-responsive table th {
@@ -18,11 +26,31 @@ img.align-center {
 @media only screen and (min-width: 769px) {
     .wy-body-for-nav {
         /* Center the page on wide displays for better readability */
-        background-color: rgb(68, 68, 68);
         max-width: 1100px;
         margin: 0 auto;
     }
 }
+
+/* Theme-aware background for the centered layout and gaps */
+html[data-theme="light"],
+html[data-theme="light"] .wy-body-for-nav {
+    background-color: #444444;
+}
+
+html[data-theme="dark"],
+html[data-theme="dark"] .wy-body-for-nav {
+    background-color: #101010;
+}
+
+/* Theme-aware sidebar search background */
+html[data-theme="light"] .wy-side-nav-search {
+    background-color: #5285A6 !important;
+}
+
+html[data-theme="dark"] .wy-side-nav-search {
+    background-color: #2a4455 !important;
+}
+
 
 /* Navigational sidebar */
 @media only screen and (min-width: 769px) {

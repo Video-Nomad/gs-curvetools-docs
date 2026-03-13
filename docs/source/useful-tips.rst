@@ -25,7 +25,7 @@ How to reset Maya preferences:
 
 3. Rename it to userPrefs.backup or userPrefs_backup.mel or to anything similar. This file holds all the Maya internal preferences for all the functions and variables. Your shelves and custom hotkeys as well as workspaces should remain intact.
 
-4. Open Maya and run the :ref:`init command for GS CurveTools again<initialize>`.
+4. Open Maya and run the :ref:`init command for GS CurveTools again<installation-steps>`.
 
 5. Check the functions that were not working. If they are still not functional - file a bug report.
 

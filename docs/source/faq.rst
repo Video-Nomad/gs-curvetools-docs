@@ -298,7 +298,7 @@ Bad Magic Number error indicates that the host (Maya) is using different version
 
 **Solution/Workaround:**
 
-During the :ref:`installation of GS CurveTools<initialize>` make sure to use the correct version of Maya in the zip file. Read the "How to choose version.txt" for details:
+During the :ref:`installation of GS CurveTools<installation-steps>` make sure to use the correct version of Maya in the zip file. Read the "How to choose version.txt" for details:
 
 .. code-block::
 

@@ -4,6 +4,39 @@
 Changelog
 #########
 
+Version 1.3.17
+^^^^^^^^^^^^^^
+
+*13-Mar-2026*
+
+**New Features:**
+
+- **Persistent UI**: Main window and Curve Control window will now persist between Maya sessions. This includes docked position.
+- **Restore Selected Curves**: Curves, Tubes and Bind objects can now be restored using Options -> Restore Selected Curves. For example if construction history was accidentally cleared.
+- **Scaling**: Selected Curves, Tubes, Bind objects and regular Geo can now be scaled as one using Scaling tab in Curve Control Window.
+
+  - Scaling can be performed from bounding box, pivots or custom center point.
+  - Shift + Click will invert the scaling (1/scale).
+  - Hotkeys for both direct and inverted scaling are available.
+
+- **New Graphs**: Added a new and improved graph for Twist, Width and Profile with better controls, responsiveness, box selection, and right-click point deletion.
+- **UV Editor**: UV item (rectangle) fill color will now become transparent if full black color is selected in the Options.
+- **Dynamic Divisions Multiplier**: Added a new input field to Curve Control Window - Dynamic Divisions Multiplier. This will allow for more granular control over the number of divisions when Dynamic Divisions (Auto) are enabled.
+
+**Improvements:**
+
+- **Advanced Visibility**: Hotkeys can now work without Curve Control Window opened.
+- **Orient to Normals**: Updated the algorithm for faster and more accurate orientation.
+- **Rebuild Curve**: Rebuild slider will now automatically remove construction history and any tweaks from curves.
+
+**Bug Fixes:**
+
+- **Color Mode**: Fixed Add to Layer error on new cards when color mode is enabled.
+- **Regroup/Extract**: Improved collection sanitization to handle leading numbers in names and fixed failures when working with namespaces.
+- **Conversion**: Fixed dialog branching and issues with dynamic divisions/auto-sampling in creation.
+- **Python 2**: Various fixes for Python 2 compatibility.
+
+
 Version 1.3.16
 ^^^^^^^^^^^^^^
 

@@ -466,7 +466,7 @@ In the options menu user can change the texture and viewport visual appearance.
 
 - (4) Selected UV frame color
 - (5) Deselected UV frame color
-- (6) UV Frame background color (fill color).
+- (6) UV Frame background color (fill color). Setting this to full black will make the fill completely transparent.
 
 The colors set here will be saved and used in every project.
 

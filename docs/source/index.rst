@@ -123,6 +123,7 @@ Supported Platforms
 	Quick Selection and Grouping <selection>
 	Importing and Exporting Curves <import-export>
 	Orient to Normals <orient-to-normals>
+	Scaling Curves <scaling-curves>
 	Utility Functions <utility>
 	Advanced Visibility <advanced-visibility>
 	Scale Factor and Precision <scale-factor-and-precision>

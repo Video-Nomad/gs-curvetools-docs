@@ -18,7 +18,7 @@ import datetime
 try:
     copyright_year = datetime.datetime.now().year
 except BaseException:
-    copyright_year = 2025
+    copyright_year = 2026
 
 # -- Project information -----------------------------------------------------
 
@@ -27,7 +27,7 @@ copyright = "%s, George Sladkovsky" % copyright_year
 author = "George Sladkovsky"
 
 # The full version, including alpha/beta/rc tags
-release = "v1.3.16"
+release = "v1.3.17"
 
 # -- General configuration ---------------------------------------------------
 
@@ -67,9 +67,7 @@ master_doc = "index"
 html_theme_options = {
     "canonical_url": "",
     "logo_only": False,
-    "display_version": False,
     "prev_next_buttons_location": "bottom",
-    "style_nav_header_background": "#5285A6",
     # Toc options
     "collapse_navigation": True,
     "sticky_navigation": True,
@@ -80,6 +78,13 @@ html_theme_options = {
 
 html_css_files = [
     "css/custom.css",
+    "dark_mode_css/general.css",
+    "dark_mode_css/dark.css",
+]
+
+html_js_files = [
+    "dark_mode_js/default_light.js",
+    "dark_mode_js/theme_switcher.js",
 ]
 
 html_logo = "images/logo.png"

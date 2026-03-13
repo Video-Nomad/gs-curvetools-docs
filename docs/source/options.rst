@@ -86,6 +86,13 @@ Can be used to easily extract and export curves from GS CurveTools objects.
 
 This function is basically the same as using Ctrl+D and then Shift+P. Using a function instead of hotkeys ensures that you won't duplicate the curve twice or duplicate and forget to unparent.
 
+Restore Selected Curves
+^^^^^^^^^^^^^^^^^^^^^^^
+
+This function will attempt to restore the selected curves to their original functional state. This is useful if you accidentally cleared construction history on geometry or the entire scene.
+
+All types are supported (curves, tubes, bound objects).
+
 Other Options
 ^^^^^^^^^^^^^
 

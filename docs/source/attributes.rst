@@ -50,6 +50,9 @@ Main Attributes
   * -  **Auto** Length Divisions Toggle - automatically recomputes length divisions based on the length of the curve. In this mode, L-Div slider controls the density of the geometry.
     - .. image:: images/attributes/auto-l-div.png
         :target: _images/auto-l-div.png
+  * -  **Dynamic Division Multiplier** - allows for more granular control over the number of divisions when Dynamic Divisions (Auto) are enabled.
+    - .. image:: images/attributes/dynamic_div_mult.png
+        :target: _images/dynamic_div_mult.png
   * - **Width Division** (W-Div) - changes width division of the geometry.
     - .. image:: images/attributes/width_division.png
         :target: _images/width_division.png
