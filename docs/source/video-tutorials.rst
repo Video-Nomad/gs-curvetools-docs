@@ -28,6 +28,16 @@ Video Tutorials
 
 |
 
+Version 1.3.17 Minor Update
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <div style="border-radius: 8px; position: relative; height: 400; overflow: hidden; max-width: 100%;">
+        <iframe width="696" height="391" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" src="https://www.youtube.com/embed/5gvNFgXdQX4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+|
 
 Version 1.3.14 Minor Update
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
