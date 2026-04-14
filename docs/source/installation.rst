@@ -37,7 +37,7 @@ Windows Installation
 
    .. code-block:: python
 
-      import gs_curvetools.init as ct_init; from imp import reload; reload(ct_init); ct_init.Init();
+      import gs_curvetools.init as ct_init; ct_init.Init();
 
 4. **Run the Code**: Press **Enter** (for Command Field) or click the **Play (Execute)** triangle icon in the Script Editor.
 
@@ -68,7 +68,7 @@ Mac Installation
 
    .. code-block:: python
 
-      import gs_curvetools.init as ct_init; from imp import reload; reload(ct_init); ct_init.Init();
+      import gs_curvetools.init as ct_init; ct_init.Init();
 
 4. **Run the Code**: Press **Enter** (for Command Field) or click the **Play (Execute)** triangle icon in the Script Editor.
 

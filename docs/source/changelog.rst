@@ -4,6 +4,25 @@
 Changelog
 #########
 
+Version 1.3.18
+^^^^^^^^^^^^^^
+
+*14-Apr-2026*
+
+**New Features:**
+
+- Maya 2027 support. Please report bugs.
+
+**IMPORTANT:**
+
+- There is a new init command for Maya 2027. Please check the docs or readme.txt.
+
+**Bug Fixes:**
+
+- Any tweaks will now be applied when using mirror function. Should fix deformations during mirror when third party tools are used.
+- Disabled OpenGL for UV editor on Mac. Unfortunately, Mac is not compatible in this case.
+- On window restore (Maya restart) the letter/number option in Layers will now be restored properly.
+
 Version 1.3.17
 ^^^^^^^^^^^^^^
 
