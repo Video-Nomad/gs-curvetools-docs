@@ -2,7 +2,7 @@
 GS CurveTools for Autodesk Maya Documentation
 #############################################
 
-**For Maya 2018-2026**
+**For Maya 2018-2027**
 
 Links
 ^^^^^
@@ -84,18 +84,19 @@ Recommended Maya Versions
 - 2024, 2024.1, 2024.2
 - 2025\*\*
 - 2026
+- 2027
 
 .. note:: 
 	
 	\*Maya **2020.4** has a native bug with width and twist graphs that can't be fixed on my end. Only Autodesk could fix that, but they didn't. In general, Maya 2020 is NOT recommended if you have other options. :ref:`More details<stuck-graphs>`.
 	
-	\*\*Maya **2025** (all versions, including 2025.3) has issues with longer scene loading times. If you can use Maya 2024 or 2026 as they are much faster.
+	\*\*Maya **2025** (all versions, including 2025.3) has issues with longer scene loading times. If you can use Maya 2024 or 2026 as they are much faster. 2027 is generally stable as well.
 
 Supported Platforms
 ^^^^^^^^^^^^^^^^^^^
 
-- **Maya 2018-2026 for Windows** ⇨ Fully Tested and Supported*.
-- **Maya 2018-2026 for Mac** ⇨ In Beta*.
+- **Maya 2018-2027 for Windows** ⇨ Fully Tested and Supported*.
+- **Maya 2018-2027 for Mac** ⇨ In Beta*.
 - **Linux** ⇨ Not Tested and Not Supported.
 - **Maya LT** ⇨ Not Tested and Not Supported.
 - **Maya 2017** ⇨ Is no longer supported since v1.2.7
