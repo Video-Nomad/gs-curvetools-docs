@@ -4,6 +4,15 @@
 Changelog
 #########
 
+Version 1.3.19
+^^^^^^^^^^^^^^
+
+*26-May-2026*
+
+**Bug Fixes:**
+
+- Mirror function reset pivot bug was fixed. Mirror operation should be about twice as fast now.
+
 Version 1.3.18
 ^^^^^^^^^^^^^^
 
