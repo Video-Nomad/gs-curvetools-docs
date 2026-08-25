@@ -15,19 +15,14 @@
 # sys.path.insert(0, os.path.abspath('.'))
 import datetime
 
-try:
-    copyright_year = datetime.datetime.now().year
-except BaseException:
-    copyright_year = 2026
-
 # -- Project information -----------------------------------------------------
 
 project = "GS CurveTools"
-copyright = "%s, George Sladkovsky" % copyright_year
+copyright = f"{datetime.datetime.now(datetime.UTC).year}, George Sladkovsky"
 author = "George Sladkovsky"
 
 # The full version, including alpha/beta/rc tags
-release = "v1.3.18"
+release = "v1.3.19"
 
 # -- General configuration ---------------------------------------------------
 
