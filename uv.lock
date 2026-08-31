@@ -103,6 +103,7 @@ dependencies = [
     { name = "sphinx-autobuild" },
     { name = "sphinx-copybutton" },
     { name = "sphinx-rtd-theme" },
+    { name = "sphinxcontrib-video" },
 ]
 
 [package.metadata]
@@ -111,6 +112,7 @@ requires-dist = [
     { name = "sphinx-autobuild", specifier = ">=2024.10.3" },
     { name = "sphinx-copybutton", specifier = ">=0.5.2" },
     { name = "sphinx-rtd-theme", specifier = ">=3.0.2" },
+    { name = "sphinxcontrib-video", specifier = ">=0.4.2" },
 ]
 
 [[package]]
@@ -375,6 +377,18 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/3b/44/6716b257b0aa6bfd51a1b31665d1c205fb12cb5ad56de752dfa15657de2f/sphinxcontrib_serializinghtml-2.0.0.tar.gz", hash = "sha256:e9d912827f872c029017a53f0ef2180b327c3f7fd23c87229f7a8e8b70031d4d", size = 16080, upload-time = "2024-07-29T01:10:09.332Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/52/a7/d2782e4e3f77c8450f727ba74a8f12756d5ba823d81b941f1b04da9d033a/sphinxcontrib_serializinghtml-2.0.0-py3-none-any.whl", hash = "sha256:6e2cb0eef194e10c27ec0023bfeb25badbbb5868244cf5bc5bdc04e4464bf331", size = 92072, upload-time = "2024-07-29T01:10:08.203Z" },
+]
+
+[[package]]
+name = "sphinxcontrib-video"
+version = "0.4.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "sphinx" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/cc/18/ca17d2f66d519f1a9d0020da0bcdf33881e02471096377b3e993d1acb952/sphinxcontrib_video-0.4.2.tar.gz", hash = "sha256:18477fd9454ac8c69259e6d24e782d8b802345b6475de6216351c2305b06c898", size = 11992, upload-time = "2026-01-14T10:00:29.298Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0b/85/5a61ac88dc21df340a5999ca3ab94edaf58287010c62020be426703b8dd3/sphinxcontrib_video-0.4.2-py3-none-any.whl", hash = "sha256:7dfd01e5e2025de39536457854052b18723575d6213d96ca35f83e3154dc0315", size = 10275, upload-time = "2026-01-14T10:00:28.477Z" },
 ]
 
 [[package]]

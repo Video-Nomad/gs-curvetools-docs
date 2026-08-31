@@ -4,6 +4,70 @@
 Changelog
 #########
 
+Version 2.0.0
+^^^^^^^^^^^^^
+
+*07-Sep-2026*
+
+**IMPORTANT:**
+
+- GS CurveTools v2 is NOT compatible with v1 scenes. Make sure to finish your v1 projects before upgrading to v2. You can still safely open v1 scenes, but you won't be able to use v2 tools on v1 objects.
+- Check the new installation method.
+
+**New Features:**
+
+- Complete rework of GS CurveTools including custom compiled nodes specifically created for hair cards workflow, fast compiled commands and intuitive :ref:`sculpting and manipulation tools<controls>`.
+- New :ref:`Mesh Generator<extrude-cards>` node for Cards and Tubes that is about 20x times faster than v1.3 Warp card with the same polycount.
+
+  - New :ref:`attributes<attributes>` for cards and tubes including Curvature-based Divisions, Profile Width Graph, Profile Frequency, V-Offset, Length Offset (yes it's back!) and more.
+  - The node graph is now extremely simple (only 3 nodes!) which means smaller file size and much faster saving/loading.
+  - Scenes can now handle thousands of cards easily without performance issues.
+- New procedural :ref:`Braid Mesh Generator<braids>` node that allows for quick creation of 2, 3 and 4 strand braids with various patterns.
+
+  - Create any type of :ref:`braid<braids>` in seconds, adjust at any moment since everything is non-destructive.
+  - Control every :ref:`strand<braid-attributes>` separately or the :ref:`braid<braids>` as a whole.
+  - Full set of :ref:`controls<attributes>` (Twist, Graphs, UVs, everything) for the :ref:`braid<braids>` and strands.
+- New custom Deformer (:ref:`Bind<bind-unbind>`) node that is about 20x faster than v1.3 Bind and hosts additional parameters.
+
+  - Create more :ref:`Bind objects<bind-unbind>` in the scene without sacrificing the performance or inflating the scene size.
+  - :ref:`Bind objects<bind-unbind>` now have full range of controls just like regular :ref:`Cards and Tubes<extrude-cards>`.
+- New :ref:`UV Lattice<uv-lattice>` for more granular UV adjustments in the UV Editor.
+- New :ref:`Template system<templates>` that allows to store and re-use scene-scoped templates easily.
+
+  - Most commands that generate new objects can now use Templates as an optional output
+  - Dedicated :ref:`Templates command<template-button>` that will directly create the selected template on the curve or apply template parameters to already existing objects.
+  - Add templates to :ref:`Curve Control Window<curve-control-window>` in one click. Rename, move and delete templates
+- New :ref:`Sculpt<sculpt-tool>` brush that allows for fast and intuitive sculpting, selection, smoothing, moving, cutting, scaling and extending NURBS curves.
+- New :ref:`Place Tool<place-tool>` that allows to place curves on the surface of the base mesh with ease. Place tool will blend the curves based on the nearby curves if they are in the influence radius of the tool.
+- New :ref:`Draw Tool<draw-tool>` that will help you quickly draw curves and templates right on the mesh surface. Use offset param, auto-orient to normals and more.
+- New :ref:`Value Tool<value-tool>` to quickly change curve attributes like Orientation, Width, Twist and more. Quickly switch between the attributes using the provided marking menu.
+- New :ref:`Twist and Width<twist-and-width-tool>` manipulators that are used for precise edits of the Twist and Width graphs on all the objects. Change the graphs right in the viewport without touching the Curve Control Window. Hotkeys available.
+- New updated :ref:`Curve Control Window<curve-control-window>` with custom sliders that support precision mode (hold Ctrl) and that also shows sub-components so you can easily adjust Braid or Bind objects.
+- New :ref:`Fill Plus<fill-plus>` window that will help you create new Curves, Cards or Templates between selected curves. Unlike regular Fill command, Fill Plus works regardless of the selection order and will adjust the curves based on the base mesh and many available parameters. Regular Fill is still available.
+- New :ref:`Orient to Normals<orient-to-normals>` algorithm is 17x faster and much more precise because it now samples multiple times to get the best orientation even for curves that are almost perpendicular to the mesh.
+- New :ref:`Mirror<mirroring>` command that is more precise and much faster. It will better compensate for rotation of the cards and have better precision for Bound objects. Bound objects are now truly mirrored, not just moved.
+- New :ref:`Convert<edge-to-curve-card-to-curve>` window that is an improvement to Geo to Curve from v1.3 and can convert from various sources to many output types:
+
+  - :ref:`Geometry source<conversion-from-geometry>` will convert Cards and Tubes to GS CurveTools objects.
+  - :ref:`XGen<conversion-from-xgen>` will convert a selected XGen description to curves or directly to GS CurveTools objects.
+  - :ref:`Edges<conversion-from-edges>` will convert from any selected edges directly to GS CurveTools objects.
+  - Automatically :ref:`Orient to Normals<orient-to-normals>` and adjust the root position after creation.
+  - Every command uses fast native code.
+- New :ref:`Extract All and Extract Selected<extract-buttons>` function now uses custom compiled code to extract geometry 28-50x times faster than the old method from v1.3.
+- New :ref:`Layer<layers>` and :ref:`Layer Collection<layer-collections>` system that has no issues with curves being imported from other files using native Maya import command. Using provided Export/Import is still recommended.
+- New :ref:`Rebuild Curve<rebuild-curve-slider>` command that powers the Rebuild Curve slider. Better preview and much better performance.
+- :ref:`Layer Names and Colors<layer-customization-window>` window now supports Layer Collections (shown as tabs selector).
+- New easier :ref:`installation method<installation-steps>`. Just copy and click one button.
+
+**Improvements:**
+
+- Performance improvements to :ref:`Randomize<randomize>` command.
+- Improvements to sliders: :ref:`precision mode<curve-control-window>`. Hold Ctrl to have more granular control over the value.
+- Improvements to :ref:`Graphs<attributes>`. Hold Ctrl and drag up/down with LMB to change the graph's range.
+- Improvements to :ref:`Advanced Visibility<advanced-visibility>`. More performance and better geometry highlight. Control over geometry highlight color, alpha and line thickness.
+- :ref:`Profile Length Graph<attributes>` is now just a regular graph without locked points or other inconveniences.
+- Improved :ref:`Smooth, Extend and Reduce<extend-reduce-smooth>` functions. They now use native code, faster and more accurate.
+
 Version 1.3.19
 ^^^^^^^^^^^^^^
 
@@ -276,7 +340,7 @@ Version 1.3.5
 
 **Bug Fixes:**
 
-- :ref:`Unpack<unpack>` will no longer be affected by the selected object type in :ref:`Geo to Curve<card-to-curve>` window.
+- :ref:`Unpack<unpack>` will no longer be affected by the selected object type in :ref:`Geo to Curve<edge-to-curve-card-to-curve>` window.
 - :ref:`Export<import-export-page>` will no longer be locked by the :ref:`Advanced Visibility<advanced-visibility>` node present in the scene.
 
 Version 1.3.4
@@ -303,9 +367,9 @@ Version 1.3.3
 **Improvements:**
 
 - Much less geometry deformation and distortion for new Warp Cards, Tubes and Bind objects when scaling them down to very small scales (like for brows, eyelashes etc.). Improved geometry precision and stability overall.
-- An option to change the new :ref:`Precision Scale<precision-scale>` value in the :ref:`Scale Factor and Precision<scale-factor-and-precision>` window.
-- An option to normalize the :ref:`Scale Factor<scale-factor>` and :ref:`Precision Scale<precision-scale>` of the selected Warp Cards, Tubes or Bind objects to the chosen slider values or to default recommended values (Scale Factor = 0.5, Precision Scale = 0.05). Buttons are found in the Scale Factor and Precision window. Also works on Cards, Tubes and Bind objects from older updates.
-- :ref:`Add Card, Add Tube and Fill<add-cards-button>` functions will now use the new Precision Scale and normalize the selected Warp Cards, Tubes or Bind objects before performing the operation. This ensures that no matter the initial scale or scale factor of the selected curves, the function will result in a consistent widths and profiles for the new objects. Works on objects from older updates as well.
+- An option to change the new Precision Scale value in the :ref:`Scale Factor and Precision<scale-factor>` window.
+- An option to normalize the :ref:`Scale Factor<scale-factor>` and Precision Scale of the selected Warp Cards, Tubes or Bind objects to the chosen slider values or to default recommended values (Scale Factor = 0.5, Precision Scale = 0.05). Buttons are found in the Scale Factor and Precision window. Also works on Cards, Tubes and Bind objects from older updates.
+- :ref:`Add Card, Add Tube and Fill<add-cards-button>` functions will now use the new Precision Scale and normalize the selected Warp Cards, Tubes or Bind objects before performing the operation. This ensures that no matter the initial scale or scale factor of the selected curves, the function will result in consistent widths and profiles for the new objects. Works on objects from older updates as well.
 - :ref:`Rebuild<rebuild-curve-slider>` slider will now work properly on small scale curves.
 - New objects should now be able to create more sharp corners when three or more CVs are bunched together.
 
@@ -350,7 +414,7 @@ Version 1.3.2
 **New Features:**
 
 - New **Unpack** function. :ref:`Unpack<unpack>` function allows to recreate the original objects (cards or tubes) from the :ref:`Bound<bind-unbind>` object and place them in the exact same position as they are currently placed with all the deformations and world position. Accessed by selecting the :ref:`Bound<bind-unbind>` object and Shift+Clicking on :ref:`Unbind<unbind>` button.
-- New :ref:`Auto-Sampling<auto-sampling>` toggle attribute that will automatically increase sampling rate for Warp based objects on low CV counts. This allows for optimal performance on high CV counts and good accuracy on low CV counts.
+- New :ref:`Auto-Sampling<attributes>` toggle attribute that will automatically increase sampling rate for Warp based objects on low CV counts. This allows for optimal performance on high CV counts and good accuracy on low CV counts.
 - New :ref:`Duplicate and Unparent Curves<duplicate-and-unparent-curves>` utility function (in the Options ⇨ Utility) that will duplicate curves and unparent them (parent them to the world). This is useful when you need to export only curves without construction history, or if you need the curves for something else in the scene.
 
 **Improvements:**
@@ -425,7 +489,7 @@ Major update!
   - Geometry Highlight option will highlight the geometry component automatically for better card visibility.
   - Curve Highlight will enable selected curves and CVs to be drawn Always-On-Top with various customizations available.
   - CVs - size, selected/deselected colors and transparency with soft select support.
-  - Curve - enabled/disable highlight, curve width, curve color and transparency.
+  - Curve - enable/disable highlight, curve width, curve color and transparency.
   - Hull - enable/disable hull drawing (lines between CVs) with width, curve color and transparency customization and soft selection support.
   - Other advanced options like Distance Colors and Occlusion.
 
@@ -437,7 +501,7 @@ Major update!
   - Match Attributes selector will toggle the attributes matching for newly created cards (Orientation, Width, etc.)
   - UV Match Options have optional post-process commands as Vertical and Horizontal Flip.
   - Reverse curve will reverse the final curve direction (enabled by default for better result).
-  - NOTE: matching parameters is not a perfect process and resulting procedural cards might have slightly different shape.
+  - NOTE: matching parameters is not a perfect process and resulting procedural cards might have slightly different shapes.
   
 - **Copy and Paste Attributes and UVs**. Attributes and UVs can now be copied and pasted from card to card (or many cards) as an alternative to the old Transfer Attr. and UV commands. Copy-Paste functions can be accessed by holding RMB on Transfer Attr. or Transfer UVs. button.
 - **Transfer (and copy-paste) attribute filter**. User can now choose which attributes to transfer when using Transfer Attr. or Copy-Paste commands. Attribute filters can be accessed through the Transfer Attr. (or Transfer UVs) button marking menu by holding RMB on those buttons. Option rectangle ▢ near the Copy-Paste buttons will open the filter menu. Highlighted attributes will be transferred and unchecked will be ignored. Orientation attribute is unchecked by default.
@@ -457,7 +521,7 @@ Major update!
 **Improvements:**
 
 - **Even more layers** available. Number of active layers can now be up to 80. User can optionally change layer number to be 20, 30, 40, 60 and 80!
-- **Layer customization windows** was updated to make use of additional layers.
+- **Layer customization window** was updated to make use of additional layers.
 - New projects will now use the updated layer system that will not clutter the Display Layer window in the Channel Box. All the layers are still there and accessible through the Window⇨Relationship Editors⇨Display Layers. User can manually update old layer system to the new one using Options⇨Other Options⇨Convert to New Layer System.
 - **Layer Hotkeys** (key combinations) were slightly **changed**:
 
@@ -466,9 +530,9 @@ Major update!
 
 - **Import and Export** curves will now use its own file extension ".curves" to easily distinguish them from regular maya ".ma" files. User can still save and import ".ma" files as an option.
 - **Extract Selected and Extract All** buttons have new key modifier available - Ctrl. Holding Ctrl will automatically open Export window after the extraction process is finished and after exporting the geometry the extracted geo will be deleted from the scene. Holding Ctrl will also disable layer hide feature during Extract All process.
-- **Bind, Unbind and Mirror** will now flip the UVs before performing the operation to achieve better results. This is optional and can be disable in the options.
+- **Bind, Unbind and Mirror** will now flip the UVs before performing the operation to achieve better results. This is optional and can be disabled in the options.
 - **Options Menu** was reordered and compressed to have better visibility and organization.
-- **UVs** will now be **properly transferred** form and to Bound geometry.
+- **UVs** will now be **properly transferred** from and to Bound geometry.
 - User can now open the **log file** using Help⇨Open Log File (Windows only) in case of any errors.
 
 **Bug Fixes:**
@@ -523,7 +587,7 @@ Version 1.2.8
 
 - **Card to Curve** algorithm was rewritten and improved:
 
-  - Better compatibility and reliability for one-sided cards with different vert orders.
+  - Better compatibility and reliability for one-sided cards with different vertex orders.
   - Optimization and speed-up of the algorithm
   - Cards with no width spans are now correctly converted.
 
@@ -549,7 +613,7 @@ Version 1.2.8
 - **Expanded supported texture formats** list for the **UV editor**. Added TIFF (TIF). 
 
   - Full list of supported texture formats: JPG, JPEG, PNG, **TIF, TIFF,** TGA (24bit, no RLE).
-  - Also added additional info for the "Wrong format" error message. It will now specify that TGA has no support for RLE compression.
+  - Also added additional info for the "Wrong format" error message. It will now specify that TGA does not support RLE compression.
 
 - Minor improvements for curve creation algorithm (better refinement and divisions calculation)
 
@@ -630,9 +694,9 @@ Version 1.2.5
 **Improvements:**
 
 - **Regroup by Layer** - will no longer use Group Name field as a default name. Group Name field is only used by the Group Curves button to set the name of the new group. Regroup by Layer will use the default name (CT_Layer#) or the name from the Layers Customization window.
-- **Changed the Default Grey Color** for layers to default (0, 0, 0) color. Reset layer will rest to this color as well.
+- **Changed the Default Grey Color** for layers to default (0, 0, 0) color. Reset layer will reset to this color as well.
 - **Some Tooltips** added to the UV editor.
-- **UV Editor Cache** - added Texture Map Caching to speed up the UV Editor. Texture map is loaded only once, and if there are no changes to the file it will be loaded from the cache every subsequent time this texture map is needed. Changes to the Diffuse or Alpha map will cause a reload from the disc. Before it was only reloaded if the path changed.
+- **UV Editor Cache** - added Texture Map Caching to speed up the UV Editor. Texture map is loaded only once, and if there are no changes to the file it will be loaded from the cache every subsequent time this texture map is needed. Changes to the Diffuse or Alpha map will cause a reload from the disk. Before it was only reloaded if the path changed.
 
 **Bugfixes:**
 
@@ -718,9 +782,9 @@ Major Update!
 - Full support of **Python 3** and **Maya 2022** (also supports python 2 compatibility mode for 2022)
 - **Bind** and **Unbind** functions (former Warp function). You can now unbind already bound cards, change them, add new cards and bind back to the original curve.
 - **Curve attributes retention**. Curves will now remember their attributes even if you unbind them. Binding back will restore the previous attributes. Can be disabled in options.
-- New **Fill** function. This function works similar to Add Cards/Tubes, but also supports custom bound cards/geometr. All card types are now supported, including Bound cards.
+- New **Fill** function. This function works similar to Add Cards/Tubes, but also supports custom bound cards/geometry. All card types are now supported, including Bound cards.
 - New **Subdivide** function. This function will subdivide any selected Card/Tube and replace it with copies of itself based on the Add slider. Increase the density of your cards with ease!
-- New **Card to Curve** function. This function will try to replace any selected cards (one sided geometry) with curves based on their topology. Only one sided cards are supported at this moment. Tubes and other complex shapes will not work.
+- New **Card to Curve** function. This function will try to replace any selected cards (one-sided geometry) with curves based on their topology. Only one-sided cards are supported at this moment. Tubes and other complex shapes will not work.
 - New **Regroup by Layer** function with color mode and custom naming support. Organize your scene in one click!
 - New **Mirror** function. Mirror or Flip your cards.
 - New **Inverted Twist** attribute. Twist the root of the curve (Fully compatible with normal Twist and Twist Graph)
@@ -735,7 +799,7 @@ Major Update!
 	- Horizontal or Vertical Flip of UV card
 	- Selected UVs List.
 	- Reset UV, Focus View, Isolate Select and Show All functions
-	- Supports TGA, PNG and JPG(JPEG) texture maps. Other formats may be supported with minor updates.
+	- Supports TGA, PNG and JPG (JPEG) texture maps. Other formats may be supported with minor updates.
 
 - New **Import and Export Curves** function in the Options menu. You can now safely export and import your curves to be stored as presets!
 

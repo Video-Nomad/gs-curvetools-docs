@@ -13,7 +13,7 @@ Intro
   :align: right
   :width: 250px
 
-Layer collections offer an efficient way of organizing a project. They allow users to divide the workspace not only into distinct layers but also to have designated collections of these layers, each with a unique name. This feature can prove especially useful in projects comprising of multiple working zones, such as hair, brows, beard, accessories, or complex groom parts like big braids etc.
+Layer collections offer an efficient way of organizing a project. They allow users to divide the workspace not only into distinct layers but also to have designated collections of these layers, each with a unique name. This feature can prove especially useful in projects comprising multiple working zones, such as hair, brows, beard, accessories, or complex groom parts like big braids, etc.
 
 In addition to providing organization capabilities, layer collections come with added functionality. Users can import content to a designated layer and utilize the auto-hide feature.
 
@@ -21,9 +21,9 @@ In addition to providing organization capabilities, layer collections come with 
   :align: right
   :width: 250px
 
-Layer collections widget can be found right above the layers widget and can be hidden in the options if not used.
+Layer collections widget can be found right above the layers widget and can be hidden in the :ref:`Options<options>` if not used.
 
-Layer collections widget consists of a drop-down mend two buttons (plus and minus) on the right. User can also enter a marking menu by hovering over the drop-down menu and holding RMB.
+Layer collections widget consists of a drop-down menu and two buttons (plus and minus) on the right. User can also enter a marking menu by hovering over the drop-down menu and holding RMB.
 Marking menu holds all the additional functions for the layer collections.
 
 .. image:: images/layer_collections/layer_collections_widget_drop_down.png
@@ -43,15 +43,15 @@ Creating and Deleting Collections
 
 User can create a new collection by pressing a [+] button near the drop-down menu.
 
-Pressing this button will open a collection naming dialog where user can choose the name of the new collections.
+Pressing this button will open a collection naming dialog where the user can choose the name of the new collection.
 
-If the name already exists, user will be promoted to change the name to a unique one.
+If the name already exists, the user will be prompted to change the name to a unique one.
 
 .. image:: images/layer_collections/delete_layer_collection_button.png
   :align: right
   :width: 250px
 
-When selected collection is not the Main collection user can delete this collection by pressing [-] button on the right side of the drop-down menu.
+When the selected collection is not the Main collection, the user can delete this collection by pressing the [-] button on the right side of the drop-down menu.
 
 |
 |
@@ -63,13 +63,13 @@ When selected collection is not the Main collection user can delete this collect
 Importing Into a New Collection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-By default, imported curves (using Options⇨Import Curves) will now go to a new collection called "Imported Curves".
+By default, imported curves (using :ref:`Options<options>` ⇨ **Import Curves**) will now go to a new collection called "Imported Curves".
 
 .. image:: images/layer_collections/options_menu.png
   :align: right
   :width: 250px
 
-This behavior can be changed in the options by unchecking the "Import Into a New Collection" checkbox.
+This behavior can be changed in the :ref:`Options<options>` by unchecking the "Import Into a New Collection" checkbox.
 
 |
 
@@ -85,9 +85,9 @@ Curve Collections Marking Menu
 
 Curve collections have several utility functions available. They are accessed by hovering over the layer collections widget and holding RMB.
 
-- **Clear** - this command will delete all the curves from the current collection. The collection itself will not be deleted. User will be prompted before the command is execute.
+- **Clear** - this command will delete all the curves from the current collection. The collection itself will not be deleted. User will be prompted before the command is executed.
 - **Rename** - will rename the currently selected collection (if it is not the "Main" collection)
-- **Merge Up and Merge Down** - used to combine all the curves in the current collection with the collection immediately above or below it. Merged collection will be deleted.
+- **Merge Up and Merge Down** - used to combine all the curves in the current collection with the collection immediately above or below it. The merged collection will be deleted.
 - **Move Up and Move Down** - will reorder the collections list and move the current collection one index up or down in the list.
 - **Copy and Paste** - will copy all the curves from the currently selected collection and paste it to another selected collection. Original curves will not be deleted.
 

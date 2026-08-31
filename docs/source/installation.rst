@@ -9,76 +9,24 @@ Installation, Shelf, Hotkeys and Updates
 
 Compatibility
 ^^^^^^^^^^^^^
- * **Windows**: Fully Supported.
- * **Mac**: Currently in **Beta**. Some bugs may occur.
- * **Linux**: Not Tested / Not Supported.
- * **Maya LT**: Not Tested / Not Supported.
 
- Please use the latest Maya patches if possible. For example: Maya 2018.1 has issues that were fixed in the latest 2018.6 and are essential for GS CurveTools functionality.
+* **Windows**: Fully Supported.
+* **Mac**: Not supported for v2. Supported for v1.3+.
+* **Linux**: Not Tested / Not Supported.
+* **Maya LT**: Not Tested / Not Supported.
+
+Please use the latest Maya patches if possible.
 
 .. _installation-steps:
 
 Windows Installation
 ^^^^^^^^^^^^^^^^^^^^
 
-1. **Unpack and Copy**: Copy the ``gs_curvetools`` folder to the following path:
-
-   .. code-block:: text
-
-      Documents/Maya/{Maya_Version}/scripts/
-
-   .. image:: images/installation/folder_structure.png
-      :width: 100%
-      :align: center
-
-2. **Launch Maya**.
-
-3. **Initialize the Plug-in**: Copy and paste the following code into the **Python Command Field** at the bottom of the Maya UI (click "MEL" to switch it to "Python") or into the **Script Editor**:
-
-   .. code-block:: python
-
-      import gs_curvetools.init as ct_init; ct_init.Init();
-
-4. **Run the Code**: Press **Enter** (for Command Field) or click the **Play (Execute)** triangle icon in the Script Editor.
-
-.. figure:: images/installation/script_editor_paste.png
-   :width: 80%
-   :align: center
-
-   Maya Script Editor Window
-
-----
-
-Mac Installation
-^^^^^^^^^^^^^^^^
-
-1. **Unpack and Copy**: Copy the ``gs_curvetools`` folder to the following path:
-
-   .. code-block:: text
-
-      {Your_Mac_Name}/Users/{User_Name}/Library/Preferences/Autodesk/maya/{Maya_Version}/scripts/
-
-   .. image:: images/installation/folder_structure_mac.png
-      :width: 100%
-      :align: center
-
-2. **Launch Maya**.
-
-3. **Initialize the Plug-in**: Copy and paste the following code into the **Python Command Field** at the bottom of the Maya UI (click "MEL" to switch it to "Python") or into the **Script Editor**:
-
-   .. code-block:: python
-
-      import gs_curvetools.init as ct_init; ct_init.Init();
-
-4. **Run the Code**: Press **Enter** (for Command Field) or click the **Play (Execute)** triangle icon in the Script Editor.
-
-.. figure:: images/installation/script_editor_paste.png
-   :width: 80%
-   :align: center
-
-   Maya Script Editor Window
-
-----
+1. Download and unpack the latest version.
+#. Close Maya if it's open.
+#. Copy gs_curvetools folder and gs_curvetools.mod file to ``Documents/Maya/{Maya_Version}/modules/``. Create the ``modules`` folder if it doesn't exist.
+#. Open Maya, go to ``Windows -> Settings/Preferences -> Plug-in Manager`` and enable the ``gs_curvetools_v2_init.py`` plugin.
+#. That's it! You can now use the GS CurveTools v2!
 
 Installation Video
 ^^^^^^^^^^^^^^^^^^
@@ -86,8 +34,8 @@ Installation Video
 .. raw:: html
 
   <div style="text-align: center; margin: 20px 0;">
-    <video width="80%" controls style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-      <source src="_static/installation.mp4" type="video/mp4">
+    <video width="100%" controls style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+      <source src="_static/videos/installation_v2.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
@@ -130,21 +78,34 @@ Once initialized, all hotkeys are available in the **Hotkey Editor**:
 
    Hotkey Editor ⇨ Custom Scripts ⇨ GS ⇨ GS_CurveTools
 
+More information here: :ref:`hotkeys-page`
+
 .. _update-instructions:
 
-Updating the Plug-in
-^^^^^^^^^^^^^^^^^^^^
+Updating the Plugin
+^^^^^^^^^^^^^^^^^^^
 
-To update to a new version:
-1. **Delete** the old ``gs_curvetools`` folder from your scripts directory.
-2. Repeat the installation steps for your platform.
+**To update from v2 to a new v2+ version:**
+
+#. Close Maya.
+#. **Delete** the old ``gs_curvetools`` folder and ``gs_curvetools.mod`` file from your modules directory.
+#. Copy the new ones and start Maya.
+
+**To update from v1:**
+
+#. Press "CT DEL" shelf button in Maya.
+#. Close Maya.
+#. Delete the old ``gs_curvetools`` folder from ``Documents/Maya/{Maya_Version}/scripts/`` folder
+#. Copy the new ``gs_curvetools`` folder and ``gs_curvetools.mod`` file to ``Documents/Maya/{Maya_Version}/scripts/`` folder.
+#. Start Maya.
+#. Go to ``Windows -> Settings/Preferences -> Plug-in Manager`` and enable the ``gs_curvetools_v2_init.py`` plug-in.
 
 Troubleshooting
 ^^^^^^^^^^^^^^^
 
 * **Incorrect Folder (Windows)**: A common mistake is copying to the "shared" folder instead of the version-specific one.
   
-  * **Correct**: ``C:\Users\{User}\Documents\maya\2024\scripts``
-  * **Incorrect**: ``C:\Users\{User}\Documents\maya\scripts``
+  * **Correct**: ``C:\Users\{User}\Documents\maya\2024\modules``
+  * **Incorrect**: ``C:\Users\{User}\Documents\maya\modules``
 
 * **OneDrive**: If you use OneDrive, your Documents folder might be located inside the OneDrive path (e.g., ``C:\Users\{User}\OneDrive\Documents\maya...``).

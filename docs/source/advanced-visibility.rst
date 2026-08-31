@@ -10,11 +10,11 @@ Advanced Visibility
   :align: right
   :width: 250px
 
-Advanced Visibility panel can be found in :ref:`Curve Control Window<attributes>` by expanding the "Advanced Visibility" frame.
+Advanced Visibility panel can be found in the :ref:`Curve Control Window<curve-control-window>` by expanding the "Advanced Visibility" frame.
 
-Using these controls user can enhance the visibility of the selected geometry and curves which can be extremely helpful when working with dense hair textures or complex multi-layered grooms.
+Using these controls, the user can enhance the visibility of the selected geometry and curves, which can be extremely helpful when working with dense hair textures or complex multi-layered grooms.
 
-Advanced Visibility is only active on selected curves and will enable always-on-top visibility for curve and its components (cvs and hull) as well as adding wireframe visibility to selected cards.
+Advanced Visibility is only active on selected curves and will enable always-on-top visibility for the curve and its components (CVs and hull) as well as adding wireframe visibility to selected cards.
 
 .. note::
   Both Geometry and Curve Highlight have respective hotkeys available in the Hotkey Editor.
@@ -32,7 +32,7 @@ Geometry Highlight will highlight the geometry component of any selected curve. 
   :align: right
   :width: 250px
 
-This can be extremely helpful for troubleshooting the geometry overlap or to finetune orientation, twist and other attributes.
+This can be extremely helpful for troubleshooting geometry overlap or to fine-tune orientation, twist and other attributes.
 
 .. note::
   When component mode is enabled (F8), highlighted geometry will also show vertices, however they will not be selectable if Geometry Editing is disabled on the current layer (default).
@@ -44,7 +44,7 @@ Curve Highlight
   :align: right
   :width: 250px
 
-Toggling Curve Highlight button will enabled Advanced Visibility for any selected curve.
+Toggling Curve Highlight button will enable Advanced Visibility for any selected curve.
 
 In this mode curve itself and its components (CVs and optionally Hull) will be always-on-top and drawn with the chosen color.
 
@@ -56,13 +56,13 @@ CV and hull highlight is soft-selection compatible and will show color gradient 
   :align: right
   :width: 250px
 
-Enabling Curve Highlight will create a node in the outliner called **"GSCT_CurveTools_DrawManager"** node. This node should not be deleted as long as Curve Highlight mode is in use. It will be automatically removed when Curve Highlight mode is disabled.
+Enabling Curve Highlight will create a node in the outliner called **"GSCT_AdvancedVisibility"**. This node should not be deleted as long as Curve Highlight mode is in use. It will be automatically removed when Curve Highlight mode is disabled.
 
 .. important:: 
-  Curve advanced visibility is only a visual effect and does not introduce any additional geometry or other objects to the screen (except for the **GSCT_CurveTools_DrawManager** node).
+  Curve advanced visibility is only a visual effect and does not introduce any additional geometry or other objects to the screen (except for the **GSCT_AdvancedVisibility** node).
 
 .. warning::
-  **"GSCT_CurveTools_DrawManager"** node can be imported in the scene or appear if you are using scene reference. Redundant imported nodes will be automatically deleted and referenced nodes will be disabled to ensure that there is only one instance that is active.
+  **"GSCT_AdvancedVisibility"** node can be imported in the scene or appear if you are using scene reference. Redundant imported nodes will be automatically deleted and referenced nodes will be disabled to ensure that there is only one instance that is active.
 
 Curve Highlight Options
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -73,13 +73,13 @@ Curve Highlight Options
 
 Curve Highlight has various customization options available:
 
-- **CV Size** will change the CV size preview. Please note that changing CV size preview will NOT change their hitbox, meaning that it will not increase the selection radius. It's purely visual effect.
+- **CV Size** will change the CV size preview. Please note that changing CV size preview will NOT change their hitbox, meaning that it will not increase the selection radius. It's a purely visual effect.
 - **Selected Color** (CVs) will change the color of the CVs that are currently selected. Color picker will change the color and input field on the right - transparency.
 - **Deselected Color** (CVs) will change the color of the CVs that are not selected. Color picker will change the color and input field on the right - transparency.
 - **Curve Visibility** Toggle will enable or disable selected curve highlight.
 - **Curve Width** slider will change the width of the curve highlight.
 - **Curve Color** will change the color of the curve highlight. Color picker will change the color and input field on the right - transparency.
-- **Hull Visibility** will enable or disable selected curve Hull visibility. Hull is a line that connects all the CVs on the current curve. Will only be visible if component selection mode is enabled (F8)
+- **Hull Visibility** will enable or disable selected curve Hull visibility. Hull is a line that connects all the CVs on the current curve. It will only be visible if component selection mode is enabled (F8).
 - **Hull Width** controls the width of Hull line.
 - **Hull Color** will change the color of the hull line and input field on the right - transparency.
 
@@ -117,7 +117,7 @@ There are advanced and experimental options available for the Advanced Highlight
   - **Select Occluder** will copy the name of the selected mesh into the occluder mesh name input field.
   - **Name** input field needs to have occluder mesh name (full scene path) for the occlusion to function.
 
-.. important:: Enabling occlusion can have significant performance on the scene, based on the density of the occluder geometry, number of selected curves etc.
+.. important:: Enabling occlusion can have a significant impact on scene performance, based on the density of the occluder geometry, number of selected curves, etc.
 
 .. list-table:: Other Options
 

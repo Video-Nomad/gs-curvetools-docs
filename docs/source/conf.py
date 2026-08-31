@@ -14,6 +14,10 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 import datetime
+import os
+import sys
+
+sys.path.insert(0, os.path.abspath("_ext"))
 
 # -- Project information -----------------------------------------------------
 
@@ -22,14 +26,18 @@ copyright = f"{datetime.datetime.now(datetime.UTC).year}, George Sladkovsky"
 author = "George Sladkovsky"
 
 # The full version, including alpha/beta/rc tags
-release = "v1.3.19"
+release = "v2.0.0"
 
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ["sphinx_copybutton"]
+extensions = [
+    "sphinx_copybutton",
+    "sphinxcontrib.video",
+    "gifvideo",
+]
 
 numfig = True
 

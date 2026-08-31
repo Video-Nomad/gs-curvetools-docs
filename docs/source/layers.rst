@@ -21,7 +21,7 @@ There are four **Filters** and **20, 30, 40, 60 or 80 Layers** available for the
   :align: right
   :width: 200px
 
-Number of layers can be changed in the Options⇨Number of active Layers
+Number of layers can be changed in :ref:`Options<options>` ⇨ :ref:`Settings<settings>` ⇨ Number of active Layers.
 
 |
 
@@ -33,31 +33,31 @@ Filters show and hide curves or geo components on all layers. There are three **
 .. list-table:: **Filter Buttons**
   :widths: 9 2
 
-  * - **Filter All** (or Show/Hide All) - this filter will show all the hidden **Curves** and **Geometry** in all the layers. By pressing **Shift** and clicking on **All** button you will instead **Hide** all the **Curves** and **Geometry**. Using **Ctrl** modifier will apply the changes to all :ref:`layer collections <layer-collections>`.
+  * - **Filter All** (or Show/Hide All) - this filter will show all the hidden **Curves** and **Geometry** in all the layers. By pressing **Shift** and clicking on the **All** button you will instead **Hide** all the **Curves** and **Geometry**. Using the **Ctrl** modifier will apply the changes to all :ref:`layer collections <layer-collections>`.
     - .. image:: images/buttons/all.png
   * - **Filter Curves** - this filter will show only **Curves** and hide the **Geometry** in all the Layers. Also has **Marking Menu (Hold RMB)** that allows for the toggle of **"Always on Top"** visibility mode. Using **Ctrl** modifier will apply the changes to all :ref:`layer collections <layer-collections>`.
     - .. image:: images/buttons/curves.png
   * - **Filter Geo** - this filter will show only **Geometry** and hide all the **Curves** in all the **Layers**. Using **Ctrl** modifier will apply the changes to all :ref:`layer collections <layer-collections>`.
     - .. image:: images/buttons/geo.png
-  * - **Color** - this toggle will activate a special **Color Mode**. In this mode all the **Geometry** will be colored based on the **Layer** color. More info is in the :ref:`layer collections <layer-collections>` section.
+  * - **Color** - this toggle will activate a special **Color Mode**. In this mode all the **Geometry** will be colored based on the **Layer** color. More info is in the :ref:`Color Mode<color-mode>` section.
     - .. image:: images/buttons/color.png
 
 Layer Controls
 ^^^^^^^^^^^^^^
 
-**Layers are exclusive** to each other. Single curve can not be in two Layers at the same time.
+**Layers are exclusive** to each other. A single curve cannot be in two Layers at the same time.
 
 Here are all the hotkeys and motions available for layers:
 
 **Clicks (LMB):**
 
 - **LMB Click** - highlights the layer (white outline). All the new curves (except for duplicated ones) will automatically be placed into highlighted layer.
-- **Ctrl + Click** - exclusively selects curves from single layer (:numref:`select_layer_figure`)
-- **Shift + Click** - additively selects curves from multiply layers (:numref:`select_layer_multiple_figure`)
+- **Ctrl + Click** - exclusively selects curves from a single layer (:numref:`select_layer_figure`)
+- **Shift + Click** - additively selects curves from multiple layers (:numref:`select_layer_multiple_figure`)
 - **Alt + Click** - hide/show selected layer.
 - **Ctrl + Shift + Click** - show/hide curve components of the selected layer.
 - **Ctrl + Alt + Click** - show/hide geometry components of the selected layer.
-- **Shift + Alt + Click** - isolate select selected layer.
+- **Shift + Alt + Click** - isolate the selected layer.
 - **Shift + Alt + Ctrl + Click** - toggle always-on-top curve visibility for the selected layer (Maya 2022+).
 
 **Motions (MMB):**
@@ -94,14 +94,10 @@ Here are all the hotkeys and motions available for layers:
 .. note:: 
   Holding RMB on any layer will open a :ref:`layer-marking-menu` with additional commands.
 
-  Layers are utilizing native Maya display layer system.
-
-  They are typically named **curveGrp_#_Curve**, **curveGrp_#_Geo**, **curveGrp_#_Inst** and can be found in Windows⇨Relationship Editors⇨Display Layer window.
-
-  Starting from v1.3 GS CurveTools layers are hidden from Channel Box/Layer Editor Window.
+  Layers utilize the native Maya display layer system.
 
 .. warning:: 
-  **User should NOT delete or rename any display layers created by GS CurveTools.**
+  User should **NOT** delete any display layers created by GS CurveTools (gsCurveToolsLayer).
 
 Color Coordination
 ^^^^^^^^^^^^^^^^^^
@@ -113,7 +109,7 @@ Each **Layer** is **color coordinated** depending on its visibility or editabili
 
   * - Default **"Empty"** color indicates that the layer has no curves assigned to it.
     - .. image:: images/buttons/empty_layer.png
-  * - **"Filled"** Layer color indicates that there is at least one curve assigned to this Layer, this layer geometry is NOT editable (not selectable in the viewport) and both Geometry and Curve is visible.
+  * - **"Filled"** Layer color indicates that there is at least one curve assigned to this Layer, this layer's geometry is NOT editable (not selectable in the viewport), and both Geometry and Curve are visible.
     - .. image:: images/buttons/filled_layer.png
   * - **"Editable"** Layer color indicates that there is at least one curve assigned to this layer and its geometry is currently selectable and editable in the viewport.
     - .. image:: images/buttons/editable_layer.png
@@ -149,14 +145,14 @@ Each **Layer** has its own **Marking Menu** that holds many useful functions. Yo
 
 - **Toggle Geometry Edit** will enable selectability of the geometry in this layer and allow user to poly edit the geometry.
 
-.. note:: **Editing** geometry is usually safe but drastic changes of vert order can have unexpected results. Edited geometry looses the ability to change its Length and Width Divisions using Length and Width Divisions attributes.
+.. note:: **Editing** geometry is usually safe but drastic changes of vertex order can have unexpected results. Edited geometry loses the ability to change its Length and Width Divisions using Length and Width Divisions attributes.
 
 .. _extract-buttons:
 
 Extract Buttons
 ^^^^^^^^^^^^^^^
 
-You can quickly extract geometry from selected curves or extract the geometry from ALL curves by using special Extract Buttons. Extraction duplicates the geometry and detaches it from curves for safe export or further editing. Original curves and procedural geometry stays unchanged.
+You can quickly extract geometry from selected curves or extract the geometry from ALL curves by using special Extract Buttons. Extraction duplicates the geometry and detaches it from curves for safe export or further editing. Original curves and procedural geometry stay unchanged.
 
 .. image:: images/buttons/extract_selected.png
   :width: 150px
@@ -167,7 +163,7 @@ You can quickly extract geometry from selected curves or extract the geometry fr
 
 Extract Selected will Extract all the geometry from any number of selected curves. 
 
-By default, extracted geometry will be merged into one mesh. You can skip this step by holding **Shift** button when clicking on the Extract Selected button. If you choose not to merge geometry, each individual curve will generate separate mesh. This is useful if you want to manually poly edit your geometry before exporting.
+By default, extracted geometry will be merged into one mesh. You can skip this step by holding the **Shift** button when clicking on the Extract Selected button. If you choose not to merge geometry, each individual curve will generate a separate mesh. This is useful if you want to manually poly edit your geometry before exporting.
 
 Holding **Ctrl** button and clicking Extract will automatically open Export window after extraction and delete extracted geometry after successful export. This allows for quick export during modeling to check the result in engine of choice.
 
@@ -182,7 +178,7 @@ Holding **Ctrl** button and clicking Extract will automatically open Export wind
 
 Extract All button will extract all the geometry from all the layers.
 
-Extract All will also Hide the original Layers so you can focus on the extracted geometry. All the original curves and geometry are still there, just hidden. You can reveal them all by using Filters or manually by Toggle Layer Visibility function in the Layer Marking Menu.
+Extract All will also hide the original Layers so you can focus on the extracted geometry. All the original curves and geometry are still there, just hidden. You can reveal them all by using Filters or manually by using the Toggle Layer Visibility function in the Layer Marking Menu.
 
 By default, extracted geometry will be merged into one mesh. You can skip this step by holding **Shift** button when clicking on the Extract All button. If you choose not to merge geometry, each individual Layer will generate separate group, and in this group there will be separate geometry meshes, one for each original curve. This is useful if you want to manually poly edit your geometry before exporting.
 
@@ -191,20 +187,4 @@ Holding **Ctrl** button and clicking Extract will automatically open Export wind
 Extract All can optionally ignore :ref:`Layer Collections<layer-collections>` that have "template" in their name. Refer to :ref:`Layer Collection Options<layer-collection-options>`.
 
 .. note:: Extracted geometry is not connected to the original curves and geometry in any way. You can freely edit it as much as you want. If you edit the original curves, edits will NOT propagate to already extracted geometry.
-
-How To Access Hidden Layers
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. image:: images/relationship_editor_display_layers.png
-  :align: right
-  :width: 250px
-
-Starting from version 1.3 GS CurveTools layers will be hidden from Channel Box/Layer Editor window to avoid cluttering the view.
-
-User can still access those layers, if he needs additional control. They are still visible and accessible in the **Windows ⇨ Relationship Editor ⇨ Display Layers** Window
-
-|
-|
-
-.. warning:: **User should NOT rename or delete any layers created by GS CurveTools**
 

@@ -7,25 +7,23 @@ UV Editor
 #########
 
 UV Editor
-^^^^^^^^^
+=========
 
 .. image:: images/uv_editor/uv_editor_window.png
     :align: right
     :width: 350px
 
-Changing UVs in GS CurveTools was always a challenge, because of the procedural limitation of UV attributes. Using sliders was always a temporary solution to a problem, and not an elegant one.
+The UV Editor is used to quickly set the UVs for the procedural objects created by GS CurveTools. It is a separate window that can be docked to any Maya window.
 
-Fortunately, with the release of v1.2 user now have access to a fully functional UV editor that is compatible with current and previous UV Attributes.
+All the functions have dedicated hotkeys that are separate from Maya hotkeys (in parentheses). Hotkeys will work only if the editor window is in focus (blue outline around the viewport).
 
-This UV Editor allows to control UV attributes using intuitive user interface, and also adds multiple useful functions.
+UV Editor consists of a viewport on the right and function buttons on the left, along with the UV list.
 
-All the functions have dedicated Hotkey that is separate from Maya hotkeys (in parenthesis). Hotkey will work only if the editor window is in focus (blue outline around the viewport)
+UV Editor will update every time you select a new curve in the Maya Viewport. Incompatible curves will not show any UV rectangles or textures.
 
-UV editor consists of a Viewport on the right, and function buttons on the left, along with the UV list.
+The UVs will dynamically update in the Maya Viewport when you edit them in the UV Editor.
 
-UV editor will update every time you select a new curve in Maya Viewport. Incompatible curves will not show any UV rectangles or textures.
-
-The UVs will dynamically update in the Maya Viewport when you edit them in the UV Editor
+The UV Editor follows a no-gizmo approach. You select the UVs and you edit them instantly based on the selected mode (Move, Rotate, Scale). Hotkeys are available.
 
 .. image:: images/uv_editor/uv_root.png
     :align: right
@@ -38,11 +36,12 @@ Small rectangle at the base of the UV rectangle indicates the root of this UV an
 |
 
 Material Setup
-^^^^^^^^^^^^^^
+==============
 
-In order for the UV Editor to work correctly a correct material should be used for the cards (:numref:`material_setup_final_material`).
+In order for the UV Editor to work correctly, a compatible material should be used for the cards (:numref:`material_setup_final_material`).
 
-Supported textures and nodes:
+Supported textures and nodes
+----------------------------
 
 - Shader nodes: Lambert, Blinn, Phong, PhongE, Standard Surface or OpenPBR.
 - File nodes: file and psdFileTex.
@@ -50,13 +49,14 @@ Supported textures and nodes:
 
 .. important::
 
-   Ramp, checker or other procedural textures are not supported as color input. There needs to be an actual texture file for UV Editor to load.
+   Ramp, checker, or other procedural textures are not supported as color input. There needs to be an actual texture file for the UV Editor to load.
 
 Simply connect Out Color of Diffuse File to Color of the Lambert and Out Transparency to Transparency (or BaseColor and Opacity for Standard Surface).
 
 Out Transparency can either be from separate file or from the same file if supported by the format.
 
-**Final Material Setup:**
+Final Material Setup
+--------------------
 
 .. figure:: images/Lambert_Final_Material.png
     :name: material_setup_final_material
@@ -64,15 +64,16 @@ Out Transparency can either be from separate file or from the same file if suppo
 
     Simple Material Node Connections
 
-**Material Setup Steps:**
+Material Setup Steps
+--------------------
 
 1. Select newly created curve(s).
-2. Click on Select Geo.
-3. Holding right mouse button in the viewport select Assign New Material ⇨ Lambert.
-4. In Attribute Editor Click on checker button |pic1| near the Color Slider ⇨ File (:numref:`lambert_material_01`).
-5. Under the Image Name field click on a folder icon and select your Diffuse(color) texture (:numref:`lambert_material_02`).
-6. If you have separate Alpha, return back to the lambert node by clicking on the box with the right arrow with Right Mouse Button and selecting the lambert.color. (:numref:`lambert_material_02`)
-7. Repeat steps 4, 5 for the Alpha if you have separate Alpha file.
+2. Click on :ref:`Select Geo<selection>`.
+3. Hold the right mouse button in the viewport and select Assign New Material ⇨ Lambert.
+4. In the Attribute Editor, click the checker button |pic1| near the Color Slider ⇨ File (:numref:`lambert_material_01`).
+5. Under the Image Name field, click on a folder icon and select your Diffuse (color) texture (:numref:`lambert_material_02`).
+6. If you have a separate Alpha, return to the Lambert node by clicking on the box with the right arrow using the Right Mouse Button and selecting lambert.color (:numref:`lambert_material_02`).
+7. Repeat steps 4 and 5 for the Alpha if you have a separate Alpha file.
 
 .. |pic1| image:: images/checker_button.png
    :width: 20px
@@ -92,7 +93,8 @@ Out Transparency can either be from separate file or from the same file if suppo
 
             File and how to get back to lambert
 
-**Video of the setup:**
+Video of the setup
+------------------
 
 .. raw:: html
 
@@ -105,15 +107,16 @@ Out Transparency can either be from separate file or from the same file if suppo
 |
 
 Select, Move, Rotate, Scale and Draw
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+====================================
 
 .. image:: images/uv_editor/uv_selection.gif
     :align: right
     :width: 400px
 
-**Selection**
+Selection
+---------
 
-In order to select UV rectangle for edit, simply switch to Select mode (Q) and click or marquee select any number of UVs.
+In order to select a UV rectangle for editing, simply switch to Select mode (Q) and click or marquee-select any number of UVs.
 
 |
 |
@@ -125,7 +128,8 @@ In order to select UV rectangle for edit, simply switch to Select mode (Q) and c
 |
 |
 
-**Move**
+Move
+----
 
 .. image:: images/uv_editor/uv_move.gif
     :align: right
@@ -144,7 +148,8 @@ In order to move selected UVs, change to Move mode (W) and click and drag with L
 |
 |
 
-**Rotate**
+Rotate
+------
 
 .. image:: images/uv_editor/uv_rotate.gif
     :align: right
@@ -164,37 +169,61 @@ In order to rotate selected UVs, change to Rotate mode (E) and click and drag wi
 |
 |
 
-**Scale**
+Scale
+-----
 
 .. image:: images/uv_editor/uv_scale.gif
     :align: right
     :width: 400px
 
-In order to Scale selected UVs, change to Scale mode (R) and click and drag with LMB to scale the UVs.
+In order to scale selected UVs, change to Scale mode (R) and click and drag with LMB to scale the UVs.
 
 There are three modes for scale - H, V and U (disabled by default). H will scale UV rectangle horizontally, and V will scale vertically.
 
-U will scale UVs uniformly in all directions. U mode is disabled by default, but can be enabled by right clicking on the grayed out U button. It can also be temporarily enabled by holding Shift button and using any other scale mode.
+U will scale UVs uniformly in all directions. U mode is disabled by default, but can be enabled by right-clicking on the grayed-out U button. It can also be temporarily enabled by holding the Shift button and using any other scale mode.
 
 You can switch between these modes by clicking on the H or V switch button or by pressing R button on your keyboard multiple times.
 
 
-**Draw**
+Draw
+----
 
 .. image:: images/uv_editor/uv_draw.gif
     :align: right
     :width: 400px
 
-Draw mode (D) allows for quick reposition of the UVs using simple drawing gestures. If will change any number of selected UV rectangles to match the shape that was drawn by the user.
+Draw mode (D) allows for quick repositioning of the UVs using simple drawing gestures. It will change any number of selected UV rectangles to match the shape that was drawn by the user.
 
-Draw will rotate the UVs to the default rotation angle by default but toggling the "Inverted" mode indicated by the "I" button will invert this behavior.
+Draw will rotate the UVs to the default rotation angle, but toggling the "Inverted" mode indicated by the "I" button will invert this behavior.
 
 Draw allows for quick initial positioning of the UV rectangles.
 
 |
 
+.. _uv-lattice:
+
+Lattice
+-------
+
+.. gifvideo:: images/uv_editor/lattice.mp4
+    :width: 400
+    :align: right
+
+Lattice is a special mode that allows for more granular control over the UVs. Simply enable the Lattice mode and start moving the lattice points.
+
+There are two modes available:
+
+- **Local** - Will control each individual lattice point on the UV rectangle.
+- **Global** - Will control all the selected UV lattices at once.
+
+Resize Lattice will resize the lattice points to the newly defined number.
+
+Reset will reset the lattice to the default state.
+
+.. important:: Do not attempt to move the entire UV card using the Lattice mode or make big changes. The underlying UVs will still be anchored to the original position. Lattice is only for small precise controls.
+
 Utility Functions
-^^^^^^^^^^^^^^^^^
+=================
 
 .. image:: images/uv_editor/h_flip_indicator.png
     :align: right
@@ -202,7 +231,7 @@ Utility Functions
 
 **H-Flip UV**
 
-This function mirrors the H-Flip UV button in the Curve Control Window. 
+This function mirrors the H-Flip UV button in the :ref:`Curve Control Window<curve-control-window>`.
 
 It will flip the UV rectangle horizontally.
 
@@ -220,7 +249,7 @@ All horizontally flipped UVs are indicated by the small blue dot at the root of 
 
 This function will vertically flip the selected UV rectangle allowing for a quick rotation and repositioning.
 
-Position, Rotation and Scale does not matter when using this function.
+Position, Rotation, and Scale do not matter when using this function.
 
 |
 |
@@ -251,7 +280,7 @@ This function will reset the UV rectangle to its initial default position and ro
     :align: right
     :width: 400px
 
-**Sync Selection** - This function will select curves in Maya Viewport based on the currently selected (highlighted) UV rectangles.
+**Sync Selection** - This function will select curves in the Maya Viewport based on the currently selected (highlighted) UV rectangles.
 
 |
 |
@@ -263,11 +292,11 @@ This function will reset the UV rectangle to its initial default position and ro
 
 **Focus View**
 
-This function will simply focus the viewport on currently selected UVs or reset it to the default position if nothing is selected.
+This function will simply focus the viewport on the currently selected UVs or reset it to the default position if nothing is selected.
 
 
 Randomize Function
-^^^^^^^^^^^^^^^^^^
+==================
 
 This function will randomize the positions of the selected UV rectangles inside the UV editor.
 
@@ -277,7 +306,7 @@ Randomization only occurs between already existing UV rectangle positions and th
     :align: right
     :width: 400px
 
-**Normal click** on the Randomize button will ensure that the original density distribution stays the same. For example, if there were 3 uv rectangles in the position on the left and 10 uv rectangles on the right, selecting all of those rectangles and clicking randomize will still give you this 3-10 distribution (3 on the left and 10 on the right), but the which cards is where will be randomized.
+**Normal click** on the Randomize button will ensure that the original density distribution stays the same. For example, if there were 3 UV rectangles on the left and 10 UV rectangles on the right, selecting all of those rectangles and clicking Randomize will still give you this 3-10 distribution (3 on the left and 10 on the right), but which cards are where will be randomized.
 
 |
 
@@ -294,7 +323,7 @@ Pressing the **Shift** button before the randomization will ignore this density 
 |
 
 UV List
-^^^^^^^
+=======
 
 .. image:: images/uv_editor/uv_list.png
     :align: right
@@ -302,9 +331,9 @@ UV List
 
 This list holds the information on the selected UVs - their names and visibility.
 
-Selected UVs in this list will be visible and editable in the UV Editor viewport
+Selected UVs in this list will be visible and editable in the UV Editor viewport.
 
-Deselected UVs will be hidden from viewport.
+Deselected UVs will be hidden from the viewport.
 
 **Isolate Select** will show only selected UVs in the Editor Viewport and hide everything else.
 
@@ -316,16 +345,16 @@ Deselected UVs will be hidden from viewport.
 |
 |
 
-Bound Cards UV Editing
-^^^^^^^^^^^^^^^^^^^^^^
+Braids and Bound Objects
+========================
 
 .. image:: images/uv_editor/uv_bound_cards.png
     :align: right
     :width: 200px
 
-You can easily edit the UVs of the bound card using this UV editor. 
+You can easily edit the UVs of the bound card or braid using the UV editor.
 
-Multiple nested bound cards (when you create a bound group from other bound groups) will be represented as flat list under the main card.
+Multiple nested bound cards (when you create a bound group from other bound groups or use braids) will be represented as a flat list under the main card.
 
 |
 |
@@ -338,7 +367,7 @@ Multiple nested bound cards (when you create a bound group from other bound grou
     :align: right
     :width: 400px
 
-You can easily isolate select or do any other functions with these nested cards and the result will be visible in Maya Viewport immediately.
+You can easily isolate or use any other functions with these nested cards, and the result will be visible in the Maya Viewport immediately.
 
 |
 |
@@ -355,7 +384,7 @@ You can easily isolate select or do any other functions with these nested cards 
 |
 
 UDIM Support
-^^^^^^^^^^^^
+============
 
 .. image:: images/uv_editor/uv_editor_udim.png
     :align: right
@@ -402,23 +431,23 @@ So for example **valid UDIM texture names** are:
     :align: right
     :width: 200px
 
-When UDIM textures are detected in the selection - a special set of controls will appear in the UV Editor.
+When UDIM textures are detected in the selection, a special set of controls will appear in the UV Editor.
 
-**First control (UDIM Texture Dropdown)** is a dropdown menu that allows you to select the UDIM tile you want to reveal. UDIM textures can be very large and have a significant impact on RAM or video memory. To prevent this only the first (1001) UDIM tile is loaded into memory by default and all others are set as placeholders with their respective UDIM tile number. Dropdown menu allows user to switch between the tiles or reveal "All" tiles at once. Revealing "All" tiles will take some time to load, so depending on the texture map size and number of tiles it might be advisable to stick to the individual UDIM tiles.
+**First control (UDIM Texture Dropdown)** is a dropdown menu that allows you to select the UDIM tile you want to reveal. UDIM textures can be very large and have a significant impact on RAM or video memory. To prevent this, only the first (1001) UDIM tile is loaded into memory by default and all others are set as placeholders with their respective UDIM tile number. The dropdown menu allows the user to switch between the tiles or reveal "All" tiles at once. Revealing "All" tiles will take some time to load, so depending on the texture map size and number of tiles it might be advisable to stick to the individual UDIM tiles.
 
-**Second control (Move Selected)** are direction buttons that allows you to quickly move UVs between the UDIM tiles. This is useful when you want to move a large number of UVs from one tile to another or if location of the hair texture is changed (from one tile to another) and there's need to update the UVs accordingly keeping their relative position.
+**Second control (Move Selected)** consists of direction buttons that allow you to quickly move UVs between the UDIM tiles. This is useful when you want to move a large number of UVs from one tile to another or when the location of the hair texture is changed (from one tile to another) and the UVs need to be updated accordingly while keeping their relative position.
 
 Options Menu
-^^^^^^^^^^^^
+============
 
 .. image:: images/uv_editor/options_menu.png
     :align: right
     :width: 150px
 
-In the options menu user can change the texture and viewport visual appearance.
+In the options menu, the user can change the texture and viewport visual appearance.
 
 
-.. important:: It is recommended for the Diffuse and Alpha map to have the same resolution and aspect ratio.
+.. important:: It is recommended for the Diffuse and Alpha maps to have the same resolution and aspect ratio.
 
 .. image:: images/uv_editor/alpha_only.png
     :align: right
@@ -456,7 +485,7 @@ In the options menu user can change the texture and viewport visual appearance.
     :align: right
     :width: 350px
 
-**Viewport Color Controls** - Using three color pickers you can change uv editor viewport appearance:
+**Viewport Color Controls** - Using three color pickers you can change the UV Editor viewport appearance:
 
 - (1) Background color
 - (2) Grid color

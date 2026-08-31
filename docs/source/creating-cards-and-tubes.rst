@@ -7,41 +7,33 @@ Curve Cards and Curve Tubes
 ###########################
 
 Intro
-^^^^^
+=====
 
-In this chapter we will discuss all the types of cards and tubes, difference between them and additional commands available for each type.
+In this chapter we will discuss all the regular creation methods for cards, tubes, braids and bound objects.
 
 .. image:: images/creation_section.png
 	:align: right
 	:width: 150px
 
-GS CurveTools has 4 main types of curves split into two categories: **Extrude** and **Warp**. You can easily switch between categories using Extrude and Warp radio button (switch) on the top of the menu.
-
-**Extrude** will create groups in the outliner called **curveCard** or **curveTube** and Warp mode will create **warpCard** or **warpTube** groups. 
+GS CurveTools has 4 types of objects available: Cards, Tubes, Braids and Bound objects. You can easily switch between Cards and Tubes by using "Shape" param in the :ref:`Curve Control Window<curve-control-window>`.
 
 You can rename this group or even group it with other groups, but do not rename or move anything inside those groups.
 
-**Extrude** and **Warp** use completely different algorithms, and in general, **Warp** is more advanced version of **Extrude**.
-
-The main reason why **Extrude** was left as an option is because it has slightly better performance than **Warp** mode. **Warp** mode, on the other hand, has the ability to precisely control the twist and scale along the length of the curve, as well as detaching the length of the geometry from the length of the curve etc.
-
-.. note:: For relatively powerful PC there should be almost no difference, but if you are experiencing performance issues it is better to use **Extrude** mode. Both **Extrude** and **Warp** modes are fully compatible with all the functions of the GS CurveTools plug-in.
-
-
 .. _extrude-cards:
 
-Extrude Mode
-^^^^^^^^^^^^
+Cards and Tubes
+===============
 
-.. image:: images/buttons/new_card.png
-	:name: new-card-button
-	:width: 150px
+.. _new-card-button:
+
+New Card and New Tube
+---------------------
 
 .. image:: images/new_card_function.gif
 	:align: right
 	:width: 250px
 
-**New Card** and **New Tube** buttons will create a default Curve Card or Curve Tube in the center of the world with the scale defined by the "Scale Factor" in the options menu (more on that in the Options Chapter). This simplest command is the best way to start off your project. Curves are placed in the selected layer (Layer 0 by default)
+**New Card** and **New Tube** buttons will create a default Card or Tube object in the center of the world with the scale defined by the "Scale Factor" in the :ref:`Options Menu<options>` (more on that in the :ref:`Scale Factor<scale-factor>` section). Curves are placed in the selected layer (Layer 0 by default).
 
 
 |
@@ -50,49 +42,84 @@ Extrude Mode
 |
 |
 |
+|
 
-.. image:: images/buttons/curve_card.png
-	:name: curve-card-button
-	:width: 150px
+.. _curve-card-button:
+
+Curve Card and Curve Tube
+-------------------------
 
 .. image:: images/curve_card_function.gif
 	:align: right
 	:width: 250px
 
-**Curve Card** and **Curve Tube** will convert any number of selected normal curves to **Curve Cards** and **Curve Tubes**. Instanced curves will be automatically converted to normal curves. Original curve position will stay the same. Curves are placed in the selected layer (Layer 0 by default)
+**Curve Card** and **Curve Tube** will convert any number of selected regular NURBS curves to **Cards** and **Tube** objects. Original curve position will stay the same. Curves are placed in the selected layer (Layer 0 by default).
 
 |
 |
+|
+|
+|
 
-.. image:: images/buttons/fill.png
-    :name: fill-button
-    :width: 150px
+.. _braids:
 
-Fill function is similar to :ref:`Add Cards and Tubes <add-cards-button>`, but it is compatible with :ref:`Bind <bind-unbind>` geometry. It will copy the first selected curve and distribute it like Add Cards does.
+Braid Button
+============
 
-Fill function is generally a recommended way of adding new curves in-between other curves as it is faster and more reliable than Add Cards and Tubes.
+.. gifvideo:: images/braid_demo.mp4
+    :width: 250
+    :align: right
+
+Braid button will either create a new Braid in the center of the scene (no curves selected) or use selected NURBS curves to create new braids from them.
+
+Braids are procedurally generated objects so any changes to their parameters are non-destructive.
+
+Braid function by default creates 3-strand braids with "Flat" pattern, but you can change all the parameters in the :ref:`Curve Control Window<curve-control-window>`.
+
+More details about braid Attributes are in :ref:`Attributes<braid-attributes>` chapter.
+
+.. _template-button:
+
+Template Button
+===============
+
+Template button will use currently selected template (:ref:`Curve Control Window<curve-control-window>`) and have different effects based on the selection:
+
+#. If nothing in the scene is selected the Template button will create the current template in the center of the scene.
+#. If a curves are selected, the Template button will create a copy of the selected template on that curve.
+#. If Curve, Tube, Braid or Bound objects are selected the Template button will copy the parameters from the template to the selected objects.
+
+When holding RMB on the Template button the marking menu will open and you can use Orient to Normals toggle to control if the newly created objects should be oriented to the global base mesh normals or not.
+
+More in the :ref:`Templates<templates>` chapter.
+
+
+.. _fill-button:
+
+Fill Function
+=============
+
+Fill function will copy the objects and distribute them between selected curves blending the attributes between them.
 
 Fill can also output curves without the geometry (as an option in the :ref:`Options Menu<options>`)
-
-.. image:: images/buttons/add_cards.png
-	:name: add-cards-button
-	:width: 150px
 
 .. image:: images/add_cards_function.gif
 	:align: right
 	:width: 250px
 
-**Add Cards** and **Add Tubes** will add cards/tubes in-between selected cards/tubes. Curves are placed in the selected layer (Layer 0 by default)
+Holding **Shift** button while clicking **Fill** button will disable blending of attributes between curve pairs. Instead, attributes will be copied from the first selected curve in the curve pair.
 
-The attributes of those selected curves will be smoothly blended between new added curves to provide more natural feel to the transition.
+.. _add-cards-button:
 
-Holding **Shift** button while clicking **Add Cards**/**Tubes** buttons will disable blending of attributes between curve pairs. Instead, attributes will be copied from the first selected curve in the curve pair.
+Holding RMB on the **Fill** will open a marking menu where you can use Add Card or Add Tube buttons. They will create new Cards or Tubes between selected curves instead of copying the original objects. This marking menu also have Orient to Normals toggle that will control if the newly created objects should be oriented to the global base mesh normals or not.
 
 .. image:: images/add_slider.png
-	:align: right
+	:align: left
 	:width: 150px
 
-The number of crated curves is defined by the **Add** slider. The number of the slider indicates how many curves will be created between each pair of selected curves.
+|
+
+The number of created curves is defined by the **Add** slider. The number of the slider indicates how many curves will be created between each pair of selected curves.
 
 **Selection order is extremely important** here because it defines the direction of added curves. The algorithm adds curves from the first selected curve, to the next in the selection order. So First ⇨ Second ⇨ Third and so on.
 
@@ -106,98 +133,11 @@ Here is an example of two different selection orders:
     - .. image:: images/add_cards_selection_02.gif
         :target: _images/add_cards_selection_02.gif
 
-.. _warp-cards:
-
-Warp Mode
-^^^^^^^^^
-
-**Warp Mode** mirrors the **Extrude** functionality but creates Warp Cards and Tubes instead. These advanced curves have additional options:
-
-.. image:: images/twist_graph.gif
-	:align: right
-	:width: 350px
-
-**Twist Curve Graph:**
-
-Twist at any point along the curve using **Twist Curve** graph in the Curve Control Window.
-
-The graph can be reset to default using **Reset Curve** button.
-
-|
-|
-
-.. image:: images/magnitude_field.gif
-	:align: right
-	:width: 350px
-
-**M:** field controls the **Magnitude** of the **Curve Twist Graph**. Changing this value will increase or decrease the effect that **Twist Curve Graph** has on the twisting of the curve.
-
-|
-|
-|
-|
-|
-
-**Width Curve Graph:**
-
-.. image:: images/width_graph.gif
-	:align: right
-	:width: 350px
-	
-Using this graph you can scale the curve width at any point along the curve.
-
-The graph can be reset to default using **Reset Curve** button.
-
-|
-|
-|
-|
-|
-
-.. image:: images/width_graph_popout.gif
-	:align: right
-	:width: 350px
-
-Both graphs can be detached from the Curve Control Window into their own windows using **"^"** button so you can scale and position them as you see fit. If you need better resolution, just detach the graph and scale it.
-
-|
-|
-|
-|
-|
-|
-|
-
-.. image:: images/width_new_cvs.gif
-	:align: right
-	:width: 350px
-
-Both graphs support **adding and removing additional points** to further enhance the control over the curve.
-
-|
-|
-|
-|
-|
-|
-
-.. image:: images/warp_length_unlock.gif
-	:align: right
-	:width: 350px
-
-**Length Unlock** will unlock the stretching of the geometry and allow for precise control over the length of the geometry.
-
-|
-|
-|
-|
-|
-|
 
 .. _subdivide:
 
 Subdivide
-^^^^^^^^^
+=========
 
 .. image:: images/buttons/subdivide.png
 	:width: 150px
@@ -216,7 +156,7 @@ Holding **Shift** before clicking on Subdivide will not delete the original card
 |
 
 Using Maya Deformers
-^^^^^^^^^^^^^^^^^^^^
+====================
 
 .. image:: images/maya_deformers.gif
 	:align: right
@@ -237,7 +177,7 @@ Supported and tested deformers are:
 - Twist
 - Wave
 
-Other deformers might work just fine as well
+Other deformers might work just fine as well.
 
 |
 |

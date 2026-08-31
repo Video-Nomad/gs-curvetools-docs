@@ -19,7 +19,7 @@ Color Mode
 
 You can continue creating hair using this mode exclusively (it is compatible with most commands) or switch to it occasionally to check curve intersections etc.
 
-**Layer** color is assigned randomly at first, but you can always manually change it using `Curve Control Window <attributes.html>`_ and clicking the color box at the top of the window or by clicking on **Layer Names & Colors Window** and opening :ref:`Layer Customization Window<layer-customization-window>`.
+**Layer** color is assigned randomly at first, but you can always manually change it using the :ref:`Curve Control Window<curve-control-window>` and clicking the color box at the top of the window or by clicking on **Layer Names & Colors Window** and opening the :ref:`Layer Customization Window<layer-customization-window>`.
 
 Color is **Layer** based. Each layer can have its own color.
 
@@ -27,16 +27,16 @@ Clicking on **Color** button again will restore the original materials of the ge
 
 There are four options available for the color mode:
 
-- **Color + Alpha Map** (:numref:`color_with_alpha`) - this default mode will colorize the geometry based on the layer color but keep the Alpha map transparency.
-- **Color + Alpha Map + Checker** (:numref:`color_with_alpha_and_checker`) - the same as the first one but with UV checker texture overlayed on top.
-- **Color** (:numref:`color_mode`) - this mode can be activated in the Options menu and it will only show colors for each individual **Layer**. This mode is useful if you want to quickly check which **Curve** is assigned to which **Layer**. Open the options menu and uncheck the **Checker Pattern for Color mode**
+- **Color + Alpha Map** (:numref:`color_with_alpha`) - this is the default mode and will colorize the geometry based on the layer color but keep the Alpha map transparency.
+- **Color + Alpha Map + Checker** (:numref:`color_with_alpha_and_checker`) - the same as the first one but with UV checker texture overlaid on top.
+- **Color** (:numref:`color_mode`) - this mode can be activated in the :ref:`Options Menu<options>` and it will only show colors for each individual **Layer**. This mode is useful if you want to quickly check which **Curve** is assigned to which **Layer**. Open the options menu and uncheck the **Checker Pattern for Color mode**.
 - **Color + Checker** (:numref:`color_mode_checker`) - this mode will colorize the geometry and also show UV checker map. This is useful to quickly check your **UVs** and which **Curve** is assigned to which **Layer**.
 
 .. image:: images/color_options.png
   :width: 200px
   :align: right
 
-You can change between the color modes using :ref:`Options<options>` ⇨ Color Options menu
+You can change between the color modes using :ref:`Options<options>` ⇨ Color Options menu.
 
 |
 
@@ -80,12 +80,12 @@ Color Marking Menu
   :align: right
   :width: 400px
 
-By holding RMB on Colors Filter you will open the Color mode marking menu.
+By holding RMB on the Colors Filter you will open the Color mode marking menu.
 
-- Randomize Colors will randomize Layer colors when clicked. The default values for randomization is Saturation range from 0.5 to 1.0, Hue 0.0 to 1.0 and Value from 0.3 to 0.7
+- Randomize Colors will randomize Layer colors when clicked. The default values for randomization are Saturation range from 0.5 to 1.0, Hue 0.0 to 1.0 and Value from 0.3 to 0.7.
 - Apply Curve Colors will sync the curve color in each layer to the color of that layer.
 - Reset Curve Colors will reset the colors of the curves to their default Maya color.
-- Custom Colors Window will open a window where the user can customize Layers color, save a preset and generate new colors.
+- Custom Colors Window will open a window where the user can customize layer colors, save a preset and generate new colors.
 
 .. _layer-customization-window:
 
@@ -96,13 +96,15 @@ Layers Customization Window
   :align: right
   :width: 200px
 
-**Layers Customization Window** holds all the controls for the color and name management of the Layers.
+**Layers Customization Window** holds all the controls for the color and name management of the layers.
 
-**Gradient** section is used to generate a linear gradient from the two colors selected and the amount of rows to generate the gradient to.
+**Gradient** section is used to generate a linear gradient from the two selected colors and the number of rows in the gradient.
 
-**Randomize** section will randomize the colors in every layer based on saturation minimum and maximum values. Value is fixed to a range of 0.3-0.7
+**Randomize** section will randomize the colors in every layer based on saturation minimum and maximum values. The value is fixed to a range of 0.3-0.7.
 
-**0-79 Layer Color Pickers and Name Fields** allow to set any custom color and name to every layer separately by clicking on the color picker or typing in the field, randomizing this single layer color (Rand) or resetting the color and name of the layer by clicking on Reset button.
+**Collection Switcher** will appear if multiple collections are available. It will allow users to switch between the collections and edit them individually.
+
+**0-79 Layer Color Pickers and Name Fields** allow users to set any custom color and name for every layer separately by clicking on the color picker or typing in the field, randomizing this single layer color (Rand) or resetting the color and name of the layer by clicking on the Reset button.
 
 **Reset All** button will reset all the layers to the default value.
 
@@ -110,7 +112,7 @@ Layers Customization Window
 
 **Set To Scene** will apply the selected colors and names to the layers in the current scene.
 
-**Load Preset** will load a global preset colors and names.
+**Load Preset** will load a global preset of colors and names.
 
 **Save As Preset** will save current colors and names to a global preset that can be then loaded to any scene.
 
@@ -130,6 +132,6 @@ Colorizing Regrouped Layers
   :align: right
   :width: 150px
 
-You can choose to apply the colors to the Regrouped layers in the outliner (using :ref:`Regroup By Layer <regroup-by-layer>` button) automatically, based on the Layer color, by selecting the option "Colorize Regrouped Layers" in the options menu.
+You can choose to apply the colors to the Regrouped layers in the outliner (using the :ref:`Regroup By Layer<regroup-by-layer>` button) automatically, based on the Layer color, by selecting the option "Colorize Regrouped Layers" in the :ref:`Options Menu<options>`.
 
 Regrouping the layers with this option enabled will colorize the groups in the outliner.

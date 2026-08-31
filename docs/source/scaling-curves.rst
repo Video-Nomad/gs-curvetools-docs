@@ -13,11 +13,11 @@ Scaling Curves
   :align: right
   :width: 300px
 
-Because of the procedural nature of GS CurveTools, cards and tubes created by the plug-in can't be scaled reliable using regular Maya scale gizmo.
+Because of the procedural nature of GS CurveTools, cards and tubes created by the plug-in can't be scaled reliably using the regular Maya scale gizmo.
 The curves themselves will scale correctly, but the procedural geometry will not.
 Parameters like Width and Profile will not be scaled.
 
-To scale the curves properly there is a separate **Scaling** section in the Curve Control Window.
+To scale the curves properly there is a separate **Scaling** section in the :ref:`Curve Control Window<curve-control-window>`.
 
 This special scale function will scale *all selected objects* (including regular geo and curves) and it will automatically adjust any parameters on the procedural geometry.
 

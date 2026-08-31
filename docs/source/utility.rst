@@ -13,9 +13,9 @@ Intro
   :align: right
   :width: 150px
 
-Utility Section expands the functionality of GS CurveTools plug-in and allows for fast rebuilding, duplication, smoothing, extending and reducing the curve.
+Utility Section expands the functionality of GS CurveTools plug-in and allows for fast rebuilding, duplication, smoothing, extending, and reducing of the curve.
 
-It also holds Control Curve function and Curve Control Window button.
+It also holds the :ref:`Control Curve<control-curve>` function and :ref:`Curve Control Window<curve-control-window>` button.
 
 |
 |
@@ -42,7 +42,7 @@ Simply select any number of curves in the viewport and start dragging the slider
 
 You can also **Manually Type** values in the **Value Field** and as soon as you press **Enter**, selected curves will be rebuilt.
 
-Typing the value over default 50 will still work and **expand the range of the slider** to double of the typed value (if you type 51, it will expand the slider range to 102 and so on).
+Typing a value over the default 50 will still work and **expand the range of the slider** to double the typed value (if you type 51, it will expand the slider range to 102 and so on).
 
 
 .. |slider_reset| image:: images/rebuild_slider_reset.png
@@ -51,9 +51,9 @@ Typing the value over default 50 will still work and **expand the range of the s
 .. |manual_rebuild| image:: images/rebuild_slider_manual_rebuild.png
   :scale: 75%
 
-The slider can be reset using |slider_reset| button.
+The slider can be reset using the |slider_reset| button.
 
-Selected curve can be rebuilt to the current value by using Manual Rebuild button |manual_rebuild|
+The selected curve can be rebuilt to the current value by using the Manual Rebuild button |manual_rebuild|.
 
 .. _duplicate:
 
@@ -91,27 +91,27 @@ Randomize
   :align: right
   :height: 450px
 
-Randomize button opens the randomization parameters window. This window holds parameters that can be used to randomize selected curves.
+The Randomize button opens the randomization parameters window. This window holds parameters that can be used to randomize selected curves.
 
 **Workflow:**
 
 - Select the curves to randomize.
-- Enable/disable the randomization modules by clicking on the "Enable" checkbox (Curve Points, Rotation, etc).
-- Change parameters (X,Y,Z, etc).
+- Enable/disable the randomization modules by clicking on the "Enable" checkbox (Curve Points, Rotation, etc.).
+- Change parameters (X, Y, Z, etc.).
 - Drag the slider and hold the mouse button to look at the preview of the amount of randomization.
 - Release the slider and click "Randomize" button to apply the randomization. Releasing the slider will disable the preview.
-- If magnitude of randomization is not enough, use "mult" slider to multiply the sliders, increasing the final randomization.
+- If the magnitude of randomization is not enough, use the "mult" slider to multiply the sliders, increasing the final randomization.
 
 **Randomization modules:**
 
-- **Control Points:** This module will randomize all the control points (CVs) on the selected curves. At least one axis should be enabled for the randomization to occur. Additionally, user can Lock First and/or Last CV on the curves to avoid moving the root or tip CV.
+- **Control Points:** This module will randomize all the control points (CVs) on the selected curves. At least one axis should be enabled for the randomization to occur. Additionally, the user can lock the first and/or last CV on the curves to avoid moving the root or tip CV.
 - **Rotation:** Randomize the overall rotation on the curves based on the pivot point on those curves. At least one axis should be enabled for the randomization to occur.
-- **Orientation:** Randomize the orientation of the geometry on the curve. Rotates the geometry around the curve.
+- **Orientation:** Randomize the orientation of the geometry on the curve. This rotates the geometry around the curve.
 - **Twist:** Randomize the twist parameter on the selected curves.
-- **Width:** Randomize width parameter of the curves. Uniform checkbox is used to sync WidthX and WidthZ parameter on Curve Tubes. Disabling Uniform will result in separate randomization values for WidthX and WidthZ parameter on Curve Tubes.
-- **Taper:** Randomize taper parameter of the curves.
-- **Profile:** Randomize profile parameter of the curve. Allow negative values will allow randomization to go negative, flipping the profile.
-- **Selection:** Randomize selection based on the slider value. Middle of the slider means that 50% of the selected curves will randomly stay selected.
+- **Width:** Randomize the width parameter of the curves. The Uniform checkbox is used to sync the WidthX and WidthZ parameters on Curve Tubes. Disabling Uniform will result in separate randomization values for the WidthX and WidthZ parameters on Curve Tubes.
+- **Taper:** Randomize the taper parameter of the curves.
+- **Profile:** Randomize the profile parameter of the curve. **Allow Negative Values** will allow randomization to go negative, flipping the profile.
+- **Selection:** Randomize selection based on the slider value. The middle of the slider means that 50% of the selected curves will randomly stay selected.
 
 **Randomize:** button will apply any randomization that was enabled.
 
@@ -154,9 +154,9 @@ You can smooth CVs on multiple curves at the same time. Just select the curves, 
   :align: right
   :width: 250px
 
-Smooth button also has Marking Menu where you can select Smoothing Multiplier. 
+Smooth button also has a Marking Menu where you can select the Smoothing Multiplier.
 
-To access sooth marking menu, simply Hold Right Mouse Button over the Smooth Button. 
+To access the smooth marking menu, simply hold the Right Mouse Button over the Smooth Button.
 
 You can select from x1, x3, x5 and x10 multipliers. They will increase the strength of the smoothing.
 
@@ -169,13 +169,13 @@ Mirroring
   :align: right
   :width: 250px
 
-Mirror functions allow to mirror curves from one side of the world to the other across X, Y or Z Axis.
+Mirror functions allow you to mirror curves from one side of the world to the other across the X, Y, or Z axis.
 
 User can switch between Mirror and Flip modes.
 
-In Mirror mode curves will be duplicated and then flipped based on the Axis selected.
+In Mirror mode, curves will be duplicated and then flipped based on the selected axis.
 
-In Flip mode curve will be flipped to the opposite side of the world based on the Axis selected.
+In Flip mode, the curve will be flipped to the opposite side of the world based on the selected axis.
 
 .. _control-curve:
 
@@ -190,13 +190,13 @@ Control Curve
 
 **Control Curve** is a special deformer created to control multiple curves at the same time.
 
-Select multiple curves and click on Control Curve button. A new curve will be generated in the middle of the selected curves. Deforming this curve will also deform any bound curve.
+Select multiple curves and click on the Control Curve button. A new curve will be generated in the middle of the selected curves. Deforming this curve will also deform any bound curves.
 
 .. image:: images/buttons/apply.png
   :width: 80px
 
-To Apply the deformer, simply select the Control Curve and click **Apply** button.
+To apply the deformer, simply select the Control Curve and click the **Apply** button.
 
-.. Note:: There might be some warnings during the creation of the Control Curve like "No points were weighted to the wrap". Ignore them.
+.. note:: There might be some warnings during the creation of the Control Curve like "No points were weighted to the wrap". Ignore them.
 
 .. important:: Control Curve is a temporary deformer (like Maya's Lattice, Twist etc.) and should be used to quickly change the shape of multiple selected curves, but it should not be used as a permanent controller for those curves. If you need to control multiple curves on a permanent basis, refer to :ref:`bind-unbind`.

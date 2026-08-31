@@ -52,7 +52,7 @@ There are a few ways you can improve that:
 1. Use XRay mode and set hotkey to toggle it. XRay mode in Maya will make every geometry and curve semi-transparent and it can be extremely helpful when searching for the curve that needs to be selected.
 2. Use :ref:`Curve Colors<layer-customization>`.
 3. Increase :ref:`Curve Thickness<options>`.
-4. User :ref:`Advanced Visibility<advanced-visibility>` options and bind some hotkeys to it.
+4. Use :ref:`Advanced Visibility<advanced-visibility>` options and bind some hotkeys to it.
 
 |
 |
@@ -74,4 +74,4 @@ To change curve thickness globally go to GS CurveTools :ref:`Options<options>` â
 
   Curve Thickness changed on selected curves
 
-You can also change curve thickness manually in :ref:`Curve Control Window<attributes>` using number field on the top right. This will not change global curve thickness. Only selected curves will be affected.
+You can also change curve thickness manually in the :ref:`Curve Control Window<curve-control-window>` using the number field on the top right. This will not change global curve thickness. Only selected curves will be affected.

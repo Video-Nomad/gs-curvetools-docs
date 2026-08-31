@@ -1,3 +1,4 @@
 sphinx-copybutton
 sphinx
 sphinx_rtd_theme
+sphinxcontrib-video
