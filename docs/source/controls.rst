@@ -185,7 +185,7 @@ Sculpt Tool Settings
 - **Strength** - the strength of the brush influence.
 - **Smooth Strength** - the strength of the smoothing brush.
 - **Falloff** - the falloff of the brush.
-- **Falloff Influence** - how strong is the influence of the falloff.
+- **Falloff Preview** - falloff preview opacity effect strength.
 - **Preview Color** - the color of the CVs that are drawn as preview when hovering over them with Sculpt tool.
 - **Start CVs** - the CVs that will be ignored by the brush at the root of the curve. Default first CV only.
 - **End CVs** - the CVs that will be ignored by the brush at the tip of the curve.
