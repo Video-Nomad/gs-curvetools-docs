@@ -4,9 +4,20 @@
 Video Tutorials
 ###############
 
+Version 2.0 Release Video
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
-[NEW] Workflow Tutorial
-^^^^^^^^^^^^^^^^^^^^^^^
+.. raw:: html
+
+    <div style="border-radius: 8px; position: relative; height: 400; overflow: hidden; max-width: 100%;">
+        <iframe width="696" height="391" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" src="https://www.youtube.com/embed/IJUIMbhT2vw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+|
+
+
+Workflow Tutorial
+^^^^^^^^^^^^^^^^^
 
 .. raw:: html
 
@@ -17,8 +28,8 @@ Video Tutorials
 |
 
 
-[NEW] Full Tutorial
-^^^^^^^^^^^^^^^^^^^
+Full Tutorial
+^^^^^^^^^^^^^
 
 .. raw:: html
 
