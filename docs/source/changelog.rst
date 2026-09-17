@@ -4,10 +4,20 @@
 Changelog
 #########
 
+
+Version 2.0.1
+^^^^^^^^^^^^^
+
+*17-Sep-2026*
+
+**Bug Fixes:**
+
+- Fixed marking menu hotkeys not working with modifier keys (Alt, Shift, Ctrl).
+
 Version 2.0.0
 ^^^^^^^^^^^^^
 
-*07-Sep-2026*
+*14-Sep-2026*
 
 **IMPORTANT:**
 
