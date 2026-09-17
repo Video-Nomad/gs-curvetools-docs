@@ -85,7 +85,7 @@ Main Features of GS CurveTools
 Supported Platforms and Versions
 ================================
 
-- **Maya 2018-2027 for Windows** ⇨ Fully Tested and Supported*.
+- **Maya 2018-2027 for Windows** ⇨ Fully Tested and Supported.
 - **Maya 2018-2027 for Mac** ⇨ **Not** Supported for **v2**. Still *supported* for v1.3+.
 - **Linux** ⇨ Not Tested and Not Supported.
 - **Maya LT** ⇨ Not Tested and Not Supported.
