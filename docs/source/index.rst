@@ -82,29 +82,14 @@ Main Features of GS CurveTools
 - Extremely fast to save and load the scenes even with thousands of cards.
 - and much more...
 
-Recommended Maya Versions
-=========================
-
-- 2018.6
-- 2019.3, 2019.3.1
-- 2020.4
-- 2022.3, 2022.4
-- 2023, 2023.1, 2023.2, 2023.3
-- 2024, 2024.1, 2024.2
-- 2025
-- 2026
-- 2027
-
-Supported Platforms
-===================
+Supported Platforms and Versions
+================================
 
 - **Maya 2018-2027 for Windows** ⇨ Fully Tested and Supported*.
-- **Maya 2018-2027 for Mac** ⇨ **Not** Supported for v2. Still supported for v1.3+.
+- **Maya 2018-2027 for Mac** ⇨ **Not** Supported for **v2**. Still *supported* for v1.3+.
 - **Linux** ⇨ Not Tested and Not Supported.
 - **Maya LT** ⇨ Not Tested and Not Supported.
 - **Maya 2017** ⇨ Is no longer supported since v1.2.7
-
-.. important:: \*Please use the latest patches if possible. Thank you!
 
 .. toctree::
     :maxdepth: 2
