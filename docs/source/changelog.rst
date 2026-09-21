@@ -5,6 +5,16 @@ Changelog
 #########
 
 
+Version 2.0.2
+^^^^^^^^^^^^^
+
+*21-Sep-2026*
+
+**Bug Fixes:**
+
+- Fixed Mirror not accounting for twist and v-offset.
+- Fixed Orient to Normals unnecessary warning messages.
+
 Version 2.0.1
 ^^^^^^^^^^^^^
 
