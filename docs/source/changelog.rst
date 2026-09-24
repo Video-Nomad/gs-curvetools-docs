@@ -4,6 +4,20 @@
 Changelog
 #########
 
+Version 2.0.3
+^^^^^^^^^^^^^
+
+*24-Sep-2026*
+
+**Improvements:**
+
+- Added triangulated meshes support for Convert from Geo (not as precise as convert from quad meshes, but works)
+- Lowered soft maximum value for braid frequency slider (50->25). Can still be extended by typing the value manually.
+
+**Bug Fixes:**
+
+- Fix Duplicate command when CVs are selected. Will switch to object selection automatically now.
+- Fix Convert from Geo and Unpack length divisions calculations. Will now match the original geo closely.
 
 Version 2.0.2
 ^^^^^^^^^^^^^
