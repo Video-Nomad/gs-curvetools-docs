@@ -4,6 +4,18 @@
 Changelog
 #########
 
+Version 2.0.4
+^^^^^^^^^^^^^
+
+**New Features:**
+
+- Two new hotkeys are available: Flip UVs Horizontal, Flip UVs Vertical.
+
+**Bug Fixes:**
+
+- Add warning when trying to use broken template (history clear bug).
+- Fix a bug with Curve Control Window that caused it to not load controls in certain cases (Color Picker widget was parented to the Maya window explicitly in some scenarios).
+
 Version 2.0.3
 ^^^^^^^^^^^^^
 

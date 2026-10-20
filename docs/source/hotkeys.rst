@@ -419,6 +419,12 @@ Utilities
   * - Paste UVs
     - ``GSCT_Paste_UVs``
     - Paste UVs to selected curves
+  * - Flip UVs Horizontal
+    - ``GSCT_Flip_UVs_Horizontal``
+    - Flip selected objects' UVs horizontally (works with the UV Editor closed)
+  * - Flip UVs Vertical
+    - ``GSCT_Flip_UVs_Vertical``
+    - Flip selected objects' UVs vertically (works with the UV Editor closed)
   * - Reset Pivot to Root
     - ``GSCT_Reset_Pivot_to_Root``
     - Reset Pivot Point to Root
