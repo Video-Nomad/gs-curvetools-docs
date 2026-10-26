@@ -109,3 +109,25 @@ Troubleshooting
   * **Incorrect**: ``C:\Users\{User}\Documents\maya\modules``
 
 * **OneDrive**: If you use OneDrive, your Documents folder might be located inside the OneDrive path (e.g., ``C:\Users\{User}\OneDrive\Documents\maya...``).
+
+
+Non-ASCII Characters Issue
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If your path to the Maya ``modules`` folder contains non-ASCII characters (e.g. Cyrillic, Japanese etc.), you might need to edit the ``gs_curvetools.mod`` **file** and change the module path on the first line to a different location. After that, copy the ``gs_curvetools`` **folder** to that new location.
+
+For example, this original first line for Maya 2026 (uses a relative path):
+
+.. code-block:: text
+
+  + MAYAVERSION:2026 PLATFORM:win64 gs_curvetools 2.0.4 gs_curvetools
+
+Will become something like this (uses an absolute path):
+
+.. code-block:: text
+
+  + MAYAVERSION:2026 PLATFORM:win64 gs_curvetools 2.0.4 C:/my_plugins/gs_curvetools
+
+That's it! Edit this path for the Maya version you're using and don't change anything else.
+
+.. important:: Copy the ``gs_curvetools`` folder that sits right next to the ``gs_curvetools.mod`` file, and make sure the new location matches the path in the ``.mod`` file exactly. Do not change anything inside that folder!
