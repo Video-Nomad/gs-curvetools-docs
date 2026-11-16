@@ -7,7 +7,7 @@ Changelog
 Version 2.0.5
 ^^^^^^^^^^^^^
 
-*24-Sep-2026*
+*16-Nov-2026*
 
 **New Features:**
 
