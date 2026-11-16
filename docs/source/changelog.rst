@@ -11,7 +11,7 @@ Version 2.0.5
 
 **New Features:**
 
-- Isolate Select (Ctrl+1) is now supported for all GS CurveTools objects when Advanced Visibility is active. Geometry will follow the isolate select as well (optional, default is on, disable in Options -> Settings -> Include Geometry in Isolate Select).
+- Isolate Select (Ctrl+1) is now supported for all GS CurveTools objects even when Advanced Visibility is active. Geometry will follow the isolate select as well (optional, default is on, disable in Options -> Settings -> Include Geometry in Isolate Select).
 - UV editor now supports Maya nodes as color inputs, not just file nodes with texture files (Maya 2022+ only). Can be disabled in the UV editor Options.
 
 **Improvements:**
