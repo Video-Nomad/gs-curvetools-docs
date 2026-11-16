@@ -4,6 +4,31 @@
 Changelog
 #########
 
+Version 2.0.5
+^^^^^^^^^^^^^
+
+*24-Sep-2026*
+
+**New Features:**
+
+- Isolate Select (Ctrl+1) is now supported for all GS CurveTools objects when Advanced Visibility is active. Geometry will follow the isolate select as well (optional, default is on, disable in Options -> Settings -> Include Geometry in Isolate Select).
+- UV editor now supports Maya nodes as color inputs, not just file nodes with texture files (Maya 2022+ only). Can be disabled in the UV editor Options.
+
+**Improvements:**
+
+- Sculpt brush will now have a tiny dot at the center for ease of control in split viewport scenarios. Can be disabled in Sculpt settings.
+- Curve Control window UI is now more stable when changing selections (less jumpy).
+- GPU acceleration is now working for the UV Editor for Maya 2020+.
+
+**Bugfixes:**
+
+- Removing a graph point when its manipulator is enabled will now work properly.
+- Fixed Advanced Visibility node being selectable which messed with the UV editor sometimes.
+- Place and Draw will no longer leave stray curves in the scene when Bound objects are used as templates.
+- Fixed Templates leaving nodes behind during Duplicate.
+- Some minor UI fixes.
+
+
 Version 2.0.4
 ^^^^^^^^^^^^^
 

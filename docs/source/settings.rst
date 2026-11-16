@@ -19,6 +19,8 @@ These are the general options that affect the functionality of the plug-in:
 - **Add Cards/Tubes Blend Attributes** enables blending of the attributes when using Add Cards/Tubes or Fill functions.
 - **Fill Creates Only Curves** will enable curve only output during :ref:`Fill<fill-button>` function
 - **Auto Convert Instances** will automatically convert instanced curves to normal curves before any other function is applied.
+- **Include Geometry in Isolate Select** will include Geo component when using Maya's isolate select.
+- **Use OpenGL in UV Editor** enable GPU acceleration in the UV editor for Maya 2020+.
 - **Enable Tooltips** - will toggle the tooltips visibility on plug-in controls and buttons.
 
 Color Settings

@@ -113,3 +113,19 @@ Reset Pivot
 Holding the **Shift** modifier will position the pivot point at the last CV of the curve (tip of the curve).
 
 This command is extremely useful because if you move the first CV, or all CVs at the same time in component mode (not the curve itself in the object mode) your pivot point will not follow the curve.
+
+|
+|
+|
+
+Isolate Select
+^^^^^^^^^^^^^^
+
+.. gifvideo:: images/isolate_select.mp4
+	:align: right
+	:width: 250
+
+Maya's Isolate Select (Ctrl+1 by default) will work with both Advanced Visibility and Geometry component.
+When you select the curves and press Ctrl+1 Maya will now isolate select not only the curve itself, but also its geometry component as well as Advanced Visibility hightlight.
+
+You can optionally not include the Geometry component by toggling Options->Settings->Include Geometry in Isolate Select option off

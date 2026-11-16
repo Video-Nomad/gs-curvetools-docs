@@ -45,11 +45,11 @@ Supported textures and nodes
 
 - Shader nodes: Lambert, Blinn, Phong, PhongE, Standard Surface or OpenPBR.
 - File nodes: file and psdFileTex.
+- Procedural textures: all 2D texture nodes when used for Color/Diffuse input. Maya 2022+ only.
 - Texture file formats: JPG/JPEG, PNG, TIF, TIFF, TGA, PSD, EXR, HDR.
 
-.. important::
-
-   Ramp, checker, or other procedural textures are not supported as color input. There needs to be an actual texture file for the UV Editor to load.
+.. note::
+    Ramp, checker, or other procedural textures are supported for color output as long as you have Maya 2022+. In older Maya versions those nodes are ignored and actual file node is used.
 
 Simply connect Out Color of Diffuse File to Color of the Lambert and Out Transparency to Transparency (or BaseColor and Opacity for Standard Surface).
 
@@ -445,6 +445,15 @@ Options Menu
     :width: 150px
 
 In the options menu, the user can change the texture and viewport visual appearance.
+
+**Node Preview/GPU preview:**
+
+Node preview allows for procedural 2d texture nodes (ramp, checker, noise etc) to be used as Color inputs and UV Editor will display them correctly. When GPU Preview is disabled it will fall back to the file texture view only.
+
+Node Preview Size determines the texture resolution. This is limited by your GPU/Maya itself 1024 or 2048 is recommended.
+
+Refresh Texture will redraw the texture in the UV Editor viewport.
+
 
 
 .. important:: It is recommended for the Diffuse and Alpha maps to have the same resolution and aspect ratio.
